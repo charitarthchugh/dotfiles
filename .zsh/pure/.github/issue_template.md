@@ -1,1 +1,0 @@
-/home/ccd/.zsh/pure/.github/issue_template.md
