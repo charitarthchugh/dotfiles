@@ -41,14 +41,21 @@ ex ()
 }
 
 export EDITOR=vim
+#Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
+
 alias sfox='firefox -P School'
-alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to the ~/.zshrc file
-alias aliasrc='${=EDITOR} ~/.zsh/aliasrc' #quickly acess this file
+
+alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
+alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly acess this file
+
 alias up='cd ..'
+# Program aliases
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
+alias sfox='firefox -P School'
+
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lsa='ls -a --color=auto'
@@ -87,7 +94,6 @@ alias ff='find . -type f -name'
 
 alias h='history'
 alias hgrep="fc -El 0 | grep"
-alias help='man'
 alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
@@ -97,6 +103,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 #A simple and quirky alias
 alias pacman='cat ~/dotfiles/aliases/pacman1 |lolcat'
+alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
 # Github User Credentials
 [ -f "$HOME/.githubA" ]&& source "$HOME/.githubA"
 #Load other alias files
