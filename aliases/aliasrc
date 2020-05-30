@@ -52,7 +52,7 @@ alias gh-desktop= 'github-desktop'
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lsa='ls -a --color=auto'
-# ls, the common ones I use a lot shortened for rapid fire usage
+# ls
 alias l='ls -lFh --color=auto'     #size,show type,human readable
 alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh --color=auto'   #sorted by date,recursive,show type,human readable
@@ -96,7 +96,10 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 #A simple and quirky alias
-alias pacman='cat ~/.zsh/a2|lolcat'
+alias pacman='cat ~/dotfiles/aliases/pacman1 |lolcat'
+# Github User Credentials
 [ -f "$HOME/.githubA" ]&& source "$HOME/.githubA"
 #Load other alias files
-[ -f "$HOME/.zsh/fl" ] && source "$HOME/.zsh/fl"
+[ -f "$HOME/dotfiles/aliases/fl.zsh" ] && source "$HOME/dotfiles/aliases/fl.zsh"
+[ -f "$HOME/dotfiles/aliases/githubcli.zsh" ] && source "$HOME/dotfiles/aliases/githubcli.zsh"
+
