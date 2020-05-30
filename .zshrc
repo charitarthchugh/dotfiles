@@ -88,7 +88,7 @@ bindkey '^ ' autosuggest-accept
 # # Load aliases and shortcuts if existent.
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source "$HOME/dotfiles/aliases/aliasrc"
 # Load a fun ASCII Pacman Ghost
-  [ -f "~/dotfiles/aliases/pacman1" ] && cat ~/dotfiles/aliases/pacman1 | lolcat
+ [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
 
 # Flutter command
  export PATH="$PATH:$HOME/Dev/flutter/bin"
