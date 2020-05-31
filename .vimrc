@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
+set nu
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -15,6 +16,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'mhinz/vim-startify'
 Plugin 'tpope/vim-fugitive'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'tpope/vim-surround'
+Plugin 'godlygeek/tabular'
 set laststatus=2
 if !has('gui_running')
   set t_Co=256
