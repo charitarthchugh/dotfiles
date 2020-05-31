@@ -102,7 +102,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 #A simple and quirky alias
-alias pacman='cat ~/dotfiles/aliases/pacman1 |lolcat'
+alias pacman1='cat ~/dotfiles/aliases/pacman1 |lolcat'
 alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
 # Github User Credentials
 [ -f "$HOME/.githubA" ]&& source "$HOME/.githubA"
