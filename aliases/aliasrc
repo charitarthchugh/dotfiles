@@ -16,6 +16,7 @@ pkg-clean(){
 	figlet 'Cleaning Apt'
 	sudo apt autoremove -y
 }
+alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
 # # usage: ex <file>
 ex ()
