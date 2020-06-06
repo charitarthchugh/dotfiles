@@ -99,6 +99,6 @@ bindkey '^ ' autosuggest-accept
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
-#source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
