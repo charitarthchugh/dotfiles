@@ -89,7 +89,8 @@ bindkey '^ ' autosuggest-accept
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source "$HOME/dotfiles/aliases/aliasrc"
 # Load a fun ASCII Pacman Ghost
  [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
-
+# Add Homebrew to PATH
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Flutter command
  export PATH="$PATH:$HOME/Dev/flutter/bin"
  #Dart Pub command+Pub executables 
@@ -101,4 +102,3 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
