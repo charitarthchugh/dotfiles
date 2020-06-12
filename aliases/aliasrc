@@ -56,6 +56,7 @@ alias up='cd ..'
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
+alias pip ='pip3' #Python-pip
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
