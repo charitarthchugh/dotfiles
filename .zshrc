@@ -92,7 +92,7 @@ bindkey '^ ' autosuggest-accept
 # Add Homebrew to PATH
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Flutter command
- export PATH="$PATH:$HOME/Dev/flutter/bin"
+ export PATH="$PATH:$HOME/Dev/SDK/flutter/bin"
  #Dart Pub command+Pub executables 
  export PATH="$PATH:/usr/lib/dart/bin"
  export PATH="$PATH":"$HOME/.pub-cache/bin"
@@ -101,4 +101,4 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-export GEM_HOME="$HOME/gems"
+export GEM_HOME="$HOME/gems" 
