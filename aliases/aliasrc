@@ -110,7 +110,5 @@ alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
 #Load other alias files
 [ -f "$HOME/dotfiles/aliases/fl.zsh" ] && source "$HOME/dotfiles/aliases/fl.zsh"
 [ -f "$HOME/dotfiles/aliases/githubcli.zsh" ] && source "$HOME/dotfiles/aliases/githubcli.zsh"
-
 # Wrap git automatically by adding the following to ~/.zshrc:
-
 eval "$(hub alias -s)"
