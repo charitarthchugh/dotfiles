@@ -2,7 +2,7 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 # Set up the prompt
-fpath+=$HOME/.zsh/pure
+fpath+=$HOME/.antigen/bundles/sindresorhus/pure
 autoload -U promptinit
 promptinit
 prompt pure
@@ -89,18 +89,27 @@ bindkey '^ ' autosuggest-accept
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source "$HOME/dotfiles/aliases/aliasrc"
 # Load a fun ASCII Pacman Ghost
  [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
+
+
+
+
 # Add Homebrew to PATH
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Flutter command
-export PATH="$PATH:$HOME/Dev/flutter/bin"
-# Dart Pub command+Pub executables 
+ export PATH="$PATH:$HOME/Dev/SDK/flutter/bin"
+ #Dart Pub command+Pub executables 
+ export PATH="$PATH:/usr/lib/dart/bin"
+ export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
-export PATH="$PATH":"$HOME/.pub-cache/bin"
 # Local Bin
 export PATH="$HOME/.local/bin:$PATH"
+
+
+
+
 # # Load ; should be last.
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
 source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-export GEM_HOME="$HOME/gems"
+export GEM_HOME="$HOME/gems" 
