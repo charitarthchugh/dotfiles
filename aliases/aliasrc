@@ -49,7 +49,7 @@ alias upg='sudo apt update -y && sudo apt upgrade -y'
 alias sfox='firefox -P School'
 
 alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
-alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly acess this file
+alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
 alias up='cd ..'
 # Program aliases
@@ -100,7 +100,7 @@ alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
 
-alias idea = "eureka"
+alias bulb= "eureka"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
