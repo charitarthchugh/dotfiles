@@ -83,6 +83,8 @@ bindkey '^ ' autosuggest-accept
 
 
 # # Load ; should be last.
+        #Cod -from dim-an/cod
+        source <(cod init $$ zsh)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/autojump/autojump.zsh 2>/dev/null
