@@ -6,38 +6,13 @@ fpath+=$HOME/.antigen/bundles/sindresorhus/pure
 autoload -U promptinit
 promptinit
 prompt pure
-#enable Antigen
-source ~/antigen.zsh
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
+#enable Antibody
+source <(antibody init)
+#Source Plugins
+antibody bundle < ~/dotfiles/.zsh_plugins.txt
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle heroku
-antigen bundle pip
-antigen bundle lein
-antigen bundle command-not-found
-antigen bundle colorize
-# Custom plugins
-# From Default(Oh-My-Zsh)
-antigen bundle github
-antigen bundle gitignore
-antigen bundle colored-man-pages
-antigen bundle vundle
-antigen bundle web-search
-antigen bundle ubuntu
-antigen bundle brew
-antigen bundle git-auto-fetch
-# From Github
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle arzzen/calc.plugin.zsh
-antigen bundle MichaelAquilina/zsh-you-should-use
-antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
-# Tell Antigen that you're done.
-antigen apply
 
 setopt histignorealldups sharehistory
 
