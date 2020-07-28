@@ -9,6 +9,7 @@ call vundle#begin()
 set nu
 
 " let Vundle manage Vundle, required
+" Plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'connorholyday/vim-snazzy'
 Plugin 'itchyny/lightline.vim'
@@ -18,6 +19,14 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'tpope/vim-surround'
 Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/syntastic'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'elzr/vim-json'
+Plugin 'valloric/youcompleteme'
+
+
+" Custom Settings
+colorscheme snazzy
 set laststatus=2
 if !has('gui_running')
   set t_Co=256
@@ -25,5 +34,5 @@ endif
 call vundle#end()            " required
     filetype plugin indent on    " required
 let g:lightline = {
-      \ 'colorscheme': 'one',
+      \ 'colorscheme': 'snazzy',
       \ }
