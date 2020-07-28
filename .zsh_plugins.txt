@@ -7,6 +7,7 @@ robbyrussell/oh-my-zsh path:plugins/command-not-found
 robbyrussell/oh-my-zsh path:plugins/colorize
 robbyrussell/oh-my-zsh path:plugins/github
 robbyrussell/oh-my-zsh path:plugins/gitignore
+robbyrussell/oh-my-zsh path:plugins/autojump
 robbyrussell/oh-my-zsh path:plugins/colored-man-pages
 robbyrussell/oh-my-zsh path:plugins/vundle
 robbyrussell/oh-my-zsh path:plugins/ubuntu
