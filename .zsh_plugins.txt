@@ -13,8 +13,10 @@ robbyrussell/oh-my-zsh path:plugins/vundle
 robbyrussell/oh-my-zsh path:plugins/ubuntu
 robbyrussell/oh-my-zsh path:plugins/brew
 # From Other Github
+zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
 arzzen/calc.plugin.zsh
 MichaelAquilina/zsh-you-should-use
 mafredri/zsh-async
