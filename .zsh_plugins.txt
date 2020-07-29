@@ -21,3 +21,6 @@ arzzen/calc.plugin.zsh
 MichaelAquilina/zsh-you-should-use
 mafredri/zsh-async
 sindresorhus/pure
+jgogstad/passwordless-history
+b4b4r07/enhancd
+viko16/gitcd.plugin.zsh
