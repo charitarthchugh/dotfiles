@@ -74,9 +74,5 @@ bindkey '^ ' autosuggest-accept
 # Local Bin
  export PATH="$HOME/.local/bin:$PATH"
 
-
-
-
 # # Load ; should be last.
-source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 export GEM_HOME="$HOME/gems" 
