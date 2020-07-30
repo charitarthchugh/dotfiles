@@ -51,7 +51,6 @@ alias sfox='firefox -P School'
 alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
-alias up='cd ..'
 # Program aliases
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
@@ -114,3 +113,5 @@ alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
 [ -f "$HOME/dotfiles/aliases/githubcli.zsh" ] && source "$HOME/dotfiles/aliases/githubcli.zsh"
 # Wrap git automatically by adding the following to ~/.zshrc:
 eval "$(hub alias -s)"
+#Better Up alias
+source ~/.config/up/up.sh
