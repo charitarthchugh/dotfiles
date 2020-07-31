@@ -55,11 +55,11 @@ alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
-
+alias md = "mkdir -p"
+#ls
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias lsa='ls -a --color=auto'
-# ls
 alias l='ls -lFh --color=auto'     #size,show type,human readable
 alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
 alias lr='ls -tRFh --color=auto'   #sorted by date,recursive,show type,human readable
