@@ -55,7 +55,7 @@ alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
 # Program aliases
-alias idea='intellij-idea-ultimate'
+#alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
 #ls
