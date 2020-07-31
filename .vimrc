@@ -26,7 +26,6 @@ Plugin 'valloric/youcompleteme'
 
 
 " Custom Settings
-colorscheme snazzy
 set laststatus=2
 if !has('gui_running')
   set t_Co=256
@@ -36,3 +35,4 @@ call vundle#end()            " required
 let g:lightline = {
       \ 'colorscheme': 'snazzy',
       \ }
+      
