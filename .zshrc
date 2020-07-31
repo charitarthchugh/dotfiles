@@ -2,10 +2,8 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 # Set up the prompt
-fpath+=$HOME/.antigen/bundles/sindresorhus/pure
 autoload -U promptinit
 promptinit
-prompt pure
 #enable Antibody
 source <(antibody init)
 #Source Plugins
