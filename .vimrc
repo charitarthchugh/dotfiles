@@ -35,4 +35,4 @@ call vundle#end()            " required
 let g:lightline = {
       \ 'colorscheme': 'snazzy',
       \ }
-      
+colorscheme snazzy
