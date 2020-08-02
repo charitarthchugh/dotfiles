@@ -64,10 +64,10 @@ bindkey '^ ' autosuggest-accept
 
 
 # Add Homebrew to PATH
- export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # Flutter command
- export PATH="$PATH:$HOME/Dev/SDK/flutter/bin" 
+export PATH="$PATH:$HOME/Dev/SDK/flutter/bin" 
 # Local Bin
- export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 # # Load ; should be last.
 export GEM_HOME="$HOME/gems" 
