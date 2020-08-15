@@ -60,7 +60,8 @@ bindkey '^ ' autosuggest-accept
 # Load a fun ASCII Pacman Ghost
  [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
 
-
+#Enhacd options
+ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
 
 # Add Homebrew to PATH
