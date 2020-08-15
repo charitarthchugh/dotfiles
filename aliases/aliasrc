@@ -49,7 +49,7 @@ export EDITOR=vim
 #Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
-
+alias ytdl="youtube-dl"
 alias sfox='firefox -P School'
 
 alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
