@@ -15,6 +15,7 @@ pkg-clean(){
 	brew cleanup
 	figlet 'Cleaning Apt'
 	sudo apt autoremove -y
+	sudo apt autoclean -y
 }
 alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
