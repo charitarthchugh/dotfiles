@@ -76,7 +76,6 @@ alias lart='ls -1Fcart --color=auto'
 alias lrt='ls -1Fcrt --color=auto'
 
 alias grep='grep --color=auto'
-alias egrep ='egrep --color=auto'
 alias fgrep ='fgrep --color=auto'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
