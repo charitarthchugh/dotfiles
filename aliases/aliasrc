@@ -37,6 +37,8 @@ ex ()
       *.zip)       unzip $1     ;;
       *.Z)         uncompress $1;;
       *.7z)        7z x $1      ;;
+      *.tar.xz)    tar xf $1	;;
+      *.tar.zst)   unzstd $1    ;;	
       *)           echo "'$1' cannot be extracted via ex()" ;;
     esac
   else
@@ -75,12 +77,13 @@ alias lS='ls -1FSsh --color=auto'
 alias lart='ls -1Fcart --color=auto'
 alias lrt='ls -1Fcrt --color=auto'
 
-alias grep='grep --color'
+alias grep='grep --color=auto'
+alias fgrep ='fgrep --color=auto'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
 alias t='tail -f'
 
-# Command line head / tail shortcuts
+# Command line head / tail shortcuits
 alias -g H='| head'
 alias -g T='| tail'
 alias -g G='| grep'
@@ -103,11 +106,15 @@ alias hgrep="fc -El 0 | grep"
 alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
-
+  
 alias bulb= "eureka"
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+
+
+
 #A simple and quirky alias
 alias pacman1='cat ~/dotfiles/aliases/pacman1 |lolcat'
 alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
