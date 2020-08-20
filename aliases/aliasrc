@@ -16,6 +16,8 @@ pkg-clean(){
 	figlet 'Cleaning Apt'
 	sudo apt autoremove -y
 	sudo apt autoclean -y
+	figlet "Cleaning flatpak"
+	flatpak uninstall --unused	
 }
 alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
