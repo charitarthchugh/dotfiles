@@ -56,7 +56,7 @@ autoload -Uz compinit && compinit
 bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
- [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source "$HOME/dotfiles/aliases/aliasrc"
+ [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
 # Load a fun ASCII Pacman Ghost
  [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
 
