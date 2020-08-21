@@ -19,6 +19,9 @@ pkg-clean(){
 	figlet "Cleaning flatpak"
 	flatpak uninstall --unused	
 }
+clonecd() {
+  hub clone "$1" && cd "$(basename "$1" .git)"
+}
 alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
 # # usage: ex <file>
