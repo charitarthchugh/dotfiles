@@ -51,7 +51,10 @@ ex ()
 md () {
 	mkdir -p $1
 }
-
+mdcd (){
+	mkdir -p $1
+	cd $1
+}
 export EDITOR=vim
 #Apt Aliases
 alias upd='sudo apt update -y'
@@ -62,8 +65,8 @@ alias sfox='firefox -P School'
 alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
-# Program aliases
-#alias idea='intellij-idea-ultimate'
+# Program aliiases
+alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
 #ls
