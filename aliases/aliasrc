@@ -1,8 +1,8 @@
 #Pkg mangaers search function
 pkg-search()
-{
-	figlet Searching Brew
-	brew search $1
+{ 	
+        figlet Searching Brew
+	brew search --formula $1
 	figlet Searching Snap
 	snap search $1
 	figlet Searching Apt
@@ -117,7 +117,15 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-
+# Tilix Aliases
+alias t-right="tilix --action=session-add-right"
+alias t-left="tilix --action=session-add-left"
+alias t-down="tilix --action=session-add-down"
+alias t-session="tilix --action=app-new-session"
+alias t-window="tilix --action=app-new-window"
+alias maximize="tilix --maximize"
+alias minimize="tilix --minimize"
+alias t-quake="tilix --quake"
 
 
 #A simple and quirky alias
