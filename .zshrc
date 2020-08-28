@@ -1,6 +1,5 @@
 #Enable Colors
 autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 # Set up the prompt
 autoload -U promptinit
 promptinit
@@ -10,7 +9,6 @@ source <(antibody init)
 antibody bundle < ~/dotfiles/.zsh_plugins.txt
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
 
 setopt histignorealldups sharehistory
 
@@ -65,9 +63,7 @@ ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
 
 # Add Homebrew to PATH
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-# Flutter command
-export PATH="$PATH:$HOME/Dev/SDK/flutter/bin" 
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" 
 # Local Bin
 export PATH="$HOME/.local/bin:$PATH"
 # # Load ; should be last.
