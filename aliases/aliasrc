@@ -118,11 +118,11 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # Tilix Aliases
-alias t-right="tilix --action=session-add-right"
-alias t-left="tilix --action=session-add-left"
-alias t-down="tilix --action=session-add-down"
-alias t-session="tilix --action=app-new-session"
-alias t-window="tilix --action=app-new-window"
+alias new-right="tilix --action=session-add-right"
+alias new-left="tilix --action=session-add-left"
+alias new-down="tilix --action=session-add-down"
+alias new-session="tilix --action=app-new-session"
+alias new-window="tilix --action=app-new-window"
 alias maximize="tilix --maximize"
 alias minimize="tilix --minimize"
 alias t-quake="tilix --quake"
