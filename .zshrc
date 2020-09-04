@@ -55,12 +55,8 @@ bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
-# Load a fun ASCII Pacman Ghost
- [ -f "$HOME/dotfiles/aliases/pacman1" ] && cat $HOME/dotfiles/aliases/pacman1 | lolcat
-
 #Enhacd options
 ENHANCD_FILTER=fzf; export ENHANCD_FILTER
-
 
 # Add Homebrew to PATH
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" 
@@ -70,4 +66,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export GEM_HOME="$HOME/gems" 
 
 source "$HOME/dotfiles/.condainit"
+
+colorscript random
 
