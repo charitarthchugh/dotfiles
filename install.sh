@@ -1,4 +1,5 @@
-ln -s /home/ccd12/dotfiles/theming/firefox/MaterialFox/user.js /home/ccd12/.mozilla/firefox/school/user.js
-ln -s /home/ccd12/dotfiles/theming/firefox/MaterialFox/user.js /home/ccd12/.mozilla/firefox/Personal/user.js
-ln -s /home/ccd12/dotfiles/theming/firefox/MaterialFox/chrome /home/ccd12/.mozilla/firefox/Personal/chrome
-ln -s /home/ccd12/dotfiles/theming/firefox/MaterialFox/chrome /home/ccd12/.mozilla/firefox/school/chrome
+#!/bin/bash
+ln -s $HOME/dotfiles/theming/firefox/MaterialFox/user.js $HOME/.mozilla/firefox/school/user.js || return 1
+ln -s $HOME/dotfiles/theming/firefox/MaterialFox/user.js $HOME/.mozilla/firefox/Personal/user.js || return 1
+ln -s $HOME/dotfiles/theming/firefox/MaterialFox/chrome $HOME/.mozilla/firefox/Personal/chrome || return 1
+ln -s $HOME/dotfiles/theming/firefox/MaterialFox/chrome $HOME/.mozilla/firefox/school/chrome || return 1
