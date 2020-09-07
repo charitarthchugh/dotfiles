@@ -1,0 +1,3 @@
+[submodule "theming/firefox/MaterialFox"]
+	path = theming/firefox/MaterialFox
+	url = https://github.com/muckSponge/MaterialFox
