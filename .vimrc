@@ -1,3 +1,13 @@
+syntax on
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set noswapfile
+set undofile
+set incsearch
+set nu
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -6,7 +16,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-set nu
+
 
 " let Vundle manage Vundle, required
 " Plugins
