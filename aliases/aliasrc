@@ -61,6 +61,7 @@ mdcd (){
 	cd $1
 }
 export EDITOR=vim
+export VISUAL=code
 #Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
