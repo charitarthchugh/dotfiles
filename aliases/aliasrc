@@ -22,6 +22,11 @@ pkg-clean(){
 clonecd() {
   hub clone "$1" && cd "$(basename "$1" .git)"
 }
+fork-sync(){
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
+}
 alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
 # # usage: ex <file>
