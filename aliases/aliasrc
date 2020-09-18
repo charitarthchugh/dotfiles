@@ -61,6 +61,7 @@ alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
 alias ytdl="youtube-dl"
 alias sfox='firefox -P School'
+alias auto-tune-bat="sudo powertop --auto-tune"
 
 alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
