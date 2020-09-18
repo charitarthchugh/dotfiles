@@ -22,6 +22,11 @@ pkg-clean(){
 clonecd() {
   hub clone "$1" && cd "$(basename "$1" .git)"
 }
+fork-sync(){
+    git fetch upstream
+    git checkout master
+    git merge upstream/master
+}
 alias pkg-update="~/dotfiles/aliases/update.sh"
 # # ex - archive extractor
 # # usage: ex <file>
@@ -56,10 +61,11 @@ mdcd (){
 	cd $1
 }
 export EDITOR=vim
+export VISUAL=code
 #Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
-alias ytdl="youtube-dl"
+alias ytdl="youtube-dl --output=\"%(title)s.%(ext)s\""
 alias sfox='firefox -P School'
 alias auto-tune-bat="sudo powertop --auto-tune"
 
