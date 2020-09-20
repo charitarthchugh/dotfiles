@@ -3,23 +3,26 @@ autoload -U colors && colors
 # Set up the prompt
 autoload -U promptinit
 promptinit
-#enable Antibody
-source <(antibody init)
-#Source Plugins
-antibody bundle < ~/dotfiles/.zsh_plugins.txt
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
-
-setopt histignorealldups sharehistory
-
-
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
-# Use modern completion system
+setopt histignorealldups sharehistory
 
+# Use modern completion system
+zmodload zsh/complist
+_comp_options+=(globdots)               # Include hidden files.
+autoload -Uz compinit && compinit
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+  autoload -Uz compinit
+  compinit
+fi
+#Load Antibody Plugins
+source ~/dotfiles/.zsh_plugins.sh
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -38,34 +41,12 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
-
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)               # Include hidden files.
-autoload -Uz compinit && compinit
-
-
 # Custom ZSH Binds
 bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
- [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
-#Enhacd options
-ENHANCD_FILTER=fzf; export ENHANCD_FILTER
+[ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc 
 
-# Add Homebrew to PATH
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH" 
-# Local Bin
-export PATH="$HOME/.local/bin:$PATH"
-# # Load ; should be last.
-export GEM_HOME="$HOME/gems" 
-
-source "$HOME/dotfiles/.condainit"
+[ -f "$HOME/dotfiles/.condainit" ] && source "$HOME/dotfiles/.condainit"
 
 colorscript random
-
