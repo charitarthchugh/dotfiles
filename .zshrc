@@ -15,7 +15,13 @@ setopt histignorealldups sharehistory
 # Use modern completion system
 zmodload zsh/complist
 _comp_options+=(globdots)               # Include hidden files.
-autoload -Uz compinit && compinit
+autoload -Uz compinit && 
+# only check cached .zcompdump once a day
+if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
+	compinit;
+else
+	compinit -C;
+fi;
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
   autoload -Uz compinit
