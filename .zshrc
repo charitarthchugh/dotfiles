@@ -9,6 +9,10 @@ export HISTCONTROL=ignoreboth
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.zsh_history
+
+# Use modern completion system
+zmodload zsh/complist
+_comp_options+=(globdots)               # Include hidden files.
 autoload -Uz compinit && compinit
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -18,25 +22,8 @@ fi
 #Antibody
 source <(antibody init)
 antibody bundle < ~/dotfiles/.zsh_plugins.txt
-# Use modern completion system
 
-# Use modern completion system
-zmodload zsh/complist
-_comp_options+=(globdots)               # Include hidden files.
-autoload -Uz compinit && 
-# only check cached .zcompdump once a day
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi;
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
-#Load Antibody Plugins
-source ~/dotfiles/.zsh_plugins.sh
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
