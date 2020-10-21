@@ -1,7 +1,9 @@
+#!/bin/zsh
 EDITOR=vim
 VISUAL=code
 export EDITOR
 export VISUAL
+
 #Pkg mangaers search function
 pkg-search()
 { 	
@@ -74,43 +76,17 @@ alias ytdl="youtube-dl --output=\"%(title)s.%(ext)s\""
 alias sfox='firefox -P School'
 alias auto-tune-bat="sudo powertop --auto-tune"
 
-alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
+#alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
 # Program aliiases
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
-#ls
-alias ls='ls --color=auto'
-alias ll='ls -l'
-alias lsa='ls -a --color=auto'
-alias l='ls -lFh --color=auto'     #size,show type,human readable
-alias la='ls -lAFh --color=auto'   #long list,show almost all,show type,human readable
-alias lr='ls -tRFh --color=auto'   #sorted by date,recursive,show type,human readable
-alias lt='ls -ltFh --color=auto'   #long list,sorted by date,show type,human readable
-alias ll='ls -l --color=auto'      #long list
-alias ldot='ls -ld .* --color=auto'
-alias lS='ls -1FSsh --color=auto'
-alias lart='ls -1Fcart --color=auto'
-alias lrt='ls -1Fcrt --color=auto'
-
-alias grep='grep --color=auto'
-alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
-
-alias t='tail -f'
+#Shell commands
+alias cat="ccat"
 
 # Command line head / tail shortcuits
-alias -g H='| head'
-alias -g T='| tail'
-alias -g G='| grep'
-alias -g L="| less"
-alias -g M="| most"
-alias -g LL="2>&1 | less"
-alias -g CA="2>&1 | cat -A"
-alias -g NE="2> /dev/null"
-alias -g NUL="> /dev/null 2>&1"
-alias -g P="2>&1| pygmentize -l pytb"
 alias -g CN="| carbon-now -c -p default -h"
 
 alias dud='du -d 1 -h'
