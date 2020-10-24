@@ -76,7 +76,6 @@ alias ytdl="youtube-dl --output=\"%(title)s.%(ext)s\""
 alias sfox='firefox -P School'
 alias auto-tune-bat="sudo powertop --auto-tune"
 
-#alias zshrc='${=EDITOR} ~/dotfiles/.zshrc' # Quick access to the ~/.zshrc file
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
 # Program aliiases
@@ -85,6 +84,8 @@ alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
 #Shell commands
 alias cat="ccat"
+#Colorize output
+alias ls="ls --color=auto"
 
 # Command line head / tail shortcuits
 alias -g CN="| carbon-now -c -p default -h"
@@ -121,11 +122,11 @@ alias t-quake="tilix --quake"
 alias pacman1='cat ~/dotfiles/aliases/pacman1 |lolcat'
 alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
 # Github User Credentials
-[ -f "$HOME/.githubA" ]&& source "$HOME/.githubA"
+[ -f "$HOME/.githubA" ] && source "$HOME/.githubA"
 #Load other alias files
 [ -f "$HOME/dotfiles/aliases/fl.zsh" ] && source "$HOME/dotfiles/aliases/fl.zsh"
 [ -f "$HOME/dotfiles/aliases/githubcli.zsh" ] && source "$HOME/dotfiles/aliases/githubcli.zsh"
-# Wrap git automatically by adding the following to ~/.zshrc:
+# Wrap git automatically with hub
 eval "$(hub alias -s)"
 #Better Up alias
 source ~/dotfiles/aliases/up.sh
