@@ -84,6 +84,7 @@ alias gh-desktop= 'github-desktop'
 alias sfox='firefox -P School'
 #Shell commands
 alias cat="ccat"
+alias lsa="ls -a"
 #Colorize output
 alias ls="ls --color=auto"
 
