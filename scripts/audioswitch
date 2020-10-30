@@ -16,10 +16,10 @@ CARD_3_PROFILE_1="iec958-stereo"
 # Read the user's input
 CHOICE="${@}"
 choice() {
-    if   [ "$CHOICE" == 1 ]; then CARD="$CARD_0"; PROF="$CARD_0_PROFILE_1" # LG ULTRAWIDE
-    elif [ "$CHOICE" == 2 ]; then CARD="$CARD_1"; PROF="$CARD_1_PROFILE_1" # LG TV
-    elif [ "$CHOICE" == 3 ]; then CARD="$CARD_2"; PROF="$CARD_2_PROFILE_1" # Digital Output
-    elif [ "$CHOICE" == 4 ]; then CARD="$CARD_3"; PROF="$CARD_3_PROFILE_1" # Headphones
+    if   [ "$CHOICE" == 1 ]; then CARD="$CARD_0"; PROF="$CARD_0_PROFILE_1" # Soundblaster
+    elif [ "$CHOICE" == 2 ]; then CARD="$CARD_1"; PROF="$CARD_1_PROFILE_1" # Built In
+    elif [ "$CHOICE" == 3 ]; then CARD="$CARD_2"; PROF="$CARD_2_PROFILE_1" # LG Monitor
+    elif [ "$CHOICE" == 4 ]; then CARD="$CARD_3"; PROF="$CARD_3_PROFILE_1" # Topping DAC
     else
         echo -e "\nYou should choice between:"
         echo -e "\n\t[1] Soundblaster Audio Card\n\t[2] Built In\n\t[3] LG Monitor\n\t[4] Topping DAC\n"
