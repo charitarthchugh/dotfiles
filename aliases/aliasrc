@@ -34,7 +34,7 @@ fork-sync(){
     git checkout master
     git merge upstream/master
 }
-alias pkg-update="~/dotfiles/aliases/update.sh"
+alias pkg-update="topgrade -y"
 # # ex - archive extractor
 # # usage: ex <file>
 ex ()
@@ -67,24 +67,29 @@ mdcd (){
 	mkdir -p $1
 	cd $1
 }
-
+pulse (){
+    pulseaudio -k
+    pulseaudio --start
+}
 
 #Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
-alias ytdl="youtube-dl --output=\"%(title)s.%(ext)s\""
-alias sfox='firefox -P School'
-alias auto-tune-bat="sudo powertop --auto-tune"
+
 
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
 # Program aliiases
 alias idea='intellij-idea-ultimate'
 alias gh-desktop= 'github-desktop'
+alias ytdl="youtube-dl --output=\"%(title)s.%(ext)s\""
 alias sfox='firefox -P School'
+alias auto-tune-bat="sudo powertop --auto-tune"
+alias mpv="celluloid"
 #Shell commands
 alias cat="ccat"
 alias lsa="ls -a"
+
 #Colorize output
 alias ls="ls --color=auto"
 
