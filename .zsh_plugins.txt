@@ -26,3 +26,5 @@ sindresorhus/pure
 jgogstad/passwordless-history
 b4b4r07/enhancd
 viko16/gitcd.plugin.zsh
+sinetoami/antibody-completion
+esc/conda-zsh-completion
