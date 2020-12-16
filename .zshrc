@@ -1,3 +1,4 @@
+autoload -U +X compinit && compinit
 #Enable Colors
 autoload -U colors && colors
 # Set up the prompt
