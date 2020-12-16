@@ -1,4 +1,9 @@
-# robbyrussell's oh-my-zsh plugins
+# base
+zsh-users/zsh-syntax-highlighting
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+# oh-my-zsh plugins
 robbyrussell/oh-my-zsh path:plugins/git
 robbyrussell/oh-my-zsh path:plugins/heroku
 robbyrussell/oh-my-zsh path:plugins/pip
@@ -14,11 +19,8 @@ robbyrussell/oh-my-zsh path:plugins/ubuntu
 robbyrussell/oh-my-zsh path:plugins/brew
 robbyrussell/oh-my-zsh path:plugins/flutter
 robbyrussell/oh-my-zsh path:plugins/common-aliases
-# From Other Github
-zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-completions
-zsh-users/zsh-autosuggestions
-zsh-users/zsh-history-substring-search
+# Individual Github Plugins
+zpm-zsh/undollar
 arzzen/calc.plugin.zsh
 MichaelAquilina/zsh-you-should-use
 mafredri/zsh-async
@@ -26,5 +28,7 @@ sindresorhus/pure
 jgogstad/passwordless-history
 b4b4r07/enhancd
 viko16/gitcd.plugin.zsh
+# Completions
+https://github.com/zpm-zsh/ssh
 sinetoami/antibody-completion
 esc/conda-zsh-completion
