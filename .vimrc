@@ -33,7 +33,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
 Plugin 'valloric/youcompleteme'
-
+Plugin 'raimondi/delimitmate'
+Plugin 'sheerun/vim-polyglot'
 
 " Custom Settings
 set laststatus=2
