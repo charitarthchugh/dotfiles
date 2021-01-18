@@ -23,8 +23,8 @@ fi
 #Antibody
 source <(antibody init)
 antibody bundle < ~/dotfiles/.zsh_plugins.txt
-
-
+# GH completion
+eval "$(gh completion -s zsh)"
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
