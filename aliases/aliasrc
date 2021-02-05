@@ -113,25 +113,6 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
-# Tilix Aliases
-alias new-right="tilix --action=session-add-right"
-alias new-left="tilix --action=session-add-left"
-alias new-down="tilix --action=session-add-down"
-alias new-session="tilix --action=app-new-session"
-alias new-window="tilix --action=app-new-window"
-alias maximize="tilix --maximize"
-alias minimize="tilix --minimize"
-alias t-quake="tilix --quake"
-
-
-#A simple and quirky alias
-alias pacman1='cat ~/dotfiles/aliases/pacman1 |lolcat'
-alias pacman3='cat ~/dotfiles/aliases/pacman3 |lolcat'
-# Github User Credentials
-[ -f "$HOME/.githubA" ] && source "$HOME/.githubA"
-#Load other alias files
-[ -f "$HOME/dotfiles/aliases/fl.zsh" ] && source "$HOME/dotfiles/aliases/fl.zsh"
-[ -f "$HOME/dotfiles/aliases/githubcli.zsh" ] && source "$HOME/dotfiles/aliases/githubcli.zsh"
 # Pip Completions
 eval "$(pip completion --zsh)"
 compctl -K _pip_completion pip3
@@ -139,3 +120,5 @@ compctl -K _pip_completion pip3
 eval "$(hub alias -s)"
 #Better Up alias
 source ~/dotfiles/aliases/up.sh
+# GH completion
+eval "$(gh completion -s zsh)"
