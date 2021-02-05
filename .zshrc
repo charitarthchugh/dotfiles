@@ -1,4 +1,3 @@
-autoload -U +X compinit && compinit
 #Enable Colors
 autoload -U colors && colors
 # Set up the prompt
@@ -14,17 +13,16 @@ HISTFILE=~/.zsh_history
 # Use modern completion system
 zmodload zsh/complist
 _comp_options+=(globdots)               # Include hidden files.
-autoload -Uz compinit && compinit
+#autoload -Uz compinit && compinit
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-  autoload -Uz compinit
-  compinit
 fi
-#Antibody
+autoload -Uz +X compinit
+compinit
+# Antibody
 source <(antibody init)
 antibody bundle < ~/dotfiles/.zsh_plugins.txt
-# GH completion
-eval "$(gh completion -s zsh)"
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -39,7 +37,6 @@ zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
 zstyle ':completion:*' use-compctl false
 zstyle ':completion:*' verbose true
-
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
@@ -48,9 +45,6 @@ bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
-#Enhacd options
-ENHANCD_FILTER=fzf; export ENHANCD_FILTER
 
 source "$HOME/dotfiles/.condainit"
 
-colorscript random
