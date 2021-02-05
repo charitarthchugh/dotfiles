@@ -6,6 +6,7 @@ set expandtab
 set smartindent
 set noswapfile
 set undofile
+set backupdir=~/.vim/backup/
 set incsearch
 set nu
 set nocompatible              " be iMproved, required
