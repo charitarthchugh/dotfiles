@@ -1,0 +1,19 @@
+{
+  "float": [
+    {
+      "class": "pop-shell-example",
+      "title": "pop-shell-example"
+    },
+    {
+      "class": "Kazam"
+    },
+    {
+      "class": "ocs-url"
+    },
+    {
+      "class": "zoom",
+      "disabled": true
+    }
+  ],
+  "log_on_focus": false
+}
