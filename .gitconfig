@@ -1,0 +1,18 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = charitarthchugh
+	email = 37895518+charitarthchugh@users.noreply.github.com
+[core]
+	autocrlf = input
+[hub]
+	protocol = https
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
