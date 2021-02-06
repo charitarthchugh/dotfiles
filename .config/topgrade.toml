@@ -1,0 +1,74 @@
+# Disable specific steps - same options as the command line flag
+#disable = ["Brew Cask"]
+
+# Run specific steps - same options as the command line flag
+#only = ["system", "emacs"]
+
+# Do not ask to retry failed steps (default: false)
+no_retry = true
+
+# Run inside tmux
+#run_in_tmux = true
+
+# List of remote machines with Topgrade installed on them
+#remote_topgrades = ["toothless", "pi", "parnas"]
+
+# Arguments to pass SSH when upgrading remote systems
+#ssh_arguments = "-o ConnectTimeout=2"
+
+# Arguments to pass tmux when pulling Repositories
+#tmux_arguments = "-S /var/tmux.sock"
+
+# Do not set the terminal title
+#set_title = false
+
+# Cleanup temporary or old files
+cleanup = true
+
+[git]
+max_concurrency = 5
+# Additional git repositories to pull
+repos = [
+    "/mnt/sdd2/Dev/*/",
+    "~/Dev/IdeaProjects/Personal/*/*/",
+    "~/Dev/GitClone/*/",
+    "~/.fonts/*/"
+]
+
+# Don't pull the predefined git repos
+# predefined_repos = false
+
+# Arguments to pass Git when pulling Repositories
+arguments = "--rebase --autostash"
+
+[composer]
+self_update = false
+
+# Commands to run before anything
+#[pre_commands]
+#"Emacs Snapshot" = "rm -rf ~/.emacs.d/elpa.bak && cp -rl ~/.emacs.d/elpa ~/.emacs.d/elpa.bak"
+
+# Custom commands
+[commands]
+#"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
+"Font cache"="fc-cache -r"
+"Pip"="/usr/bin/python3 ~/pip_update.py"
+"Netdata"="bash <(curl -Ss https://my-netdata.io/kickstart.sh) --disable-telemetry"
+"Conda"="conda update -n base conda -y"
+"YouCompleteMe Vim"="python -m ~/.vim/bundle/youcompleteme/install.py --all"
+"Starship Prompt"="curl -fsSL https://starship.rs/install.sh | bash"
+#[brew]
+#greedy_cask = true
+
+#[linux]
+# Arguments to pass yay when updating packages
+#yay_arguments = "--nodevel"
+#trizen_arguments = "--devel"
+#enable_tlmgr = true
+#emerge_sync_flags = "-q"
+#emerge_update_flags = "-uDNa --with-bdeps=y world"
+
+#[windows]
+# Manually select Windows updates
+# accept_all_updates = false
+
