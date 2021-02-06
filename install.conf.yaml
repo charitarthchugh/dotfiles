@@ -1,0 +1,66 @@
+- defaults: 
+    link:
+      relink: true
+      create: true
+      glob: true
+    shell:
+      stderror: true
+- clean: ["~", "~/.config"]
+
+- link:
+    ~/.zshrc:
+      path: .zshrc
+      relink: true
+      force: true
+    ~/.zshenv: 
+      path: ~/dotfiles/.zshenv
+    ~/.zsh_profile:
+      path: ~/dotfiles/.zsh_profile
+    ~/.gitconfig: 
+      path: ~/dotfiles/.gitconfig
+    ~/.bashrc:
+      path: ~/dotfiles/.bashrc
+    ~/.vimrc:
+      path: ~/dotfiles/.vimrc
+    ~/.carbon-now.json:
+      path: ~/dotfiles/.carbon-now.json
+    ~/.config/topgrade.toml:
+      path:  ~/dotfiles/.config/topgrade.toml
+    ~/.config/user-dirs.dirs:
+      path: ~/dotfiles/.config/user-dirs.dirs
+    ~/.config/starship.toml: 
+      path: ~/dotfiles/.config/starship.toml
+    ~/.config/alacritty/:
+      path: ~/dotfiles/.config/alacritty/*
+    ~/.config/bpytop/:
+      path: ~/dotfiles/.config/bpytop/*
+    ~/.config/fish/:
+      path: ~/dotfiles/.config/fish/*
+      force: true
+    ~/.config/gh:
+      path: ~/dotfiles/.config/gh/*
+    ~/.config/pop-shell:
+      path: ~/dotfiles/.config/pop-shell/*
+    ~/.config/up/:
+      path: ~/dotfiles/.config/up/*
+
+- shell:
+  -
+    command: chsh -s /usr/bin/fish
+    description: Set Fish as default shell
+    stdin: true
+  - 
+    command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    description: Install Fisher
+  - 
+    command: fish -i -c "fisher update"
+    description: Install and update Fish Plugins
+  - 
+    command: git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim 
+    description: Install Vundle for Vim
+  - 
+    command: vim +PluginInstall +qall 
+    description: Install Vim Plugins
+  - 
+    command: /usr/bin/python3 $HOME/.vim/bundle/youcompleteme/install.py --all
+    description: Install YouCompleteMe for Vim

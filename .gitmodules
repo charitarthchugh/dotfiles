@@ -4,3 +4,7 @@
 [submodule ".config/up"]
 	path = .config/up
 	url = https://github.com/shannonmoeller/up
+[submodule "dotbot"]
+	ignore = dirty
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot/ 
