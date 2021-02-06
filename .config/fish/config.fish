@@ -1,4 +1,4 @@
-#/usr/bin/colorscript -r
+
 source ~/.config/up/up.fish
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -13,4 +13,4 @@ end
 if test -d (brew --prefix)"/share/fish/vendor_completions.d"
     set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
 end
-
+starship init fish | source
