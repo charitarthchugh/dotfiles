@@ -61,6 +61,7 @@ style = "242"
 [dart]
 format = "[${symbol}(${version})]($style)"
 style = "242"
+
 [conda]
 format = "[$symbol$environment]($style) "
 style = "242"
