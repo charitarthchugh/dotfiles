@@ -1,10 +1,66 @@
+[cmd_duration]
+min_time = 1000
+format = "[$duration]($style)"
+style = "yellow"
+
 [git_branch]
-symbol=""
+format = "[$branch]($style)"
+style = "242"
 
 [git_status]
-modified="*"
-ahead = "⇡${count}"
-diverged = "⇕⇡${ahead_count}⇣${behind_count}"
-behind = "⇣${count}"
+modified = "[*](218)"
+stashed = "[≡](cyan)"
+ahead = "[⇡](cyan)"
+diverged = "[⇡⇣](cyan)"
+behind = "[⇣](cyan)"
+format = '([$modified $ahead_behind]($style) )'
+
 [memory_usage]
-disabled="false"
+disabled = "false"
+
+[directory]
+truncate_to_repo = false
+truncation_length = 0
+style = "blue"
+
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+
+[user]
+style_user = "242"
+
+[hostname]
+style = "242"
+
+[package]
+format = " [$symbol$version]($style) "
+style = "208"
+
+[python]
+style = "242"
+format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv))]($style)"
+scan_for_pyfiles = false
+
+[java]
+format = "[${symbol}(${version})]($style)"
+style = "242"
+
+[swift]
+format = "[${symbol}(${version})]($style)"
+style = "242"
+
+[golang]
+format = "[${symbol}(${version})]($style)"
+style = "242"
+
+[kotlin]
+format = "[${symbol}(${version})]($style)"
+style = "242"
+
+[dart]
+format = "[${symbol}(${version})]($style)"
+style = "242"
+[conda]
+format = "[$symbol$environment]($style) "
+style = "242"
