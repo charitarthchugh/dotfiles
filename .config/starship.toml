@@ -65,3 +65,7 @@ style = "242"
 [conda]
 format = "[$symbol$environment]($style) "
 style = "242"
+
+[docker]
+format = "[$symbol$context]($style) "
+style = "242"
