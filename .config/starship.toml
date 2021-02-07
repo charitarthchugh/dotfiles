@@ -40,7 +40,6 @@ style = "208"
 [python]
 style = "242"
 format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv))]($style)"
-scan_for_pyfiles = false
 
 [java]
 format = "[${symbol}(${version})]($style)"
