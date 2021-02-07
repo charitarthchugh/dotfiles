@@ -52,7 +52,7 @@ self_update = false
 [commands]
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Font cache"="fc-cache -r"
-"Pip"="/usr/bin/python3 ~/pip_update.py"
+"Pip"="/usr/bin/python3 ~/dotfiles/scripts/pip_update.py"
 "Netdata"="bash <(curl -Ss https://my-netdata.io/kickstart.sh) --disable-telemetry"
 "Conda"="conda update -n base conda -y"
 "YouCompleteMe Vim"="python -m ~/.vim/bundle/youcompleteme/install.py --all"
