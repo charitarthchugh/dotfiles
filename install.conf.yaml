@@ -49,6 +49,12 @@
     command: chsh -s /usr/bin/fish
     description: Set Fish as default shell
     stdin: true
+    sdout: true
+  - 
+    command: curl -fsSL "https://starship.rs/install.sh" | bash
+    description: Install Starship Prompt
+    stdin: true
+    sdout: true
   - 
     command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
     description: Install Fisher
@@ -61,6 +67,3 @@
   - 
     command: vim +PluginInstall +qall 
     description: Install Vim Plugins
-  - 
-    command: /usr/bin/python3 $HOME/.vim/bundle/youcompleteme/install.py --all
-    description: Install YouCompleteMe for Vim
