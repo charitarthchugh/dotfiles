@@ -4,12 +4,12 @@
 
 | Type                | Choice        |
 | ------------------- | ------------- |
-| Shell               | zsh           |
-| Prompt              | Pure          |
+| Shell               | Fish          |
+| Prompt              | Starship(Pure)|
 | Color scheme        | Snazzy        |
 | Distribution        | Ubuntu        |
 | Desktop Environment | Gnome         |
 | Tiling              | Pop Shell     |
 | IDE                 | IntelliJ IDEA |
 | Web Browser         | Firefox       |
-| Terminal            | Tilix         |
+| Terminal            | Alacritty     |
