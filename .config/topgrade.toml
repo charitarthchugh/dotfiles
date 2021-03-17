@@ -23,16 +23,15 @@ no_retry = true
 #set_title = false
 
 # Cleanup temporary or old files
-cleanup = true
+# cleanup = true
 
 [git]
 max_concurrency = 5
 # Additional git repositories to pull
 repos = [
-    "/mnt/sdd2/Dev/*/",
     "~/Dev/IdeaProjects/Personal/*/*/",
     "~/Dev/GitClone/*/",
-    "~/.fonts/*/"
+    "~/.local/share/fonts/*/"
 ]
 
 # Don't pull the predefined git repos
@@ -53,10 +52,8 @@ self_update = false
 #"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Font cache"="fc-cache -r"
 "Pip"="/usr/bin/python3 ~/dotfiles/scripts/pip_update.py"
-"Netdata"="bash <(curl -Ss https://my-netdata.io/kickstart.sh) --disable-telemetry"
-"Conda"="conda update -n base conda -y"
-"YouCompleteMe Vim"="python -m ~/.vim/bundle/youcompleteme/install.py --all"
 "Starship Prompt"="curl -fsSL https://starship.rs/install.sh | bash"
+"Cleanup Package Managers"="conda clean -a -y;brew autoremove; sudo apt autoremove --purge -y; flatpak uninstall --unused; brew cleanup"
 #[brew]
 #greedy_cask = true
 
