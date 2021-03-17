@@ -11,8 +11,7 @@
       "class": "ocs-url"
     },
     {
-      "class": "zoom",
-      "disabled": true
+      "class": "File-roller"
     }
   ],
   "log_on_focus": false
