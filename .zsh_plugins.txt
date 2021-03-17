@@ -20,8 +20,6 @@ robbyrussell/oh-my-zsh path:plugins/common-aliases
 zpm-zsh/undollar
 arzzen/calc.plugin.zsh
 MichaelAquilina/zsh-you-should-use
-mafredri/zsh-async
-sindresorhus/pure
 # Completions
 sinetoami/antibody-completion
 esc/conda-zsh-completion
