@@ -1,8 +1,8 @@
 #Enable Colors
 autoload -U colors && colors
 # Set up the prompt
-autoload -U promptinit
-promptinit
+#autoload -U promptinit
+#promptinit
 export TERM=xterm-256color
 export HISTCONTROL=ignoreboth
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
@@ -45,6 +45,4 @@ bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
-
-source "$HOME/dotfiles/.condainit"
-
+eval "$(starship init zsh)"
