@@ -3,6 +3,7 @@
       relink: true
       create: true
       glob: true
+      force: true
     shell:
       stderror: true
 - clean: ["~", "~/.config"]
