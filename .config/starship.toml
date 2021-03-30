@@ -69,3 +69,7 @@ style = "242"
 [docker]
 format = "[$symbol$context]($style) "
 style = "242"
+
+[node]
+format = "[$symbol($version)]($style)"
+style = "242"
