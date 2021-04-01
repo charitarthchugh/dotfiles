@@ -16,3 +16,7 @@
 	defaultBranch = main
 [credential]
 	helper = store
+[maintenance]
+	repo = /home/ccd/dotfiles
+	repo = /home/ccd/.local/share/fonts/NerdFonts
+	repo = /home/ccd/.local/share/fonts/Google
