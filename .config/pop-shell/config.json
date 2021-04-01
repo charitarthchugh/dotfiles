@@ -12,6 +12,13 @@
     },
     {
       "class": "File-roller"
+    },
+    {
+      "class": "Blackmagic RAW Speed Test",
+      "title": "Blackmagic RAW Speed Test"
+    },
+    {
+      "class": "RTHRBM Preview"
     }
   ],
   "log_on_focus": false
