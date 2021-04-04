@@ -70,6 +70,6 @@ style = "242"
 format = "[$symbol$context]($style) "
 style = "242"
 
-[node]
+[nodejs]
 format = "[$symbol($version)]($style)"
 style = "242"
