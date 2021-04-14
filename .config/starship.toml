@@ -36,7 +36,7 @@ style = "242"
 
 [package]
 format = " [$symbol$version]($style) "
-style = "208"
+style = "242"
 
 [python]
 style = "242"
@@ -71,5 +71,5 @@ format = "[$symbol$context]($style) "
 style = "242"
 
 [nodejs]
-format = "[$symbol($version)]($style)"
+format = "[$symbol($version) ]($style)"
 style = "242"
