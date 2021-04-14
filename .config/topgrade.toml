@@ -50,8 +50,7 @@ self_update = false
 # Custom commands
 [commands]
 "Font cache"="fc-cache -r"
-"Starship Prompt"="curl -fsSL https://starship.rs/install.sh | bash"
-"Cleanup Package Managers"="conda clean -a -y;brew autoremove; sudo apt autoremove --purge -y; flatpak uninstall --unused; brew cleanup"
+"Cleanup Package Managers"="conda clean -a -y; sudo apt autoremove --purge -y; flatpak uninstall --unused;"
 #[brew]
 #greedy_cask = true
 
