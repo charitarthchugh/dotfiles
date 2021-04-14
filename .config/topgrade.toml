@@ -49,10 +49,7 @@ self_update = false
 
 # Custom commands
 [commands]
-#"Python Environment" = "~/dev/.env/bin/pip install -i https://pypi.python.org/simple -U --upgrade-strategy eager jupyter"
 "Font cache"="fc-cache -r"
-#"Pip"="/usr/bin/python3 ~/dotfiles/scripts/pip_update.py"
-"YoutubeDl"="sudo -H pip install --upgrade youtube-dl"
 "Starship Prompt"="curl -fsSL https://starship.rs/install.sh | bash"
 "Cleanup Package Managers"="conda clean -a -y;brew autoremove; sudo apt autoremove --purge -y; flatpak uninstall --unused; brew cleanup"
 #[brew]
