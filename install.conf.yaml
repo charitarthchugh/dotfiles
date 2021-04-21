@@ -46,6 +46,8 @@
       path: ~/dotfiles/.config/pop-shell/*
     ~/.config/up/:
       path: ~/dotfiles/.config/up/*
+    ~/.config/nvim:
+      path: ~/dotfiles/.config/nvim/*
 
 - shell:
     - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
