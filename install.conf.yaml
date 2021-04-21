@@ -46,15 +46,13 @@
       path: ~/dotfiles/.config/up/*
 
 - shell:
-    - command: chsh -s /usr/bin/fish
-      description: Set Fish as default shell
-      stdin: true
-      sdout: true
     - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
       description: Install Fisher
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
-    - command: git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
-      description: Install Vundle for Vim
-    - command: vim +PluginInstall +qall
-      description: Install Vim Plugins
+    - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
+      description: Install Dein for Vim/Neovim
+    - command: chsh -s /usr/bin/fish
+      description: Set Fish as default shell
+      stdin: true
+      sdout: true
