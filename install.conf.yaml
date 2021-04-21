@@ -31,6 +31,8 @@
       path: ~/dotfiles/.config/user-dirs.dirs
     ~/.config/starship.toml:
       path: ~/dotfiles/.config/starship.toml
+    ~/.config/coc/extensions/package.json:
+      path: ~/dotfiles/.config/coc/extensions/package.json
     ~/.config/alacritty/:
       path: ~/dotfiles/.config/alacritty/*
     ~/.config/bpytop/:
@@ -52,6 +54,8 @@
       description: Install and update Fish Plugins
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim/Neovim
+    - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+      description: Install CoC Extensions
     - command: chsh -s /usr/bin/fish
       description: Set Fish as default shell
       stdin: true
