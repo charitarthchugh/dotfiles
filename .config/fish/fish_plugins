@@ -10,3 +10,5 @@ laughedelic/brew-completions
 jorgebucaran/fisher
 jhillyerd/plugin-git
 jorgebucaran/nvm.fish
+gazorby/fish-abbreviation-tips
+brgmnn/fish-docker-compose
