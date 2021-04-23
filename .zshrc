@@ -19,10 +19,8 @@ if type brew &>/dev/null; then
 fi
 autoload -Uz +X compinit
 compinit
-# Antibody
-source <(antibody init)
-antibody bundle < ~/dotfiles/.zsh_plugins.txt
-
+# zplug
+source ~/dotfiles/.zsh_plugins.zsh
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
