@@ -18,6 +18,9 @@ zplug "plugins/flutter",   from:oh-my-zsh
 # Inidividial Github Plugins
 zplug "zpm-zsh/undollar", as:command 
 zplug "esc/conda-zsh-completion"
+zplug "MichaelAquilina/zsh-you-should-use"
+zplug "olets/zsh-abbr"
+zplug "zpm-zsh/clipboard"
 if zplug check || zplug install; then
   zplug load
 fi
