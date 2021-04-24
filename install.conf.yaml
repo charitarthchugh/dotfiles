@@ -10,7 +10,7 @@
 
 - link:
     ~/.zshrc:
-      path: .zshrc
+      path: ~/.zshrc
       relink: true
       force: true
     ~/.zshenv:
@@ -54,7 +54,7 @@
       description: Install Fisher
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
-    - command: git clone --depth=1 https://github.com/zplug/zplug "~/.zplug/" 
+    - command: git clone --depth=1 https://github.com/zplug/zplug "~/.zplug/"
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim/Neovim
     - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
