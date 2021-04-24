@@ -33,6 +33,8 @@
       path: ~/dotfiles/.config/starship.toml
     ~/.config/coc/extensions/package.json:
       path: ~/dotfiles/.config/coc/extensions/package.json
+    ~/.config/up/up.fish:
+      path: ~/dotfiles/.config/up/up.fish
     ~/.config/alacritty/:
       path: ~/dotfiles/.config/alacritty/*
     ~/.config/bpytop/:
@@ -44,8 +46,6 @@
       path: ~/dotfiles/.config/gh/*
     ~/.config/pop-shell:
       path: ~/dotfiles/.config/pop-shell/*
-    ~/.config/up/:
-      path: ~/dotfiles/.config/up/*
     ~/.config/nvim:
       path: ~/dotfiles/.config/nvim/*
 
