@@ -34,4 +34,4 @@ jobs:
         uses: fish-actions/install-fish@v1.1.0
       - run:  which python3
       - run:  which npm
-      - run:  whitch fish 
+      - run:  which fish 
