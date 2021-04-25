@@ -13,12 +13,12 @@ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt
 
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
-    wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
+echo "deb http://packages.azlux.fr/debian/ buster main" | sudo tee /etc/apt/sources.list.d/azlux.list
+wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
 
 # Wine
 # Enable 32 bit architecture
-source /etc/os-release 
+source /etc/os-release
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
@@ -28,33 +28,33 @@ sudo add-apt-repository -y ppa:git-core/ppa
 sudo add-apt-repository -y ppa:phoerious/keepassxc
 sudo apt update -y
 # Programs to install via apt
-while read package; do 
+while read package; do
     sudo apt install -y -qq "$package"
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from apt!"
     else
-        echo "$package" >> apt_failed.text
+        echo "$package" >>apt_failed.text
     fi
-done < "${BASEDIR}/packages/apt_packages.txt"
+done <"${BASEDIR}/packages/apt_packages.txt"
 pip install -r "${BASEDIR}/packages/requirements-pip.txt"
 # install packages using pipx
-while read package; do 
+while read package; do
     pipx install "$package"
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from pipx!"
     else
-        echo "$package" >> pipx_failed.txt
+        echo "$package" >>pipx_failed.txt
     fi
-done < "${BASEDIR}/packages/requirements.txt"
+done <"${BASEDIR}/packages/requirements.txt"
 # Install packages from cargo
-while read package; do 
+while read package; do
     cargo install "$package" -q
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from cargo!"
     else
-        echo "$package" >> cargo_failed.txt
+        echo "$package" >>cargo_failed.txt
     fi
-done < "${BASEDIR}/packages/cargo.txt"
+done <"${BASEDIR}/packages/cargo.txt"
 # Snap section- cannot use loop for snaps that need --classic
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic pycharm-professional
@@ -67,10 +67,10 @@ sudo snap install starship glow hugo
 mkdir -p $HOME/Dev/GTK
 cd $HOME/Dev/GTK
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme 
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme
 git clone https://github.com/vinceliuice/WhiteSur-cursors
 # sudo ./WhiteSur-gtk-theme/install.sh -g -c dark -i ubuntu
-./WhiteSur-icon-theme/install.sh 
+./WhiteSur-icon-theme/install.sh
 ./WhiteSur-cursors/install.sh
 gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
 # gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-dark" # do not use theme by default because it will render system unusible if requirements are not satisfied
@@ -91,7 +91,7 @@ flatpak install flathub com.github.marktext.marktext com.github.tchx84.Flatseal 
 # Programs to install via Homebrew(brew)
 # brew bundle --file ~/fre.sh/Brewfile --no-lock
 # programs to install via npm
-npm i -g carbon-now-cli  firebase-tools is-up-cli  neovim  npm  yarn
+npm i -g carbon-now-cli firebase-tools is-up-cli neovim npm yarn
 # Install fonts
 git clone --depth 1 https://github.com/google/fonts.git $HOME/.local/share/fonts/Google
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/.local/share/fonts/nerd-fonts
