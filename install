@@ -69,13 +69,14 @@ cd $HOME/Dev/GTK
 git clone https://github.com/vinceliuice/WhiteSur-gtk-theme
 git clone https://github.com/vinceliuice/WhiteSur-icon-theme
 git clone https://github.com/vinceliuice/WhiteSur-cursors
-# sudo ./WhiteSur-gtk-theme/install.sh -g -c dark -i ubuntu
+sudo ./WhiteSur-gtk-theme/install.sh -t blue -c dark -i ubuntu
 ./WhiteSur-icon-theme/install.sh
 ./WhiteSur-cursors/install.sh
+sudo ./tweaks.sh -F
 gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-dark"
 # gsettings set org.gnome.desktop.interface gtk-theme "WhiteSur-dark" # do not use theme by default because it will render system unusible if requirements are not satisfied
 gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-dark"
-# sudo flatpak override --filesystem=/usr/share/themes/WhiteSur-dark/
+
 cd $HOME
 # Setup dotfiles
 git clone --recursive https://github.com/charitarthchugh/dotfiles $HOME/dotfiles/
