@@ -25,6 +25,8 @@
       path: ~/dotfiles/.vimrc
     ~/.carbon-now.json:
       path: ~/dotfiles/.carbon-now.json
+    ~/.selected_editor:
+      path: "~/dotfiles/.selected_editor"
     ~/.config/topgrade.toml:
       path: ~/dotfiles/.config/topgrade.toml
     ~/.config/user-dirs.dirs:
