@@ -10,7 +10,7 @@
 
 - link:
     ~/.zshrc:
-      path: ~/.zshrc
+      path: ~/dotfiles/.zshrc
       relink: true
       force: true
     ~/.zshenv:
