@@ -78,14 +78,13 @@ gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-dark"
 # sudo flatpak override --filesystem=/usr/share/themes/WhiteSur-dark/
 cd $HOME
 # Setup dotfiles
-curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
 git clone --recursive https://github.com/charitarthchugh/dotfiles $HOME/dotfiles/
 eval ${BASEDIR}/install-dotfiles
 
 # Add Flatpak repositories
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub com.github.marktext.marktext com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
+flatpak install -y flathub com.github.marktext.marktext com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
 # Install Homebrew
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 # Programs to install via Homebrew(brew)
@@ -97,3 +96,7 @@ git clone --depth 1 https://github.com/google/fonts.git $HOME/.local/share/fonts
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/.local/share/fonts/nerd-fonts
 fc-cache -r -v
 cat apt_failed.txt
+notify-send -i /usr/share/icons/gnome/32x32/emotes/face-smile-big.png "Done" "Make sure to check for any failures and restart"
+sleep 30
+notify-send "Restarting in 10 seconds" -i /usr/share/icons/gnome/32x32/status/error.png
+eval ${BASEDIR}/scripts/do_first.sh
