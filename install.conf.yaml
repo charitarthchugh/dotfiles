@@ -44,7 +44,7 @@
     ~/.config/VSCodium/User/keybindings.json:
       path: ~/dotfiles/.config/VSCodium/User/keybindings.json
     ~/.config/VSCodium/User/settings.json:
-      path: ~/dotfiles/.config/VSCodium/User/setings.json
+      path: ~/dotfiles/.config/VSCodium/User/settings.json
     ~/.config/Code/User/snippets/:
       path: ~/dotfiles/.config/Code/User/snippets/*
     ~/.config/VSCodium/User/snippets/:
