@@ -1,0 +1,64 @@
+{
+    "workbench.colorTheme": "Nord",
+    "workbench.startupEditor": "newUntitledFile",
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.fontFamily": "\"MesloLGMDZ Nerd Font\",\"Fira Code\",'Liga Meslo LG M DZ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "dart.previewLsp": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "update.mode": "none",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "python.dataScience.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.experiments.optInto": [
+        "CustomEditor"
+    ],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.dataScience.askForKernelRestart": false,
+    "git.confirmSync": false,
+    "terminal.external.linuxExec": "alacritty",
+    "terminal.integrated.allowMnemonics": true,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "editor.fontLigatures": true,
+    "python.showStartPage": false,
+    "python.pythonPath": "/bin/python3",
+    "terminal.integrated.rendererType": "dom",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.chktex.enabled": true,
+    "latex-workshop.intellisense.update.aggressive.enabled": true,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.view.pdf.external.synctex.command": "evince",
+    "latex-workshop.view.pdf.viewer": "tab",
+
+}

@@ -37,6 +37,18 @@
       path: ~/dotfiles/.config/coc/extensions/package.json
     ~/.config/up/up.fish:
       path: ~/dotfiles/.config/up/up.fish
+    ~/.config/Code/User/keybindings.json:
+      path: ~/dotfiles/.config/Code/User/keybindings.json
+    ~/.config/Code/User/settings.json:
+      path: ~/dotfiles/.config/Code/User/settings.json
+    ~/.config/VSCodium/User/keybindings.json:
+      path: ~/dotfiles/.config/VSCodium/User/keybindings.json
+    ~/.config/VSCodium/User/settings.json:
+      path: ~/dotfiles/.config/VSCodium/User/setings.json
+    ~/.config/Code/User/snippets/:
+      path: ~/dotfiles/.config/Code/User/snippets/*
+    ~/.config/VSCodium/User/snippets/:
+      path: ~/dotfiles/.config/Code/User/snippets/*
     ~/.config/alacritty/:
       path: ~/dotfiles/.config/alacritty/*
     ~/.config/bpytop/:

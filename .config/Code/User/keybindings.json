@@ -1,0 +1,77 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "f10",
+		"command": "-extension.node-debug.startWithStopOnEntry",
+		"when": "!inDebugMode && debugConfigurationType == 'node'"
+	},
+	{
+		"key": "f10",
+		"command": "-workbench.action.debug.stepOver",
+		"when": "debugState == 'stopped'"
+	},
+	{
+		"key": "f10",
+		"command": "java.test.explorer.run"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "redo"
+	},
+	{
+		"key": "ctrl+shift+z",
+		"command": "-redo"
+	},
+	{
+		"key": "f10",
+		"command": "workbench.action.debug.run",
+		"when": "!inDebugMode && !terminalFocus"
+	},
+	{
+		"key": "shift+f9",
+		"command": "-workbench.action.debug.run",
+		"when": "!inDebugMode && !terminalFocus"
+	},
+	{
+		"key": "shift+f10",
+		"command": "workbench.action.debug.start",
+		"when": "debuggersAvailable && !inDebugMode"
+	},
+	{
+		"key": "f5",
+		"command": "-workbench.action.debug.start",
+		"when": "debuggersAvailable && !inDebugMode"
+	},
+	{
+		"key": "shift+alt+enter",
+		"command": "editor.action.showContextMenu",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+f10",
+		"command": "-editor.action.showContextMenu",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "f10",
+		"command": "latex-workshop.view",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "ctrl+alt+v",
+		"command": "-latex-workshop.view",
+		"when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+	},
+	{
+		"key": "ctrl+alt+pageup",
+		"command": "jupyter.runallcellsabove.palette"
+	},
+	{
+		"key": "ctrl+alt+pagedown",
+		"command": "jupyter.runcurrentcellandallbelow.palette"
+	},
+	{
+		"key": "shift+f1",
+		"command": "workbench.action.quickOpen"
+	}
+]
