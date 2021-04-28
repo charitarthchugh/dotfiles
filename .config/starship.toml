@@ -28,7 +28,7 @@ style = "blue"
 success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 
-[user]
+[username]
 style_user = "242"
 
 [hostname]
@@ -66,7 +66,7 @@ style = "242"
 format = "[$symbol$environment]($style) "
 style = "242"
 
-[docker]
+[docker_context]
 format = "[$symbol$context]($style) "
 style = "242"
 
