@@ -11,8 +11,6 @@
 - link:
     ~/.zshrc:
       path: ~/dotfiles/.zshrc
-      relink: true
-      force: true
     ~/.zshenv:
       path: ~/dotfiles/.zshenv
     ~/.zsh_profile:
@@ -54,6 +52,8 @@
       path: ~/dotfiles/.config/pop-shell/*
     ~/.config/nvim:
       path: ~/dotfiles/.config/nvim/*
+    ~/Templates:
+      path: ~/dotfiles/Templates/*
 
 - shell:
     - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
