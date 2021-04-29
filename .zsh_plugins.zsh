@@ -8,15 +8,15 @@ zplug "zsh-users/zsh-history-substring-search", from:github
 zplug "zsh-users/zsh-autosuggestions", from:github
 zplug "zsh-users/zsh-completions", from:github
 # Oh My Zsh
-zplug "plugins/command-not-found",   from:oh-my-zsh
-zplug "plugins/git",   from:oh-my-zsh
-zplug "plugins/pip",   from:oh-my-zsh
-zplug "plugins/github",   from:oh-my-zsh
-zplug "plugins/ubuntu",   from:oh-my-zsh
-zplug "plugins/common-aliases",   from:oh-my-zsh
-zplug "plugins/flutter",   from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/pip", from:oh-my-zsh
+zplug "plugins/github", from:oh-my-zsh
+zplug "plugins/ubuntu", from:oh-my-zsh
+zplug "plugins/common-aliases", from:oh-my-zsh
+zplug "plugins/flutter", from:oh-my-zsh
 # Inidividial Github Plugins
-zplug "zpm-zsh/undollar", as:command 
+zplug "zpm-zsh/undollar", as:command
 zplug "esc/conda-zsh-completion"
 zplug "MichaelAquilina/zsh-you-should-use"
 zplug "olets/zsh-abbr"
