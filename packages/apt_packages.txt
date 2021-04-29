@@ -62,7 +62,6 @@ flameshot
 lollypop
 firefox
 cheese
-google-chrome-stable
 keepassxc
 
 fonts-lato
