@@ -71,44 +71,7 @@
 		"command": "jupyter.runcurrentcellandallbelow.palette"
 	},
 	{
-		"key": "ctrl+p",
+		"key": "shift+f1",
 		"command": "workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+p",
-		"command": "-workbench.action.quickOpen"
-	},
-	{
-		"key": "shift",
-		"command": "workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+f1",
-		"command": "workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+shift+alt+c",
-		"command": "copyFilePath",
-		"when": "!editorFocus"
-	},
-	{
-		"key": "ctrl+shift+c",
-		"command": "-copyFilePath",
-		"when": "!editorFocus"
-	},
-	{
-		"key": "ctrl+shift+c",
-		"command": "copyRelativeFilePath",
-		"when": "!editorFocus"
-	},
-	{
-		"key": "ctrl+shift+alt+c",
-		"command": "-copyRelativeFilePath",
-		"when": "!editorFocus"
-	},
-	{
-		"key": "ctrl+shift+i",
-		"command": "-notebook.format",
-		"when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
 	}
 ]
