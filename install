@@ -9,10 +9,6 @@ sudo apt install apt-transport-https curl gnupg software-properties-common # req
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 sudo apt-add-repository https://cli.github.com/packages
 
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb http://packages.azlux.fr/debian/ stable main" | sudo tee /etc/apt/sources.list.d/azlux.list
 wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
 
@@ -61,7 +57,7 @@ sudo snap install --classic pycharm-professional
 sudo snap install --classic code
 sudo snap install --classic codium
 sudo snap install --classic flutter
-sudo snap install starship glow hugo
+sudo snap install starship glow hugo brave
 
 # Set GTK Themes
 mkdir -p $HOME/Dev/GTK

@@ -60,11 +60,9 @@ kazam
 gnome-screenshot
 flameshot
 lollypop
-chromium
 firefox
 cheese
 google-chrome-stable
-brave-browser
 keepassxc
 
 fonts-lato
