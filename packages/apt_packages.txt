@@ -9,7 +9,7 @@ autojump
 cmake
 flatpak
 vim
-nvim
+neovim
 trash-cli
 xclip
 chrome-gnome-shell
