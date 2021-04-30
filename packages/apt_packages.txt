@@ -51,7 +51,7 @@ gir1.2-nautilus-3.0
 gir1.2-edataserver-1.2
 gir1.2-ebook-1.2
 gir1.2-ebookcontacts-1.2
-playonlinux
+wine-staging
 thunar
 vlc
 gimp
@@ -63,13 +63,7 @@ lollypop
 firefox
 cheese
 keepassxc
-
-fonts-lato
-fonts-materialdesignicons-webfont
-fonts-powerline
 font-manager
-msttcorefonts
-fonts-wine
 
 gtk2-engines-murrine
 gtk2-engines-pixbuf
