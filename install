@@ -31,7 +31,7 @@ while read package; do
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from apt!"
     else
-        echo "$package" >>apt_failed.text
+        echo "$package" >>apt_failed.txt
     fi
 done <"${BASEDIR}/packages/apt_packages.txt"
 pip install -r "${BASEDIR}/packages/requirements-pip.txt"
@@ -96,6 +96,6 @@ git clone --depth 1 https://github.com/ryanoasis/nerd-fonts $HOME/.local/share/f
 fc-cache -r -v
 cat apt_failed.txt
 notify-send -i /usr/share/icons/gnome/32x32/emotes/face-smile-big.png "Done" "Make sure to check for any failures and restart"
-sleep 30
 notify-send "Restarting in 10 seconds" -i /usr/share/icons/gnome/32x32/status/error.png
+sleep 30
 eval ${BASEDIR}/scripts/do_first.sh

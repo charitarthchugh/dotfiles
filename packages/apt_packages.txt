@@ -51,7 +51,7 @@ gir1.2-nautilus-3.0
 gir1.2-edataserver-1.2
 gir1.2-ebook-1.2
 gir1.2-ebookcontacts-1.2
-wine-staging
+winehq-staging
 thunar
 vlc
 gimp
