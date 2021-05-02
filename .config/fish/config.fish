@@ -5,5 +5,5 @@ source $HOME/.config/up/up.fish
 eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 export BETTER_EXCEPTIONS=1
-eval (batpipe)
+
 starship init fish | source
