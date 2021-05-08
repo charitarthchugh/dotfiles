@@ -5,7 +5,7 @@ unzip
 llvm
 zsh
 snapd
-autojump
+fish
 cmake
 flatpak
 vim
