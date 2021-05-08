@@ -15,8 +15,8 @@ call dein#begin('~/.vim/bundle')
 call dein#add('~/.vim/bundle/repos/github.com/Shougo/dein.vim')
 
 " Add or remove your plugins here like this:
-"call dein#add('Shougo/neosnippet.vim')
-"call dein#add('Shougo/neosnippet-snippets')
+call dein#add('Shougo/neosnippet.vim')
+call dein#add('Shougo/neosnippet-snippets')
 call dein#add('wsdjeg/dein-ui.vim')
 call dein#add('connorholyday/vim-snazzy')
 call dein#add('ryanoasis/vim-devicons')
