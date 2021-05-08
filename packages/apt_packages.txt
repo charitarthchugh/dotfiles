@@ -77,3 +77,4 @@ dconf-editor
 gnome-themes-standard
 gir1.2-gtop-2.0
 lm-sensors
+libnotify-bin

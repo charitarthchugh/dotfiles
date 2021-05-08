@@ -34,7 +34,6 @@ while read package; do
         echo "$package" >>apt_failed.txt
     fi
 done <"${BASEDIR}/packages/apt_packages.txt"
-pip install -r "${BASEDIR}/packages/requirements-pip.txt"
 # install packages using pipx
 while read package; do
     pipx install "$package"
