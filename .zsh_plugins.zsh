@@ -21,6 +21,8 @@ zplug "esc/conda-zsh-completion"
 zplug "MichaelAquilina/zsh-you-should-use"
 zplug "olets/zsh-abbr"
 zplug "zpm-zsh/clipboard"
+zplug "djui/alias-tips"
+zplug "agkozak/zsh-z"
 if zplug check || zplug install; then
   zplug load
 fi
