@@ -60,7 +60,7 @@
       description: Install Fisher
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
-    - command: curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+    - command: git clone git clone https://github.com/zplug/zplug ~/.zplug
       description: Install zplug
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim/Neovim
