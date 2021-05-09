@@ -87,7 +87,6 @@ alias sfox='firefox -P School'
 alias auto-tune-bat="sudo powertop --auto-tune"
 alias mpv="celluloid"
 #Shell commands
-alias cat="ccat"
 alias lsa="ls -a"
 
 #Colorize output
