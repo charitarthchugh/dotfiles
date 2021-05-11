@@ -21,6 +21,8 @@
       path: ~/dotfiles/.bashrc
     ~/.vimrc:
       path: ~/dotfiles/.vimrc
+    ~/.npmrc:
+      path: ~/dotfiles/.npmrc
     ~/.carbon-now.json:
       path: ~/dotfiles/.carbon-now.json
     ~/.selected_editor:
