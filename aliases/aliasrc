@@ -118,6 +118,6 @@ compctl -K _pip_completion pip3
 # Wrap git automatically with hub
 eval "$(hub alias -s)"
 #Better Up alias
-source ~/dotfiles/aliases/up.sh
+source ~/dotfiles/.config/up/up.sh
 # GH completion
 eval "$(gh completion -s zsh)"
