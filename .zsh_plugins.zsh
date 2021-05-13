@@ -17,12 +17,13 @@ zplug "plugins/common-aliases", from:oh-my-zsh
 zplug "plugins/flutter", from:oh-my-zsh
 # Inidividial Github Plugins
 zplug "zpm-zsh/undollar", as:command
-zplug "esc/conda-zsh-completion"
-zplug "MichaelAquilina/zsh-you-should-use"
-zplug "olets/zsh-abbr"
-zplug "zpm-zsh/clipboard"
-zplug "djui/alias-tips"
-zplug "agkozak/zsh-z"
+zplug "esc/conda-zsh-completion", from:github
+zplug "MichaelAquilina/zsh-you-should-use", from:github
+zplug "olets/zsh-abbr", from:github
+zplug "zpm-zsh/clipboard", from:github
+zplug "djui/alias-tips", from:github
+zplug "agkozak/zsh-z", from:github
+zplug "RobSis/zsh-completion-generator", from:github
 if zplug check || zplug install; then
   zplug load
 fi
