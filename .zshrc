@@ -12,11 +12,7 @@ HISTFILE=~/.zsh_history
 
 # Use modern completion system
 zmodload zsh/complist
-_comp_options+=(globdots)               # Include hidden files.
-#autoload -Uz compinit && compinit
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
+_comp_options+=(globdots) # Include hidden files.
 autoload -Uz +X compinit
 compinit
 # zplug
