@@ -19,6 +19,13 @@
     },
     {
       "class": "RTHRBM Preview"
+    },
+    {
+      "class": "Solanum"
+    },
+    {
+      "class": "Firefox",
+      "title": "About Mozilla Firefox"
     }
   ],
   "log_on_focus": false
