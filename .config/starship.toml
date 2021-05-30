@@ -40,26 +40,26 @@ style = "242"
 
 [python]
 style = "242"
-format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv ))]($style)"
+format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv))]($style) "
 
 [java]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version})]($style) "
 style = "242"
 
 [swift]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version})]($style) "
 style = "242"
 
 [golang]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version})]($style) "
 style = "242"
 
 [kotlin]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version})]($style) "
 style = "242"
 
 [dart]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version})]($style) "
 style = "242"
 
 [conda]
@@ -71,5 +71,5 @@ format = "[$symbol$context]($style) "
 style = "242"
 
 [nodejs]
-format = "[$symbol($version) ]($style)"
+format = "[$symbol($version)]($style) "
 style = "242"
