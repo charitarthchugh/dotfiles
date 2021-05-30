@@ -52,7 +52,7 @@ self_update = false
 "Font cache"="fc-cache -r"
 "Cleanup Package Managers"="conda clean -a -y; sudo apt autoremove --purge -y; flatpak uninstall --unused; sudo apt autoclean"
 "Clean logs older than 15d"="sudo journalctl --vacuum-time=15d"
-"Clean old snap packages"="~/dotfiles/scripts/clean_snaps.sh"
+"Clean old snap packages"="sudo ~/dotfiles/scripts/clean_snaps.sh"
 #[brew]
 #greedy_cask = true
 
