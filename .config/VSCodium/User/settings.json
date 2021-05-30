@@ -60,5 +60,6 @@
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.view.pdf.external.synctex.command": "evince",
     "latex-workshop.view.pdf.viewer": "tab",
+    "sync.gist": "795395fe0a8035bd7400ce6a87e3a92d",
 
 }
