@@ -35,12 +35,12 @@
       path: ~/dotfiles/.config/starship.toml
     ~/.config/coc/extensions/package.json:
       path: ~/dotfiles/.config/coc/extensions/package.json
-        ~/.config/fish/config.fish:
+    ~/.config/fish/config.fish:
       path: ~/dotfiles/.config/fish/config.fish
       force: true
     ~/.config/fish/fish_plugins:
       path: ~/dotfiles/.config/fish/fish_plugins
-     ~/.config/up/up.fish:
+    ~/.config/up/up.fish:
       path: ~/dotfiles/.config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
       path: ~/dotfiles/.config/VSCodium/User/keybindings.json
