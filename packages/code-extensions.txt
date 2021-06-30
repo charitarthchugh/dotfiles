@@ -1,6 +1,5 @@
 aaron-bond.better-comments
 akmittal.hugofy
-alexanderte.dainty-vscode
 alexisvt.flutter-snippets
 bmuskalla.vscode-tldr
 bodil.prettier-toml
@@ -18,6 +17,9 @@ dotiful.dotfiles-syntax-highlighting
 eamodio.gitlens
 ecmel.vscode-html-css
 eg2.vscode-npm-script
+Equinusocio.vsc-community-material-theme
+Equinusocio.vsc-material-theme
+equinusocio.vsc-material-theme-icons
 esbenp.prettier-vscode
 file-icons.file-icons
 fivethree.vscode-hugo-snippets
@@ -39,12 +41,15 @@ k--kato.intellij-idea-keybindings
 KevinRose.vsc-python-indent
 lunaryorn.fish-ide
 mads-hartmann.bash-ide-vscode
+mblode.zotero
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
 Nash.awesome-flutter-snippets
 njpwerner.autodocstring
 njqdev.vscode-python-typehint
@@ -52,6 +57,7 @@ npxms.hide-gitignored
 piotrpalarz.vscode-gitignore-generator
 pranaygp.vscode-css-peek
 RandomFractalsInc.vscode-data-preview
+redhat.vscode-commons
 redhat.vscode-yaml
 rpinski.shebang-snippets
 sandcastle.vscode-open
@@ -72,3 +78,4 @@ XadillaX.viml
 YoshinoriN.current-file-path
 yzhang.markdown-all-in-one
 Zignd.html-css-class-completion
+znck.grammarly
