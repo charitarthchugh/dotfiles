@@ -2,3 +2,7 @@ topgrade
 bat
 alacritty
 cargo-update
+git-delta
+fd-find
+procs
+tealdeer
