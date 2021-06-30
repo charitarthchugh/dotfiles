@@ -21,3 +21,12 @@
 	repo = /home/ccd/dotfiles
 	repo = /home/ccd/.local/share/fonts/NerdFonts
 	repo = /home/ccd/.local/share/fonts/Google
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+[delta]
+	navigate = true
+[interactive]
+	diffFilter = delta --color-only
