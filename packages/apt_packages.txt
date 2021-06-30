@@ -46,7 +46,6 @@ cargo
 virt-manager
 pandoc
 
-timeshift
 gir1.2-nautilus-3.0
 gir1.2-edataserver-1.2
 gir1.2-ebook-1.2
