@@ -23,6 +23,8 @@
       path: ~/dotfiles/.vimrc
     ~/.npmrc:
       path: ~/dotfiles/.npmrc
+    ~/.condarc:
+      path: ~/dotfiles/.condarc  
     ~/.carbon-now.json:
       path: ~/dotfiles/.carbon-now.json
     ~/.selected_editor:
