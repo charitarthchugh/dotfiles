@@ -46,10 +46,6 @@ cargo
 virt-manager
 pandoc
 
-gir1.2-nautilus-3.0
-gir1.2-edataserver-1.2
-gir1.2-ebook-1.2
-gir1.2-ebookcontacts-1.2
 winehq-staging
 thunar
 vlc
@@ -76,4 +72,8 @@ dconf-editor
 gnome-themes-standard
 gir1.2-gtop-2.0
 lm-sensors
+libfreetype6-dev
+libfontconfig1-dev
+libxfixes0-dev
+libxkbcommon-dev
 libnotify-bin
