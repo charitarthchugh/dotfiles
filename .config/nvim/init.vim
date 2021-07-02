@@ -18,29 +18,32 @@ call dein#add('~/.vim/bundle/repos/github.com/Shougo/dein.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 call dein#add('wsdjeg/dein-ui.vim')
-call dein#add('connorholyday/vim-snazzy')
+call dein#add('connorholyday/vim-snazzy', {'script_type': 'colors'})
 call dein#add('kyazdani42/nvim-web-devicons')
 call dein#add('itchyny/lightline.vim')
 call dein#add('glepnir/dashboard-nvim')
 call dein#add('nvim-lua/popup.nvim')
 call dein#add('nvim-lua/plenary.nvim')
-call dein#add('nvim-telescope/telescope.nvim')
+call dein#add('nvim-telescope/telescope.nvim',{'depends': ['nvim-lua/popup.nvim','nvim-lua/plenary.nvim']})
 call dein#add('tpope/vim-surround')
 call dein#add('scrooloose/syntastic')
 call dein#add('scrooloose/nerdtree')
 call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
 call dein#add('tpope/vim-fugitive')
-call dein#add('neoclide/coc.nvim', { 'merged': 0 })
-call dein#add('josa42/vim-lightline-coc')
+call dein#add('sbdchd/neoformat')
 call dein#add('sheerun/vim-polyglot')
 call dein#add('Xuyuanp/nerdtree-git-plugin')
 call dein#add('raimondi/delimitmate')
 call dein#add('neovim/nvim-lspconfig')
 call dein#add('kabouzeid/nvim-lspinstall')
-if !has('nvim')
-  call dein#add('roxma/nvim-yarp')
-  call dein#add('roxma/vim-hug-neovim-rpc')
-endif
+call dein#add('nvim-lua/completion-nvim')
+call dein#add('aca/completion-tabnine',{'build': './install.sh'}) 
+ "need to run install.sh later, just to make sure
+call dein#add('lewis6991/gitsigns.nvim',{'depends': ['nvim-lua/plenary.nvim']})
+call dein#add('kosayoda/nvim-lightbulb')
+call dein#add('ojroques/nvim-lspfuzzy', {'depends': ['junegunn/fzf','junegunn/fzf.vim']})
+call dein#add('ahmedkhalf/lsp-rooter.nvim')
+call dein#add('npxbr/glow.nvim')
 " Required:
 call dein#end()
 
@@ -53,7 +56,7 @@ if dein#check_install()
   call dein#install()
 endif
 
-"End dein Scripts-------------------------
+"End dein scripts-------------------------
 "Colorscheme and statusline---------------
 colorscheme snazzy
 set laststatus=2
@@ -62,14 +65,6 @@ set laststatus=2
 let g:lightline = {
 \ 'colorscheme': 'snazzy'
 \ }
-let g:lightline.component_expand = {
-  \   'linter_warnings': 'lightline#coc#warnings',
-  \   'linter_errors': 'lightline#coc#errors',
-  \   'linter_info': 'lightline#coc#info',
-  \   'linter_hints': 'lightline#coc#hints',
-  \   'linter_ok': 'lightline#coc#ok',
-  \   'status': 'lightline#coc#status',
-  \ }
 
 " Set color to the components:
 let g:lightline.component_type = {
@@ -79,14 +74,6 @@ let g:lightline.component_type = {
   \   'linter_hints': 'hints',
   \   'linter_ok': 'left',
   \ }
-
-" Add the components to the lightline:
-let g:lightline.active = {
-  \   'left': [[ 'coc_info', 'coc_hints', 'coc_errors', 'coc_warnings', 'coc_ok' ], [ 'coc_status'  ]]
-  \ }
-
-" Use autocmd to force lightline update
-autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 " NERDTree--------------------------------
 " Start NERDTree when Vim starts with a directory argument.
 autocmd StdinReadPre * let s:std_in=1
@@ -99,42 +86,8 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
-"CoC-------------------------------------
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
-" Some servers have issues with backup files.
-set nobackup
-set nowritebackup
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
-" Use tab for trigger completion with characters ahead and navigate.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
 
-" Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-
-" Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
-" Dashboard
+" Dashboard------------------------------
 let g:dashboard_default_executive = 'telescope'
 let g:dashboard_custom_header = [
     \'',
@@ -163,7 +116,27 @@ nnoremap <silent> <Leader>tc :DashboardChangeColorscheme<CR>
 nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
 nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
 nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
-" Custom Mappings
+" completion-nvim----------------------
+" Setup 
+lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
+" Lightbulb------------------------------
+autocmd CursorHold,CursorHoldI * lua require'nvim-lightbulb'.update_lightbulb()
+" Neoformat------------------------------
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
+let g:neoformat_enabled_python = ['black', 'docformatter']
+" Custom Mappings------------------------
 " Make pane switching easier
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -171,58 +144,8 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 set termguicolors
 
-" Lua
-lua << EOF
--- Telescope
-require('telescope').setup{
-  defaults = {
-    vimgrep_arguments = {
-      'rg',
-      '--color=never',
-      '--no-heading',
-      '--with-filename',
-      '--line-number',
-      '--column',
-      '--smart-case'
-    },
-    prompt_position = "bottom",
-    prompt_prefix = "> ",
-    selection_caret = "> ",
-    entry_prefix = "  ",
-    initial_mode = "insert",
-    selection_strategy = "reset",
-    sorting_strategy = "descending",
-    layout_strategy = "horizontal",
-    layout_defaults = {
-      horizontal = {
-        mirror = false,
-      },
-      vertical = {
-        mirror = false,
-      },
-    },
-    file_sorter =  require'telescope.sorters'.get_fuzzy_file,
-    file_ignore_patterns = {},
-    generic_sorter =  require'telescope.sorters'.get_generic_fuzzy_sorter,
-    shorten_path = true,
-    winblend = 0,
-    width = 0.75,
-    preview_cutoff = 120,
-    results_height = 1,
-    results_width = 0.8,
-    border = {},
-    borderchars = { '─', '│', '─', '│', '╭', '╮', '╯', '╰' },
-    color_devicons = true,
-    use_less = true,
-    set_env = { ['COLORTERM'] = 'truecolor' }, -- default = nil,
-    file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
-    grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
-    qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
 
-    -- Developer configurations: Not meant for general override
-    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
-  }
-}
+lua << EOF
 -- LSP
 local function setup_servers()
   require'lspinstall'.setup()
@@ -239,4 +162,6 @@ require'lspinstall'.post_install_hook = function ()
   setup_servers() -- reload installed servers
   vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
 end
+-- lsp-rooter
+require("lsp-rooter").setup()
 EOF
