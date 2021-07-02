@@ -29,17 +29,14 @@
         "jsdelivr.com",
         "unpkg.com"
     ],
-    "workbench.iconTheme": "eq-material-theme-icons-ocean",
+    "workbench.iconTheme": "material-icon-theme",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.experiments.optInto": [
         "CustomEditor"
     ],
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "python.dataScience.askForKernelRestart": false,
     "git.confirmSync": false,
     "terminal.external.linuxExec": "alacritty",
@@ -88,6 +85,8 @@
             "statusBarItem.remoteBackground": "#84FFFF"
         }
     },
-    "materialTheme.accent": "Sky",
+    "security.workspace.trust.enabled": false,
+    "python.formatting.provider": "black",
+    "redhat.telemetry.enabled": false,
 
 }
