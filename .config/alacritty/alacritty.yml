@@ -188,10 +188,6 @@ mouse:
   launcher:
     program: xdg-open
     args: []
-shell:
-  program: /usr/bin/fish
-  args: 
-      - --login
 key_bindings:
   - { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
   - { key: PageDown, mods: Shift,   action: ScrollPageDown }
