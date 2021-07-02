@@ -44,6 +44,7 @@ call dein#add('kosayoda/nvim-lightbulb')
 call dein#add('ojroques/nvim-lspfuzzy', {'depends': ['junegunn/fzf','junegunn/fzf.vim']})
 call dein#add('ahmedkhalf/lsp-rooter.nvim')
 call dein#add('npxbr/glow.nvim')
+call dein#add('folke/which-key.nvim')
 " Required:
 call dein#end()
 
@@ -108,6 +109,7 @@ let g:dashboard_custom_header = [
      \'⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ',
      \]
 let g:mapleader="\<Space>"
+let g:indentLine_fileTypeExclude = ['dashboard']
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>
 nnoremap <silent> <Leader>fh :DashboardFindHistory<CR>
@@ -116,6 +118,7 @@ nnoremap <silent> <Leader>tc :DashboardChangeColorscheme<CR>
 nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
 nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
 nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
+autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
 " completion-nvim----------------------
 " Setup 
 lua require'lspconfig'.pyls.setup{on_attach=require'completion'.on_attach}
@@ -164,4 +167,6 @@ require'lspinstall'.post_install_hook = function ()
 end
 -- lsp-rooter
 require("lsp-rooter").setup()
+-- which-key
+require("which-key").setup()
 EOF
