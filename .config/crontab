@@ -1,0 +1,42 @@
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+MAILTO="charitarth.chughg@gmail.com"
+#35 7 * * 1-5 DISPLAY=:0 /home/ccd/bin/automeet
+0 15 * * * /snap/bin/code --list-extensions > ~/dotfiles/packages/code-extensions.txt
+0 15 * * * /snap/bin/codium --list-extensions > ~/dotfiles/packages/codium-extensions.txt
+0 15 * * * cd ~/.local/share/fonts/NerdFonts; git gc --aggressive --prune
+0 16 * * * cd ~/.local/share/fonts/Google; git gc --aggressive --prune 
+# BEGIN GIT MAINTENANCE SCHEDULE
+# The following schedule was created by Git
+# Any edits made in this region might be
+# replaced in the future by a Git command.
+
+0 1-23 * * * "/usr/lib/git-core/git" --exec-path="/usr/lib/git-core" for-each-repo --config=maintenance.repo maintenance run --schedule=hourly >/dev/null 2>&1
+0 0 * * 1-6 "/usr/lib/git-core/git" --exec-path="/usr/lib/git-core" for-each-repo --config=maintenance.repo maintenance run --schedule=daily >/dev/null 2>&1
+0 0 * * 0 "/usr/lib/git-core/git" --exec-path="/usr/lib/git-core" for-each-repo --config=maintenance.repo maintenance run --schedule=weekly >/dev/null 2>&1
+
+# END GIT MAINTENANCE SCHEDULE
+#Back In Time system entry, this will be edited by the gui:
+0 12 * * * /usr/bin/nice -n19 /usr/bin/ionice -c2 -n7 /usr/bin/backintime backup-job >/dev/null
+
