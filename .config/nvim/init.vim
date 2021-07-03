@@ -37,14 +37,15 @@ call dein#add('raimondi/delimitmate')
 call dein#add('neovim/nvim-lspconfig')
 call dein#add('kabouzeid/nvim-lspinstall')
 call dein#add('nvim-lua/completion-nvim')
-call dein#add('aca/completion-tabnine',{'build': 'sh ./install.sh'}) 
- "need to run install.sh later, just to make sure
+call dein#add('aca/completion-tabnine') 
+ "need to run install.sh later
 call dein#add('lewis6991/gitsigns.nvim',{'depends': ['nvim-lua/plenary.nvim']})
 call dein#add('kosayoda/nvim-lightbulb')
 call dein#add('ojroques/nvim-lspfuzzy', {'depends': ['junegunn/fzf','junegunn/fzf.vim']})
 call dein#add('ahmedkhalf/lsp-rooter.nvim')
 call dein#add('npxbr/glow.nvim')
 call dein#add('folke/which-key.nvim')
+call dein#add('Pocco81/AutoSave.nvim')
 " Required:
 call dein#end()
 
@@ -169,4 +170,5 @@ end
 require("lsp-rooter").setup()
 -- which-key
 require("which-key").setup()
+require("autosave").setup()
 EOF
