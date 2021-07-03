@@ -21,7 +21,7 @@ gnome-tweak-tool
 openssh-server
 openssh-client
 appimagelauncher
-samba
+progress
 
 hub
 gh
