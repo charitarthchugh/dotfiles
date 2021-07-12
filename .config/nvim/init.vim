@@ -89,7 +89,7 @@ autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
-
+let NERDTreeShowHidden=1
 " Dashboard------------------------------
 let g:dashboard_default_executive = 'telescope'
 let g:dashboard_custom_header = [
