@@ -48,6 +48,14 @@
       path: ~/dotfiles/.config/VSCodium/User/keybindings.json
     ~/.config/VSCodium/User/settings.json:
       path: ~/dotfiles/.config/VSCodium/User/settings.json
+    ~/.config/VSCodium/User/snippets:
+      path: ~/dotfiles/.config/VSCodium/User/snippets/*
+    ~/.config/Code/User/keybindings.json:
+      path: ~/dotfiles/.config/VSCodium/User/keybindings.json
+    ~/.config/Code/User/settings.json:
+      path: ~/dotfiles/.config/VSCodium/User/settings.json
+    ~/.config/Code/User/snippets:
+      path: ~/dotfiles/.config/Code/User/snippets/*
     ~/.config/alacritty/:
       path: ~/dotfiles/.config/alacritty/*
     ~/.config/bpytop/:
