@@ -7,7 +7,8 @@
     shell:
       stderror: true
 - clean: ["~", "~/.config"]
-
+- shell:
+  
 - link:
     ~/.zshrc:
       path: ~/dotfiles/.zshrc
@@ -40,8 +41,6 @@
     ~/.config/fish/config.fish:
       path: ~/dotfiles/.config/fish/config.fish
       force: true
-    ~/.config/fish/fish_plugins:
-      path: ~/dotfiles/.config/fish/fish_plugins
     ~/.config/up/up.fish:
       path: ~/dotfiles/.config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
@@ -56,12 +55,12 @@
       path: ~/dotfiles/.config/VSCodium/User/settings.json
     ~/.config/Code/User/snippets:
       path: ~/dotfiles/.config/Code/User/snippets/*
+    ~/.config/gh/config.yml:
+      path: ~/dotfiles/.config/gh/config.yml
     ~/.config/alacritty/:
       path: ~/dotfiles/.config/alacritty/*
     ~/.config/bpytop/:
       path: ~/dotfiles/.config/bpytop/*
-    ~/.config/gh:
-      path: ~/dotfiles/.config/gh/*
     ~/.config/pop-shell:
       path: ~/dotfiles/.config/pop-shell/*
     ~/.config/nvim:
@@ -72,6 +71,8 @@
 - shell:
     - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
       description: Install Fisher
+    - command: ln -sf ~/dotfiles/.config/fish/fish_plugins ~/.config/fish/fish_plugins
+      description: Link fish plugins
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
     - command: git clone https://github.com/zplug/zplug ~/.zplug
