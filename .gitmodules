@@ -5,3 +5,6 @@
 	ignore = dirty
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot/ 
+[submodule ".config/ulauncher/user-themes/WhiteSur-Dark-ulauncher"]
+	path = .config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
+	url = https://github.com/Raayib/WhiteSur-Dark-ulauncher

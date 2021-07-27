@@ -66,6 +66,8 @@
       path: ~/dotfiles/.config/pop-shell/*
     ~/.config/nvim:
       path: ~/dotfiles/.config/nvim/*
+    ~/.config/ulauncher:
+      path: ~/dotfiles/.config/ulauncher/*
     ~/Templates:
       path: ~/dotfiles/Templates/*
 

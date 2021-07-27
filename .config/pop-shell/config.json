@@ -26,6 +26,9 @@
     {
       "class": "Firefox",
       "title": "About Mozilla Firefox"
+    },
+    {
+      "class": "Ulauncher"
     }
   ],
   "log_on_focus": false
