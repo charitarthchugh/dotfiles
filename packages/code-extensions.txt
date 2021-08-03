@@ -28,6 +28,7 @@ formulahendry.auto-rename-tag
 formulahendry.code-runner
 foxundermoon.shell-format
 geoffkaile.latex-count
+GitHub.codespaces
 GitHub.vscode-pull-request-github
 goessner.mdmath
 golang.go
@@ -72,8 +73,6 @@ tht13.html-preview-vscode
 trybick.terminal-zoom
 valentjn.vscode-ltex
 VisualStudioExptTeam.vscodeintellicode
-vscjava.vscode-java-debug
-vscjava.vscode-java-pack
 XadillaX.viml
 YoshinoriN.current-file-path
 yzhang.markdown-all-in-one
