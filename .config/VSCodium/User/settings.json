@@ -35,7 +35,7 @@
         "CustomEditor"
     ],
     "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
+        "*.ipynb": "jupyter-notebook"
     },
     "python.dataScience.askForKernelRestart": false,
     "git.confirmSync": false,
@@ -88,5 +88,9 @@
     "security.workspace.trust.enabled": false,
     "python.formatting.provider": "black",
     "redhat.telemetry.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
 
 }
