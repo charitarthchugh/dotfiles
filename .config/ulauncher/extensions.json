@@ -20,13 +20,6 @@
         "last_commit": "3199eb7287c56dac4dc4a32311b49b5bdf3f0a2f",
         "last_commit_time": "2021-07-07T07:56:03"
     },
-    "com.github.kazumasan.ulauncher-sessions": {
-        "id": "com.github.kazumasan.ulauncher-sessions",
-        "url": "https://github.com/Kazumasan/ulauncher-sessions",
-        "updated_at": "2021-07-26T19:56:44.620016",
-        "last_commit": "7e48b0191aa74bcdf101c25dd106e67d0974b1b5",
-        "last_commit_time": "2021-03-14T02:45:15"
-    },
     "com.github.plibither8.ulauncher-zoom": {
         "id": "com.github.plibither8.ulauncher-zoom",
         "url": "https://github.com/plibither8/ulauncher-zoom",
@@ -89,13 +82,6 @@
         "updated_at": "2021-07-26T21:39:25.380941",
         "last_commit": "8ec8a0dda09e172de62051cd1f251816ce4af368",
         "last_commit_time": "2019-09-06T19:20:09"
-    },
-    "com.github.brpaz.ulauncher-docker": {
-        "id": "com.github.brpaz.ulauncher-docker",
-        "url": "https://github.com/brpaz/ulauncher-docker",
-        "updated_at": "2021-07-26T21:41:13.193588",
-        "last_commit": "6213bfe156084aa4c049de24fb69acd7f1fba8f2",
-        "last_commit_time": "2019-12-03T20:15:17"
     },
     "com.github.brpaz.ulauncher-vscode-projects": {
         "id": "com.github.brpaz.ulauncher-vscode-projects",
