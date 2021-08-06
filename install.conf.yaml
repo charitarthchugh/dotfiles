@@ -8,8 +8,6 @@
       stderror: true
       stdout: true
 - clean: ["~", "~/.config"]
-- shell:
-  
 - link:
     ~/.zshrc:
       path: ~/dotfiles/.zshrc
