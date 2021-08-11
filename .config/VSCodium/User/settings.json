@@ -1,7 +1,6 @@
 {
     "workbench.colorTheme": "Material Theme Ocean",
     "workbench.startupEditor": "newUntitledFile",
-    "python.dataScience.alwaysTrustNotebooks": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "editor.fontFamily": "\"MesloLGMDZ Nerd Font\",\"Fira Code\",'Liga Meslo LG M DZ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -25,10 +24,6 @@
     "window.zoomLevel": 1,
     "explorer.confirmDelete": false,
     "git.autofetch": true,
-    "python.dataScience.widgetScriptSources": [
-        "jsdelivr.com",
-        "unpkg.com"
-    ],
     "workbench.iconTheme": "material-icon-theme",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.experiments.optInto": [
@@ -37,7 +32,6 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "python.dataScience.askForKernelRestart": false,
     "git.confirmSync": false,
     "terminal.external.linuxExec": "alacritty",
     "terminal.integrated.allowMnemonics": true,
@@ -92,5 +86,14 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.defaultInterpreterPath": "/usr/bin/python3",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "python.formatting.blackPath": "~/.local/bin/black",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
 
 }
