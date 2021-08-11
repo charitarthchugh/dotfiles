@@ -1,3 +1,4 @@
+arcticicestudio.nord-visual-studio-code
 bmalehorn.vscode-fish
 budparr.language-hugo-vscode
 christian-kohler.path-intellisense

@@ -1,6 +1,7 @@
 aaron-bond.better-comments
 akmittal.hugofy
 alexisvt.flutter-snippets
+arcticicestudio.nord-visual-studio-code
 bmuskalla.vscode-tldr
 bodil.prettier-toml
 budparr.language-hugo-vscode
@@ -12,6 +13,7 @@ Dart-Code.dart-code
 Dart-Code.flutter
 DavidAnson.vscode-markdownlint
 davidwoo.flutter-auto-import
+dongli.python-preview
 donjayamanne.githistory
 dotiful.dotfiles-syntax-highlighting
 eamodio.gitlens
@@ -38,7 +40,6 @@ James-Yu.latex-workshop
 JeffersonQin.latex-snippets-jeff
 jeroen-meijer.pubspec-assist
 jojoee.conda-cheatsheet
-k--kato.intellij-idea-keybindings
 KevinRose.vsc-python-indent
 lunaryorn.fish-ide
 mads-hartmann.bash-ide-vscode
@@ -57,7 +58,6 @@ njqdev.vscode-python-typehint
 npxms.hide-gitignored
 piotrpalarz.vscode-gitignore-generator
 pranaygp.vscode-css-peek
-RandomFractalsInc.vscode-data-preview
 redhat.vscode-commons
 redhat.vscode-yaml
 rpinski.shebang-snippets
