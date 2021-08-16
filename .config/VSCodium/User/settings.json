@@ -95,5 +95,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
     },
+    "explorer.confirmDragAndDrop": false,
 
 }
