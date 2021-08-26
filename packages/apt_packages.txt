@@ -16,7 +16,6 @@ chrome-gnome-shell
 exfat-fuse
 p7zip-full
 p7zip-rar
-needrestart
 gnome-tweak-tool
 openssh-server
 openssh-client
@@ -77,3 +76,4 @@ libfontconfig1-dev
 libxfixes0-dev
 libxkbcommon-dev
 libnotify-bin
+needrestart
