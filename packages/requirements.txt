@@ -1,6 +1,5 @@
 kaggle
 jovian
-opendatasets
 autopep8
 bpytop
 youtube-dl
