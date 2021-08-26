@@ -73,5 +73,10 @@
 	{
 		"key": "shift+f1",
 		"command": "workbench.action.quickOpen"
-	}
+	},
+	{
+		"key": "ctrl+alt+l",
+		"command": "editor.action.formatDocument",
+		"when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+	},
 ]

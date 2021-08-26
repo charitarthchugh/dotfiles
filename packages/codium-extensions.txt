@@ -18,7 +18,6 @@ James-Yu.latex-workshop
 JeffersonQin.latex-snippets-jeff
 k--kato.intellij-idea-keybindings
 KevinRose.vsc-python-indent
-marp-team.marp-vscode
 mathpix.vscode-mathpix-markdown
 ms-azuretools.vscode-docker
 ms-pyright.pyright

@@ -1,5 +1,6 @@
 aaron-bond.better-comments
 akmittal.hugofy
+albert.TabOut
 alexisvt.flutter-snippets
 arcticicestudio.nord-visual-studio-code
 bmuskalla.vscode-tldr
