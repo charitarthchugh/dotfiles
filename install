@@ -27,7 +27,7 @@ while read package; do
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from apt!"
     else
-        echo "$package" >>apt_failed.txt
+        echo "$package" >> apt_failed.txt
     fi
 done <"${BASEDIR}/packages/apt_packages.txt"
 # install packages using pipx
@@ -36,18 +36,19 @@ while read package; do
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from pipx!"
     else
-        echo "$package" >>pipx_failed.txt
+        echo "$package" >> pipx_failed.txt
     fi
 done <"${BASEDIR}/packages/requirements.txt"
 # Install rustup    
 curl https://sh.rustup.rs -sSf | sh -s -- -y
+source ~/.cargo/env
 # Install packages from cargo
 while read package; do
     ~/.cargo/bin/cargo install "$package" -q
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from cargo!"
     else
-        echo "$package" >>cargo_failed.txt
+        echo "$package" >> cargo_failed.txt
     fi
 done <"${BASEDIR}/packages/cargo.txt"
 # Snap section- cannot use loop for snaps that need --classic
