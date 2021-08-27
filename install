@@ -39,9 +39,11 @@ while read package; do
         echo "$package" >>pipx_failed.txt
     fi
 done <"${BASEDIR}/packages/requirements.txt"
+# Install rustup    
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 # Install packages from cargo
 while read package; do
-    cargo install "$package" -q
+    ~/.cargo/bin/cargo install "$package" -q
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from cargo!"
     else

@@ -41,7 +41,6 @@ maven
 nodejs
 node-typescript
 npm
-cargo
 virt-manager
 pandoc
 
