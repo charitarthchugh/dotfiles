@@ -24,6 +24,7 @@ progress
 
 hub
 gh
+codium
 gedit
 golang
 python2
