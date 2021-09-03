@@ -23,6 +23,7 @@ Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 esbenp.prettier-vscode
+evzen-wybitul.magic-racket
 file-icons.file-icons
 fivethree.vscode-hugo-snippets
 formulahendry.auto-close-tag
@@ -64,6 +65,7 @@ rpinski.shebang-snippets
 sandcastle.vscode-open
 seripap.vscode-memory
 shd101wyy.markdown-preview-enhanced
+sjhuangx.vscode-scheme
 skyapps.fish-vscode
 tamasfe.even-better-toml
 tecosaur.latex-utilities
