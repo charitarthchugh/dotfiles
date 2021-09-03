@@ -2,134 +2,127 @@
     "com.github.tchar.ulauncher-albert-calculate-anything": {
         "id": "com.github.tchar.ulauncher-albert-calculate-anything",
         "url": "https://github.com/tchar/ulauncher-albert-calculate-anything",
-        "updated_at": "2021-07-26T19:43:21.718017",
-        "last_commit": "2dfbe786c20e3877ac98d389bbd13ad08e5129da",
-        "last_commit_time": "2021-07-26T17:42:15"
+        "updated_at": "2021-08-26T22:54:31.630248",
+        "last_commit": "ee0903174c8b87cd1f7c3b6c1acef10702547507",
+        "last_commit_time": "2021-08-12T06:39:56"
     },
     "com.github.andr3slelouch.ulauncher-gnome-extensions-prefs": {
         "id": "com.github.andr3slelouch.ulauncher-gnome-extensions-prefs",
         "url": "https://github.com/andr3slelouch/ulauncher-gnome-extensions-prefs",
-        "updated_at": "2021-07-26T19:55:21.228079",
+        "updated_at": "2021-08-26T22:54:38.235338",
         "last_commit": "fa41689dfbb2477c61ebbb64b5237dc7f44fa481",
         "last_commit_time": "2020-11-02T01:18:57"
     },
     "com.github.fajtak.ulauncher-weather": {
         "id": "com.github.fajtak.ulauncher-weather",
         "url": "https://github.com/fajtak/ulauncher-weather",
-        "updated_at": "2021-07-26T19:55:44.469639",
-        "last_commit": "3199eb7287c56dac4dc4a32311b49b5bdf3f0a2f",
-        "last_commit_time": "2021-07-07T07:56:03"
+        "updated_at": "2021-08-26T22:54:39.251340",
+        "last_commit": "d87a90a318646bdf81efa1a71392f300f45f8d5b",
+        "last_commit_time": "2021-08-12T08:03:26"
     },
     "com.github.plibither8.ulauncher-zoom": {
         "id": "com.github.plibither8.ulauncher-zoom",
         "url": "https://github.com/plibither8/ulauncher-zoom",
-        "updated_at": "2021-07-26T21:35:08.066365",
-        "last_commit": "3754ac09b436347f32de81f71084e91064e6c3ca",
-        "last_commit_time": "2021-06-25T07:17:19"
+        "updated_at": "2021-08-26T22:54:40.464537",
+        "last_commit": "2e9f13d474f8ae2a4b6285f6e80d4c4fdbf454e0",
+        "last_commit_time": "2021-08-22T04:01:49"
     },
     "com.github.mikebarkmin.ulauncher-obsidian": {
         "id": "com.github.mikebarkmin.ulauncher-obsidian",
         "url": "https://github.com/mikebarkmin/ulauncher-obsidian",
-        "updated_at": "202let g:compe.source.tabnine = {}1-07-26T21:35:36.919777",
+        "updated_at": "2021-08-26T22:54:41.758104",
         "last_commit": "85c869eda769eb7cd70b341451281038b5473b92",
         "last_commit_time": "2021-07-18T21:10:03"
     },
     "com.github.mikebarkmin.ulauncher-duckduckgo": {
         "id": "com.github.mikebarkmin.ulauncher-duckduckgo",
         "url": "https://github.com/mikebarkmin/ulauncher-duckduckgo",
-        "updated_at": "2021-07-26T21:36:20.198334",
-        "last_commit": "a44087ebac71f4c9a33fe88800986313b771447d",
-        "last_commit_time": "2021-07-15T11:03:21"
+        "updated_at": "2021-08-26T22:54:42.892532",
+        "last_commit": "f2ea6a187082c600a59acc9cca6e288d96f66cc0",
+        "last_commit_time": "2021-08-07T18:51:44"
     },
     "com.github.nastuzzisamy.ulauncher-custom-scripts": {
         "id": "com.github.nastuzzisamy.ulauncher-custom-scripts",
         "url": "https://github.com/NastuzziSamy/ulauncher-custom-scripts",
-        "updated_at": "2021-07-26T21:36:33.576592",
+        "updated_at": "2021-08-26T22:54:44.080928",
         "last_commit": "8249528fbaeb5210b063994149d85fc00146dc5e",
         "last_commit_time": "2021-04-16T11:45:26"
     },
     "com.github.kleber-swf.ulauncher-turn-off-screen": {
         "id": "com.github.kleber-swf.ulauncher-turn-off-screen",
         "url": "https://github.com/kleber-swf/ulauncher-turn-off-screen",
-        "updated_at": "2021-07-26T21:36:50.429141",
+        "updated_at": "2021-08-26T22:54:45.071678",
         "last_commit": "a461b89706008fcb5605b6e800fec29308b70a04",
         "last_commit_time": "2020-11-18T20:05:35"
     },
     "com.github.kleber-swf.ulauncher-toggle-dnd": {
         "id": "com.github.kleber-swf.ulauncher-toggle-dnd",
         "url": "https://github.com/kleber-swf/ulauncher-toggle-dnd",
-        "updated_at": "2021-07-26T21:37:14.302537",
+        "updated_at": "2021-08-26T22:54:46.249689",
         "last_commit": "13ab598869f5490f3b2a6ddeb93cb9eb8e88a1a1",
         "last_commit_time": "2020-09-25T00:34:56"
     },
     "com.github.elken.terminal-runner": {
         "id": "com.github.elken.terminal-runner",
         "url": "https://github.com/elken/Terminal-Runner",
-        "updated_at": "2021-07-26T21:37:25.581062",
+        "updated_at": "2021-08-26T22:54:47.340194",
         "last_commit": "6807ebe6047462bcce6063c63228eddcb8c6b481",
         "last_commit_time": "2020-02-22T23:04:04"
     },
     "com.github.rkarami.ulauncher-gitmoji": {
         "id": "com.github.rkarami.ulauncher-gitmoji",
         "url": "https://github.com/rkarami/ulauncher-gitmoji",
-        "updated_at": "2021-07-26T21:38:54.735882",
+        "updated_at": "2021-08-26T22:54:48.590269",
         "last_commit": "59ad2d0aa89696d41a29ce0efc845f2138f47b6e",
         "last_commit_time": "2019-09-26T13:21:43"
     },
     "com.github.fisadev.ulauncher-better-file-browser": {
         "id": "com.github.fisadev.ulauncher-better-file-browser",
         "url": "https://github.com/fisadev/ulauncher-better-file-browser",
-        "updated_at": "2021-07-26T21:39:25.380941",
+        "updated_at": "2021-08-26T22:54:49.654497",
         "last_commit": "8ec8a0dda09e172de62051cd1f251816ce4af368",
         "last_commit_time": "2019-09-06T19:20:09"
-    },
-    "com.github.brpaz.ulauncher-vscode-projects": {
-        "id": "com.github.brpaz.ulauncher-vscode-projects",
-        "url": "https://github.com/brpaz/ulauncher-vscode-projects",
-        "updated_at": "2021-07-26T21:42:20.285792",
-        "last_commit": "0e3c1b84a124f959d25b58f85e3ab31ee6aac72e",
-        "last_commit_time": "2021-02-03T19:57:59"
     },
     "com.github.friday.ulauncher-gnome-settings": {
         "id": "com.github.friday.ulauncher-gnome-settings",
         "url": "https://github.com/friday/ulauncher-gnome-settings",
-        "updated_at": "2021-07-26T21:46:42.113031",
-        "last_commit": "12281ba540740ed3f47cf1d49bcfc506ea78fbd1",
-        "last_commit_time": "2019-05-09T21:44:58"
+        "updated_at": "2021-08-26T22:54:52.337972",
+        "last_commit": "5c6b7589a6d70665a63a2421f92d44d51266b6fd",
+        "last_commit_time": "2021-07-31T14:41:16"
     },
     "com.github.dalanicolai.gnome-tracker-extension": {
         "id": "com.github.dalanicolai.gnome-tracker-extension",
         "url": "https://github.com/dalanicolai/gnome-tracker-extension",
-        "updated_at": "2021-07-26T21:57:28.288398",
+        "updated_at": "2021-08-26T22:54:54.228334",
         "last_commit": "59a68d3836627f3f13f5af9e78500ca398872637",
         "last_commit_time": "2021-04-25T10:56:02"
     },
     "com.github.brpaz.ulauncher-file-search": {
         "id": "com.github.brpaz.ulauncher-file-search",
         "url": "https://github.com/brpaz/ulauncher-file-search",
-        "updated_at": "2021-07-26T22:02:00.556270",
+        "updated_at": "2021-08-26T22:54:55.651237",
         "last_commit": "0ea61c2049b27f1ddfa81d1844876f21dd9d6e7b",
         "last_commit_time": "2020-07-03T13:30:16"
     },
     "com.github.randomcharacter.ulauncher-meet": {
         "id": "com.github.randomcharacter.ulauncher-meet",
         "url": "https://github.com/randomCharacter/ulauncher-meet",
-        "updated_at": "2021-07-26T22:12:34.411760",
+        "updated_at": "2021-08-26T22:54:56.631501",
         "last_commit": "f2fe055b6e21e15ea4c65918a6f499d61d4cf4b0",
         "last_commit_time": "2021-02-26T22:04:21"
     },
     "com.github.brpaz.ulauncher-statuspages": {
         "id": "com.github.brpaz.ulauncher-statuspages",
         "url": "https://github.com/brpaz/ulauncher-statuspages",
-        "updated_at": "2021-07-26T22:13:55.466603",
+        "updated_at": "2021-08-26T22:55:02.410103",
         "last_commit": "ef71cdc608b85ad3f247b18a984542258c9e3250",
         "last_commit_time": "2019-12-03T20:19:02"
     },
     "com.github.kazumasan.ulauncher-sessions": {
         "id": "com.github.kazumasan.ulauncher-sessions",
         "url": "https://github.com/Kazumasan/ulauncher-sessions",
-        "updated_at": "2021-08-03T13:28:29.784698",
-        "last_commit": "7e48b0191aa74bcdf101c25dd106e67d0974b1b5",
-        "last_commit_time": "2021-03-14T02:45:15"
+        "updated_at": "2021-08-26T22:55:05.828361",
+        "last_commit": "d999aeb6db95695e82119c898d0e657d25320a4e",
+        "last_commit_time": "2021-08-13T20:20:23"
     }
 }

@@ -29,7 +29,16 @@
     },
     {
       "class": "Ulauncher"
+    },
+    {
+      "class": "jetbrains-idea",
+      "title": "win0"
+    },
+    {
+      "class": "jetbrains-pycharm",
+      "title": "win0"
     }
   ],
+  "skiptaskbarhidden": [],
   "log_on_focus": false
 }
