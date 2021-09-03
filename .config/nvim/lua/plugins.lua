@@ -4,8 +4,15 @@ return require('packer').startup(
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   -- Compe
-  use "hrsh7th/nvim-compe" --completion
-  use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
+  use {"hrsh7th/nvim-cmp", 
+   requires = {    
+    "hrsh7th/vim-vsnip",
+    "hrsh7th/cmp-buffer",
+    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip",
+    }
+  }
+  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   -- Colorscheme, statusline
 -- If you are using Packer
   use 'marko-cerovac/material.nvim'
@@ -65,5 +72,9 @@ use {
 }
 use 'kdheepak/lazygit.nvim'
 use "lukas-reineke/indent-blankline.nvim"
-use {'ms-jpq/chadtree', branch="chad", run="python3 -m chadtree deps"}
+use {
+  'kyazdani42/nvim-tree.lua',
+  requires = 'kyazdani42/nvim-web-devicons'
+}
+use "wlangstroth/vim-racket"
 end)

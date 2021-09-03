@@ -7,24 +7,74 @@ local opt = vim.opt
 local api = vim.api
 local lsp = vim.lsp
 -- Compe
-require('compe').setup {
-    enabled = true;
-    min_length = 1;
-    autocomplete = true;
-    source = {
-      path = true;
-      buffer = true;
-      calc = true;
-      nvim_lsp = true;
-      nvim_lua = true;
-      vsnip = true;
-      tabnine = true;
-      treesitter=true;
-    };
-  }
-local t = function(str)
-   return api.nvim_replace_termcodes(str, true, true, true)
-end
+vim.opt.completeopt = "menuone,noselect"
+
+-- nvim-cmp setup
+cmp = require "cmp"
+cmp.setup {
+   snippet = {
+      expand = function(args)
+         require("luasnip").lsp_expand(args.body)
+      end,
+   },
+   formatting = {
+      format = function(entry, vim_item)
+         -- load lspkind icons
+         vim_item.kind = string.format(
+            "%s %s",
+            require("plugins.configs.lspkind_icons").icons[vim_item.kind],
+            vim_item.kind
+         )
+
+         vim_item.menu = ({
+            nvim_lsp = "[LSP]",
+            nvim_lua = "[Lua]",
+            buffer = "[BUF]",
+         })[entry.source.name]
+
+         return vim_item
+      end,
+   },
+   mapping = {
+      ["<C-p>"] = cmp.mapping.select_prev_item(),
+      ["<C-n>"] = cmp.mapping.select_next_item(),
+      ["<C-d>"] = cmp.mapping.scroll_docs(-4),
+      ["<C-f>"] = cmp.mapping.scroll_docs(4),
+      ["<C-Space>"] = cmp.mapping.complete(),
+      ["<C-e>"] = cmp.mapping.close(),
+      ["<CR>"] = cmp.mapping.confirm {
+         behavior = cmp.ConfirmBehavior.Replace,
+         select = true,
+      },
+      ["<Tab>"] = function(fallback)
+         if vim.fn.pumvisible() == 1 then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-n>", true, true, true), "n")
+         elseif require("luasnip").expand_or_jumpable() then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-expand-or-jump", true, true, true), "")
+         else
+            fallback()
+         end
+      end,
+      ["<S-Tab>"] = function(fallback)
+         if vim.fn.pumvisible() == 1 then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<C-p>", true, true, true), "n")
+         elseif require("luasnip").jumpable(-1) then
+            vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-jump-prev", true, true, true), "")
+         else
+            fallback()
+         end
+      end,
+   },
+   sources = {
+      { name = "nvim_lsp" },
+      { name = "luasnip" },
+      { name = "buffer" },
+      { name = "nvim_lua" },
+   },
+}
+-- function(str)
+--    return api.nvim_replace_termcodes(str, true, true, true)
+-- end
 local check_back_space = function()
   local col = fn.col('.') - 1
   return col == 0 or fn.getline('.'):sub(col, col):match('%s') ~= nil
@@ -72,16 +122,20 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
 -- Colorscheme and Statusline
 --Lua:
 g.material_style = "deep ocean"
-g.material_italic_comments = true
-g.material_italic_keywords = true
-g.material_italic_functions = true
-g.material_italic_variables = false
+require("material").setup({
+  italics = {
+    comments = true,
+    strings=false,
+    functions=true,
+    variables=true
+  }
+})
 require('lualine').setup {
   options = {
     theme = 'material-nvim'
   }
 }
-require('material').set()
+cmd([[colorscheme material]])
 
 opt.termguicolors = true;
 -- Dashboard
@@ -106,10 +160,10 @@ fn.sign_define('LightBulbSign', { text = "", texthl = "", linehl="", numhl="" })
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  ignore_install = {}, -- List of parsers to ignore installing
   highlight = {
     enable = true,              -- false will disable the whole extension
-    disable = { "c", "rust" },  -- list of language that will be disabled
+    disable = {},  -- list of language that will be disabled
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
     -- Using this option may slow down your editor, and you may see some duplicate highlights.
@@ -119,3 +173,58 @@ require'nvim-treesitter.configs'.setup {
 }
 g.neoformat_enabled_python = {'autopep8', 'black', 'docformatter'}
 g.indentLine_fileTypeExclude = {'dashboard'}
+-- NvimTree
+
+g.nvim_tree_add_trailing = 0 -- append a trailing slash to folder names
+g.nvim_tree_allow_resize = 1
+g.nvim_tree_auto_close = 0 -- closes tree when it's the last window
+g.nvim_tree_auto_ignore_ft = { "dashboard" } -- don't open tree on specific fiypes.
+g.nvim_tree_auto_open = 0
+g.nvim_tree_disable_netrw = 1
+g.nvim_tree_follow = 1
+g.nvim_tree_git_hl = 1
+g.nvim_tree_gitignore = 1
+g.nvim_tree_hide_dotfiles = 0
+g.nvim_tree_highlight_opened_files = 0
+g.nvim_tree_hijack_netrw = 0
+g.nvim_tree_indent_markers = 1
+g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
+g.nvim_tree_quit_on_open = 0 -- closes tree when file's opened
+g.nvim_tree_root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ", 1000), "?:gs?^??" }
+g.nvim_tree_side = "left"
+g.nvim_tree_tab_open = 0
+g.nvim_tree_update_cwd = 1
+g.nvim_tree_width = 25
+g.nvim_tree_lsp_diagnostics = 0
+
+g.nvim_tree_show_icons = {
+   folders = 1,
+   -- folder_arrows= 1
+   files = 1,
+   git = 1,
+}
+
+g.nvim_tree_icons = {
+   default = "",
+   symlink = "",
+   git = {
+      deleted = "",
+      ignored = "◌",
+      renamed = "➜",
+      staged = "✓",
+      unmerged = "",
+      unstaged = "✗",
+      untracked = "★",
+   },
+   folder = {
+      -- disable indent_markers option to get arrows working or if you want both arrows and indent then just add the arrow icons in front            ofthe default and opened folders below!
+      -- arrow_open = "",
+      -- arrow_closed = "",
+      default = "",
+      empty = "", -- 
+      empty_open = "",
+      open = "",
+      symlink = "",
+      symlink_open = "",
+   },
+}
