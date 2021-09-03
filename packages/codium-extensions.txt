@@ -18,6 +18,7 @@ James-Yu.latex-workshop
 JeffersonQin.latex-snippets-jeff
 k--kato.intellij-idea-keybindings
 KevinRose.vsc-python-indent
+Koihik.vscode-lua-format
 mathpix.vscode-mathpix-markdown
 ms-azuretools.vscode-docker
 ms-pyright.pyright
@@ -28,5 +29,7 @@ redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
 rusnasonov.vscode-hugo
+sumneko.lua
+tamasfe.even-better-toml
 valentjn.vscode-ltex
 vincaslt.highlight-matching-tag
