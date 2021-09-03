@@ -11,8 +11,8 @@ done < "$BASEDIR/packages/codium-extensions.txt"
 while read package; do
     code --install-extension "$package"
     if [[ $? -eq 0 ]]; then
-        echo "$package is installed from codium!"
+        echo "$package is installed from code!"
     else
-        echo "$package" >>codium_failed.txt
+        echo "$package" >>code_failed.txt
     fi
 done < "$BASEDIR/packages/code-extensions.txt"
