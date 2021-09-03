@@ -25,6 +25,8 @@ progress
 hub
 gh
 codium
+exa
+fd-find
 gedit
 golang
 python2
@@ -46,7 +48,6 @@ virt-manager
 pandoc
 
 winehq-staging
-thunar
 vlc
 gimp
 geary
