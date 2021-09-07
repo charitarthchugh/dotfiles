@@ -23,8 +23,8 @@
 # m h  dom mon dow   command
 MAILTO="charitarth.chughg@gmail.com"
 #35 7 * * 1-5 DISPLAY=:0 /home/ccd/bin/automeet
-0 15 * * * /snap/bin/code --list-extensions > ~/dotfiles/packages/code-extensions.txt
-0 15 * * * /snap/bin/codium --list-extensions > ~/dotfiles/packages/codium-extensions.txt
+0 15 * * * code --list-extensions > ~/dotfiles/packages/code-extensions.txt
+0 15 * * * codium --list-extensions > ~/dotfiles/packages/codium-extensions.txt
 0 15 * * * cd ~/.local/share/fonts/NerdFonts; git gc --aggressive --prune
 0 16 * * * cd ~/.local/share/fonts/Google; git gc --aggressive --prune 
 # BEGIN GIT MAINTENANCE SCHEDULE
