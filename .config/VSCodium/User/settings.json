@@ -100,5 +100,6 @@
 },
 "editor.defaultFormatter": "esbenp.prettier-vscode",
 "editor.formatOnSave": true,
-"window.titleBarStyle": "custom"
+"window.titleBarStyle": "custom",
+"editor.bracketPairColorization.enabled": true
 }
