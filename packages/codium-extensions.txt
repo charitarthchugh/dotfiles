@@ -23,6 +23,7 @@ mathpix.vscode-mathpix-markdown
 ms-azuretools.vscode-docker
 ms-pyright.pyright
 ms-python.python
+ms-toolsai.jupyter
 PKief.markdown-checkbox
 PKief.material-icon-theme
 redhat.java
