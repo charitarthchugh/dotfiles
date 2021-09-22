@@ -101,5 +101,6 @@
 "editor.defaultFormatter": "esbenp.prettier-vscode",
 "editor.formatOnSave": true,
 "window.titleBarStyle": "custom",
-"editor.bracketPairColorization.enabled": true
+"editor.bracketPairColorization.enabled": true,
+"remote.SSH.remoteServerListenOnSocket": true,
 }
