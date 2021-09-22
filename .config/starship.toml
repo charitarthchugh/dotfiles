@@ -30,10 +30,10 @@ error_symbol = "[❯](red)"
 
 [username]
 style_user = "242"
-format = "[$user]($style) @"
+format = "[$user]($style) @ "
 [hostname]
 style = "242"
-format = "[$hostname]($style)"
+format = "[$hostname]($style) "
 [package]
 format = " [$symbol$version]($style) "
 style = "242"
