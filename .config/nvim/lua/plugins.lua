@@ -10,7 +10,10 @@ return require('packer').startup(
     "hrsh7th/cmp-buffer",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
-    }
+    "hrsh7th/cmp-calc",
+    "hrsh7th/cmp-path",
+    "hrsh7th/cmp-nvim-lsp"
+    },
   }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   -- Colorscheme, statusline
@@ -77,4 +80,5 @@ use {
   requires = 'kyazdani42/nvim-web-devicons'
 }
 use "wlangstroth/vim-racket"
+use "tpope/vim-unimpaired"
 end)
