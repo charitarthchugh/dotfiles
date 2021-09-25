@@ -16,8 +16,7 @@ return require('packer').startup(
     },
   }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  -- Colorscheme, statusline
--- If you are using Packer
+
   use 'marko-cerovac/material.nvim'
   use {
     'hoob3rt/lualine.nvim',
