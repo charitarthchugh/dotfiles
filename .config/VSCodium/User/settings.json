@@ -18,7 +18,6 @@
   "dart.debugExternalLibraries": false,
   "dart.debugSdkLibraries": false,
   "update.mode": "none",
-  "window.zoomLevel": 1,
   "explorer.confirmDelete": false,
   "git.autofetch": true,
   "workbench.iconTheme": "file-icons",
@@ -81,7 +80,7 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.defaultInterpreterPath": "/usr/bin/python3",
   "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
-"jupyter.askForKernelRestart": false,
+  "jupyter.askForKernelRestart": false,
   "[python]": {
     "editor.defaultFormatter": "ms-python.python"
   },
@@ -97,10 +96,16 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"editor.defaultFormatter": "esbenp.prettier-vscode",
-"editor.formatOnSave": true,
-"window.titleBarStyle": "custom",
-"editor.bracketPairColorization.enabled": true,
-"remote.SSH.remoteServerListenOnSocket": true,
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "window.titleBarStyle": "custom",
+  "editor.bracketPairColorization.enabled": true,
+  "remote.SSH.remoteServerListenOnSocket": true,
+  "remote.SSH.remotePlatform": {
+    "ccd": "linux",
+    "ccl": "linux"
+  },
+  "window.zoomLevel": 2,
+  "diffEditor.ignoreTrimWhitespace": false
 }
