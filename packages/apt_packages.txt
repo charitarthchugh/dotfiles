@@ -1,5 +1,8 @@
 gnome-session
 alacritty
+nautilus
+baobab
+
 
 git
 file
@@ -65,17 +68,7 @@ keepassxc
 font-manager
 syncthing
 
-gtk2-engines-murrine
-gtk2-engines-pixbuf
-sassc
-optipng
-inkscape
-libglib―― 09:44:01 - rustup ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-2.0-dev-bin
-libxml2-utils
-dconf-editor
-gnome-themes-standard
-gir1.2-gtop-2.0
+
 lm-sensors
 libnotify-bin
 needrestart
