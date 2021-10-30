@@ -23,7 +23,8 @@
   "workbench.iconTheme": "file-icons",
   "jupyter.alwaysTrustNotebooks": true,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+    "*.ipynb": "jupyter-notebook",
+    "*.pdf": "latex-workshop-pdf-hook"
   },
   "git.confirmSync": false,
   "terminal.external.linuxExec": "alacritty",
@@ -107,5 +108,6 @@
     "ccl": "linux"
   },
   "window.zoomLevel": 2,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "material-icon-theme.showWelcomeMessage": false
 }
