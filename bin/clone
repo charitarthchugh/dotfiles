@@ -1,2 +1,2 @@
 #! /usr/bin/env bash
-gh repo clone "$1" -- "$@"
+gh repo clone "$@"
