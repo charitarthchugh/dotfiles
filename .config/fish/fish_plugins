@@ -6,10 +6,10 @@ PatrickF1/fzf.fish
 franciscolourenco/done
 jorgebucaran/autopair.fish
 laughedelic/brew-completions
-jhillyerd/plugin-git
 jorgebucaran/nvm.fish
 gazorby/fish-abbreviation-tips
 brgmnn/fish-docker-compose
 gazorby/fish-exa
 oh-my-fish/plugin-bang-bang
 jorgebucaran/fisher
+wfxr/forgit
