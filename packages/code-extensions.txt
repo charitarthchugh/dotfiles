@@ -2,11 +2,9 @@ aaron-bond.better-comments
 akmittal.hugofy
 albert.TabOut
 alexisvt.flutter-snippets
-arcticicestudio.nord-visual-studio-code
 bmuskalla.vscode-tldr
 bodil.prettier-toml
 budparr.language-hugo-vscode
-christian-kohler.npm-intellisense
 cschleiden.vscode-github-actions
 cssho.vscode-svgviewer
 darkriszty.markdown-table-prettify
@@ -18,7 +16,6 @@ donjayamanne.githistory
 dotiful.dotfiles-syntax-highlighting
 eamodio.gitlens
 ecmel.vscode-html-css
-eg2.vscode-npm-script
 Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
@@ -34,7 +31,6 @@ geoffkaile.latex-count
 GitHub.codespaces
 GitHub.vscode-pull-request-github
 goessner.mdmath
-golang.go
 HitkoDev.vscode-remark-hugo
 ionutvmi.path-autocomplete
 James-Yu.latex-workshop
@@ -50,7 +46,7 @@ ms-azuretools.vscode-docker
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
-ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -60,7 +56,6 @@ njqdev.vscode-python-typehint
 npxms.hide-gitignored
 piotrpalarz.vscode-gitignore-generator
 pranaygp.vscode-css-peek
-redhat.vscode-commons
 redhat.vscode-yaml
 rpinski.shebang-snippets
 sandcastle.vscode-open
