@@ -67,7 +67,7 @@ cheese
 keepassxc
 font-manager
 syncthing
-
+brave-browser
 
 lm-sensors
 libnotify-bin
