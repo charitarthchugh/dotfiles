@@ -31,6 +31,7 @@ max_concurrency = 5
 repos = [
     "~/Dev/IdeaProjects/Personal/*/*/",
     "~/Dev/GitClone/*/",
+    "~/Dev/Reading/*/",
     "~/.local/share/fonts/*/"
 ]
 
@@ -56,11 +57,11 @@ self_update = false
 #[brew]
 #greedy_cask = true
 
-#[linux]
+[linux]
 # Arguments to pass yay when updating packages
 #yay_arguments = "--nodevel"
 #trizen_arguments = "--devel"
-#enable_tlmgr = true
+enable_tlmgr = true
 #emerge_sync_flags = "-q"
 #emerge_update_flags = "-uDNa --with-bdeps=y world"
 
