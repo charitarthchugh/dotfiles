@@ -67,8 +67,8 @@ capabilities.textDocument.completion.completionItem.resolveSupport = {
     'additionalTextEdits',
   }
 }
+g.syntastic_enable_racket_racket_checker = 1
 -- Colorscheme and Statusline
---Lua:
 g.material_style = "deep ocean"
 require("material").setup({
   italics = {
@@ -122,60 +122,64 @@ require'nvim-treesitter.configs'.setup {
 g.neoformat_enabled_python = {'autopep8', 'black', 'docformatter'}
 g.indentLine_fileTypeExclude = {'dashboard'}
 -- NvimTree
-
-g.nvim_tree_add_trailing = 0 -- append a trailing slash to folder names
-g.nvim_tree_allow_resize = 1
-g.nvim_tree_auto_close = 0 -- closes tree when it's the last window
-g.nvim_tree_auto_ignore_ft = { "dashboard" } -- don't open tree on specific fiypes.
-g.nvim_tree_auto_open = 0
-g.nvim_tree_disable_netrw = 1
-g.nvim_tree_follow = 1
-g.nvim_tree_git_hl = 1
-g.nvim_tree_gitignore = 1
-g.nvim_tree_hide_dotfiles = 0
-g.nvim_tree_highlight_opened_files = 0
-g.nvim_tree_hijack_netrw = 0
-g.nvim_tree_indent_markers = 1
+g.nvim_tree_auto_ignore_ft = { "dashboard" }
 g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
-g.nvim_tree_quit_on_open = 0 -- closes tree when file's opened
-g.nvim_tree_root_folder_modifier = table.concat { ":t:gs?$?/..", string.rep(" ", 1000), "?:gs?^??" }
-g.nvim_tree_side = "left"
-g.nvim_tree_tab_open = 0
-g.nvim_tree_update_cwd = 1
-g.nvim_tree_width = 25
-g.nvim_tree_lsp_diagnostics = 0
+require'nvim-tree'.setup({
+  auto_close = true,
+  open_on_tab = true,
+  diagnostics = {
+    enable = true
+  },
+  filters = {
+    dotfiles = true
+  }
+})
 
-g.nvim_tree_show_icons = {
-   folders = 1,
-   -- folder_arrows= 1
-   files = 1,
-   git = 1,
-}
 
-g.nvim_tree_icons = {
-   default = "",
-   symlink = "",
-   git = {
-      deleted = "",
-      ignored = "◌",
-      renamed = "➜",
-      staged = "✓",
-      unmerged = "",
-      unstaged = "✗",
-      untracked = "★",
-   },
-   folder = {
-      -- disable indent_markers option to get arrows working or if you want both arrows and indent then just add the arrow icons in front            ofthe default and opened folders below!
-      -- arrow_open = "",
-      -- arrow_closed = "",
-      default = "",
-      empty = "", -- 
-      empty_open = "",
-      open = "",
-      symlink = "",
-      symlink_open = "",
-   },
-}
+cmd[[
+  nnoremap <C-n> :NvimTreeToggle<CR>
+]]
+cmd[[
+  nnoremap <leader>r :NvimTreeRefresh<CR>
+]]
+cmd[[
+  nnoremap <leader>n :NvimTreeFindFile<CR>
+]]
+-- require("autosave").setup({
+--   on_off_commands = true,
+--   events = {"InsertLeave"}
+-- })
+require('bufferline').setup({
+  diagnostics = "nvim_lsp",
+  offsets = {
+    {
+      filetype = "NvimTree",
+      text = function()
+        return fn.getcwd()
+      end,
+      highlight = "Directory",
+      text_align = "left"
+    }
+  }
+  -- offsets = {filetype = "NvimTree", text = "File Explorer" | function , text_align = "left" | "center" | "right"},
+})
+
+cmd[[
+  nnoremap <silent>[b :BufferLineCycleNext<CR>
+  nnoremap <silent>b] :BufferLineCyclePrev<CR>
+  nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
+  nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
+  nnoremap <silent><leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
+  nnoremap <silent><leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
+  nnoremap <silent><leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
+  nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
+  nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
+  nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
+  nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+]]
+cmd[[
+autocmd BufWritePre *.py execute ':Black'
+]]
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 require("lspconfig").latex.setup({
