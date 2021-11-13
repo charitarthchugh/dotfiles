@@ -10,6 +10,9 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 echo "deb http://packages.azlux.fr/debian/ stable main" | sudo tee /etc/apt/sources.list.d/azlux.list
 wget -qO - https://azlux.fr/repo.gpg.key | sudo apt-key add -
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
 # Codium
 sudo extrepo enable vscodium
 # Wine
@@ -56,13 +59,29 @@ while read package; do
         echo "$package" >> cargo_failed.txt
     fi
 done <"${BASEDIR}/packages/cargo.txt"
+while read package; do
+    codium --install-extension "$package"
+    if [[ $? -eq 0 ]]; then
+        echo "$package is installed from codium!"
+    else
+        echo "$package" >>codium_failed.txt
+    fi
+done < "$BASEDIR/packages/codium-extensions.txt"
+while read package; do
+    code --install-extension "$package"
+    if [[ $? -eq 0 ]]; then
+        echo "$package is installed from code!"
+    else
+        echo "$package" >>code_failed.txt
+    fi
+done < "$BASEDIR/packages/code-extensions.txt"
 # Snap section- cannot use loop for snaps that need --classic
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic pycharm-professional
 sudo snap install --classic code
 sudo snap install --classic codium
 sudo snap install --classic flutter
-sudo snap install starship glow hugo brave
+sudo snap install starship glow hugo
 
 # Set GTK Themes
 mkdir -p $HOME/Dev/GTK

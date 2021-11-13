@@ -16,7 +16,7 @@ return require('packer').startup(
     },
   }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   use 'marko-cerovac/material.nvim'
   use {
     'hoob3rt/lualine.nvim',
@@ -42,13 +42,11 @@ return require('packer').startup(
       require('gitsigns').setup()
     end
   }
-use {'Pocco81/AutoSave.nvim', config= function ()
-  require("autosave").setup()
-end}
+use {'Pocco81/AutoSave.nvim'}
 use {
   "folke/which-key.nvim",
   config = function()
-    require("which-key").setup {}
+    require("which-key").setup()
   end
 }
 use {
@@ -82,4 +80,5 @@ use {
 }
 use "wlangstroth/vim-racket"
 use "tpope/vim-unimpaired"
+use "psf/black"
 end)
