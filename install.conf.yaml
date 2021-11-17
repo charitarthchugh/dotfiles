@@ -73,14 +73,14 @@
     - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
       description: Install Fisher
     - command: ln -sf ~/dotfiles/.config/fish/fish_plugins ~/.config/fish/fish_plugins
-      description: Link fish plugins
+      description: Install fish plugins
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
     - command: git clone https://github.com/zplug/zplug ~/.zplug
       description: Install zplug
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim
-    - command: git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    - command: git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     - description: Install packer for Neovim 
     - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
       description: Install CoC Extensions
