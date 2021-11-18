@@ -16,6 +16,8 @@ cmake
 flatpak
 vim
 neovim
+adb
+figlet
 trash-cli
 xclip
 chrome-gnome-shell
