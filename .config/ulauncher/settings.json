@@ -3,7 +3,7 @@
     "clear-previous-query": true,
     "grab-mouse-pointer": false,
     "hotkey-show-app": "<Super>space",
-    "render-on-screen": "default-monitor",
+    "render-on-screen": "mouse-pointer-monitor",
     "show-indicator-icon": false,
     "show-recent-apps": "5",
     "terminal-command": "alacritty -e",
