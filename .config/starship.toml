@@ -40,7 +40,8 @@ style = "242"
 
 [python]
 style = "242"
-format = "[${symbol}${pyenv_prefix}(${version} )(($virtualenv))]($style) "
+symbol = "🐍"
+format = "[${pyenv_prefix}${version} ($virtualenv)]($style) "
 
 [java]
 format = "[${symbol}(${version})]($style) "
