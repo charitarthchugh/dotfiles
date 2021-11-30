@@ -6,3 +6,4 @@ end
 export BETTER_EXCEPTIONS=1
 fzf_configure_bindings
 starship init fish | source
+starship completions | source 
