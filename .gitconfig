@@ -18,9 +18,9 @@
 [credential]
 	helper = store
 [maintenance]
-	repo = /home/ccd/dotfiles
-	repo = /home/ccd/.local/share/fonts/NerdFonts
-	repo = /home/ccd/.local/share/fonts/Google
+	repo = /home/cc/dotfiles
+	repo = /home/cc/.local/share/fonts/NerdFonts
+	repo = /home/cc/.local/share/fonts/Google
 [pager]
   diff = delta
   log = delta
