@@ -29,6 +29,7 @@ formulahendry.code-runner
 foxundermoon.shell-format
 geoffkaile.latex-count
 GitHub.codespaces
+GitHub.remotehub
 GitHub.vscode-pull-request-github
 goessner.mdmath
 HitkoDev.vscode-remark-hugo
