@@ -37,6 +37,9 @@
     {
       "class": "jetbrains-pycharm",
       "title": "win0"
+    },
+    {
+      "class": "re.sonny.Junction"
     }
   ],
   "skiptaskbarhidden": [],
