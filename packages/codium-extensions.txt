@@ -24,6 +24,7 @@ KevinRose.vsc-python-indent
 Koihik.vscode-lua-format
 mads-hartmann.bash-ide-vscode
 mathpix.vscode-mathpix-markdown
+mhutchie.git-graph
 ms-azuretools.vscode-docker
 ms-pyright.pyright
 ms-python.python
@@ -31,9 +32,11 @@ ms-toolsai.jupyter
 pinage404.bash-extension-pack
 PKief.markdown-checkbox
 PKief.material-icon-theme
+RandomFractalsInc.vscode-data-preview
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
+ritwickdey.LiveServer
 rogalmic.bash-debug
 rusnasonov.vscode-hugo
 sumneko.lua
