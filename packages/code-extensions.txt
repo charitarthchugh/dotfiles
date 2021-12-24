@@ -62,7 +62,6 @@ pranaygp.vscode-css-peek
 redhat.vscode-yaml
 rpinski.shebang-snippets
 sandcastle.vscode-open
-seripap.vscode-memory
 shd101wyy.markdown-preview-enhanced
 sjhuangx.vscode-scheme
 skyapps.fish-vscode
