@@ -43,20 +43,14 @@ cmp.setup({
     { name = 'buffer' },
   }
 })
-require("nvim-autopairs").setup({
-  disable_filetype={"dashboard", "TelescopePrompt"}
-})
-require("nvim-autopairs.completion.cmp").setup({
-  map_cr = true, --  map <CR> on insert mode
-  map_complete = true, -- it will auto insert `(` (map_char) after select function or method item
-  auto_select = true, -- automatically select the first item
-  insert = false, -- use insert confirm behavior instead of replace
-  map_char = { -- modifies the function or method delimiter by filetypes
-    all = '(',
-    tex = '{'
-  },
+local npairs = require("nvim-autopairs")
+npairs.setup({
+  disable_filetype= { "dashboard", "TelescopePrompt"},
+  check_ts = true,
   ignored_next_char = "[%w%.]"
 })
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on( 'confirm_done', cmp_autopairs.on_confirm_done({  map_char = { tex = '' } }))
 -- Snippet Support
 local capabilities = lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
@@ -122,14 +116,14 @@ require'nvim-treesitter.configs'.setup {
 g.neoformat_enabled_python = {'autopep8', 'black', 'docformatter'}
 g.indentLine_fileTypeExclude = {'dashboard'}
 -- NvimTree
-g.nvim_tree_auto_ignore_ft = { "dashboard" }
-g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
+-- g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
 require'nvim-tree'.setup({
   auto_close = true,
   open_on_tab = true,
   diagnostics = {
     enable = true
   },
+  ignore__ft_on_setup = {"dashboard"}
 })
 
 
