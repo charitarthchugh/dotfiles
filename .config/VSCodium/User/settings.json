@@ -110,5 +110,6 @@
   "window.zoomLevel": 2,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
-  "python.formatting.blackPath": "~/.local/bin/black"
+  "python.formatting.blackPath": "~/.local/bin/black",
+  "terminal.integrated.defaultProfile.linux": "fish"
 }
