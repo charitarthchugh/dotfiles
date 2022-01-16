@@ -5,9 +5,42 @@ local g = vim.g
 local opt = vim.opt
 local api = vim.api
 local lsp = vim.lsp
--- Compe
+-- LSP
+local lsp_installer = require 'nvim-lsp-installer'
+lsp_servers = {
+"bashls",
+"html",
+"eslint",
+"jsonls",
+"grammarly",
+"ltex",
+'sunneko_lua',
+"pyright",
+"xml",
+"yaml",
+"remark_ls",
+"tsserver"
+}
+for _, name in pairs(lsp_servers) do
+  local server_is_found, server = lsp_installer.get_server(name)
+  if server_is_found then
+    if not server:is_installed() then
+      print("Installing " .. name)
+      server:install()
+    end
+  end
+end
+lsp_installer.on_server_ready(function(server)
+  local opts = {}
+  server:setup(opts) 
+end)
+-- Cmp
+local lspkind = require('lspkind')
 local cmp = require('cmp')
 cmp.setup({
+  formatting = {
+    format = lspkind.cmp_format(),
+  },  
   snippet = {
     expand = function(args)
       -- For `vsnip` user.
@@ -30,7 +63,7 @@ cmp.setup({
   },
   sources = {
     { name = 'nvim_lsp' },
-
+    -- { name = 'treesitter'},
     -- For vsnip user.
     { name = 'vsnip' },
 
@@ -38,6 +71,7 @@ cmp.setup({
     { name = 'luasnip' },
      -- Tabnine 
     { name = 'cmp_tabnine' },
+    { name = 'cmp_git'},
     { name = 'path' },
     { name = 'nvim_lua' },
     { name = 'buffer' },
@@ -82,22 +116,6 @@ cmd([[colorscheme material]])
 opt.termguicolors = true;
 -- Dashboard
 g.dashboard_default_executive ='telescope';
---LSP
-require('lspinstall').setup(); -- important
-
-local function setup_servers()
-  require'lspinstall'.setup()
-  local servers = require'lspinstall'.installed_servers()
-  for _, server in pairs(servers) do
-    require'lspconfig'[server].setup{}
-  end
-end
-
-setup_servers()
-require'lspinstall'.post_install_hook = function ()
-  setup_servers() -- reload installed servers
-  vim.cmd("bufdo e") -- this triggers the FileType autocmd that starts the server
-end
 fn.sign_define('LightBulbSign', { text = "", texthl = "", linehl="", numhl="" })
 
 require'nvim-treesitter.configs'.setup {
@@ -171,23 +189,4 @@ cmd[[
 cmd[[
 autocmd BufWritePre *.py execute ':Black'
 ]]
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
-require("lspconfig").latex.setup({
-   capabilities = capabilities
-})
-require("lspconfig").yaml.setup({
-   capabilities = capabilities
-})
-require("lspconfig").vim.setup({
-   capabilities = capabilities
-})
-require("lspconfig").python.setup({
-   capabilities = capabilities
-})
-require("lspconfig").lua.setup({
-   capabilities = capabilities
-})
-require("lspconfig").json.setup({
-   capabilities = capabilities
-})
+
