@@ -111,5 +111,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
   "python.formatting.blackPath": "~/.local/bin/black",
-  "terminal.integrated.defaultProfile.linux": "fish"
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "Codegenx.Token": "44be2396d00666e80c423edb0b801578a63589e740553ec7385c8f25b1215ae5.72057285b3883b0241ae5409a4366428b3d020362b112facc43488f562c26fd5"
 }
