@@ -12,7 +12,9 @@ return require('packer').startup(
     "saadparwaiz1/cmp_luasnip",
     "hrsh7th/cmp-calc",
     "hrsh7th/cmp-path",
-    "hrsh7th/cmp-nvim-lsp"
+    "hrsh7th/cmp-nvim-lsp",
+    "ray-x/cmp-treesitter",
+    "onsails/lspkind-nvim"
     },
   }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
@@ -24,7 +26,7 @@ return require('packer').startup(
   }
   --LSP
   use {'neovim/nvim-lspconfig'}
-  use {'kabouzeid/nvim-lspinstall', requires = 'neovim/nvim-lspconfig'}
+  use {'williamboman/nvim-lsp-installer', requires = 'neovim/nvim-lspconfig'}
   use {'kosayoda/nvim-lightbulb'}
   -- Startup
   use {'glepnir/dashboard-nvim', requires={'nvim-telescope/telescope.nvim', 'nvim-lua/popup.nvim','nvim-lua/plenary.nvim'}}
@@ -78,7 +80,14 @@ use {
   'kyazdani42/nvim-tree.lua',
   requires = 'kyazdani42/nvim-web-devicons'
 }
-use "wlangstroth/vim-racket"
+use {"petertriho/cmp-git", requires= "nvim-lua/plenary.nvim"}
+use {
+    's1n7ax/nvim-terminal',
+    config = function()
+        vim.o.hidden = true
+        require('nvim-terminal').setup()
+    end,
+}
 use "tpope/vim-unimpaired"
 use "psf/black"
 end)

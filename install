@@ -78,8 +78,6 @@ done < "$BASEDIR/packages/code-extensions.txt"
 # Snap section- cannot use loop for snaps that need --classic
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic pycharm-professional
-sudo snap install --classic code
-sudo snap install --classic codium
 sudo snap install --classic flutter
 sudo snap install starship glow hugo
 

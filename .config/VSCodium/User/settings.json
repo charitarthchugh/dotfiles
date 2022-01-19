@@ -4,7 +4,6 @@
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "editor.fontFamily": "\"MesloLGMDZ Nerd Font\",\"Fira Code\",'Liga Meslo LG M DZ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-  "dart.previewLsp": true,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -15,13 +14,10 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "dart.debugExternalLibraries": false,
   "dart.debugSdkLibraries": false,
   "update.mode": "none",
   "explorer.confirmDelete": false,
   "git.autofetch": true,
-  "workbench.iconTheme": "file-icons",
-  "jupyter.alwaysTrustNotebooks": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
     "*.pdf": "latex-workshop-pdf-hook"
@@ -32,12 +28,9 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "line",
   "editor.fontLigatures": true,
-  "python.showStartPage": false,
   "python.pythonPath": "/bin/python3",
-  "terminal.integrated.rendererType": "dom",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "latex-workshop.message.update.show": false,
   "latex-workshop.chktex.enabled": true,
   "latex-workshop.intellisense.update.aggressive.enabled": true,
   "latex-workshop.latex.autoBuild.run": "onSave",
@@ -45,7 +38,6 @@
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.view.pdf.external.synctex.command": "evince",
   "latex-workshop.view.pdf.viewer": "tab",
-  "sync.gist": "795395fe0a8035bd7400ce6a87e3a92d",
   "workbench.colorCustomizations": {
     "[Material Theme Ocean]": {
       "activityBarBadge.background": "#84FFFF",
@@ -78,7 +70,6 @@
   "redhat.telemetry.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.defaultInterpreterPath": "/usr/bin/python3",
   "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
   "jupyter.askForKernelRestart": false,
@@ -107,10 +98,17 @@
     "ccd": "linux",
     "ccl": "linux"
   },
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 1,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
   "python.formatting.blackPath": "~/.local/bin/black",
   "terminal.integrated.defaultProfile.linux": "fish",
-  "Codegenx.Token": "44be2396d00666e80c423edb0b801578a63589e740553ec7385c8f25b1215ae5.72057285b3883b0241ae5409a4366428b3d020362b112facc43488f562c26fd5"
+  "Codegenx.Token": "44be2396d00666e80c423edb0b801578a63589e740553ec7385c8f25b1215ae5.72057285b3883b0241ae5409a4366428b3d020362b112facc43488f562c26fd5",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.languageServer": "Jedi",
 }
