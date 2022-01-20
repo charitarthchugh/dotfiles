@@ -11,5 +11,5 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive 
-fish -i - c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
