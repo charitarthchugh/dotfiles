@@ -1,5 +1,4 @@
 kaggle
-jovian
 autopep8
 bpytop
 youtube-dl
