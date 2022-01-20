@@ -70,10 +70,6 @@
       path: ~/dotfiles/Templates/*
 
 - shell:
-    - command: fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
-      description: Install Fisher
-    - command: ln -sf ~/dotfiles/.config/fish/fish_plugins ~/.config/fish/fish_plugins
-      description: Install fish plugins
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
     - command: git clone https://github.com/zplug/zplug ~/.zplug
