@@ -46,7 +46,8 @@ while read package; do
     else
         echo "$package" >> pipx_failed.txt
     fi
-done <"${BASEDIR}/packages/requirements.txt"
+done <"${BASEDIR}/packages/pipx.txt"
+pip install -r "${BASEDIR}/packages/requirements.txt"
 # Install rustup    
 curl https://sh.rustup.rs -sSf | sh -s -- -y
 source ~/.cargo/env
