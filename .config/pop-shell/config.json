@@ -40,6 +40,10 @@
     },
     {
       "class": "re.sonny.Junction"
+    },
+    {
+      "class": "firefox",
+      "title": "Firefox — Sharing Indicator"
     }
   ],
   "skiptaskbarhidden": [],
