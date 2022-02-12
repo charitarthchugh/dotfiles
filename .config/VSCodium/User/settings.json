@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Material Theme Ocean",
+  "workbench.colorTheme": "Nord",
   "workbench.startupEditor": "newUntitledFile",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
@@ -111,4 +111,8 @@
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.autoImportCompletions": true,
   "python.languageServer": "Jedi",
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "evenBetterToml.schema.links": true
 }
