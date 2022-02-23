@@ -12,3 +12,4 @@ export PATH="$PATH:$HOME/Dev/SDK/swift/usr/bin"
 export PATH="$PATH:$HOME/miniconda3/condabin"
 # Cargo
 export PATH="$PATH:$HOME/.cargo/bin"
+if [ -e /home/cc/.nix-profile/etc/profile.d/nix.sh ]; then . /home/cc/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

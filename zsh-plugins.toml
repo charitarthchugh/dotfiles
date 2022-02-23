@@ -1,0 +1,72 @@
+# `sheldon` configuration file
+# ----------------------------
+#
+# You can modify this file directly or you can use one of the following
+# `sheldon` commands which are provided to assist in editing the config file:
+#
+# - `sheldon add` to add a new plugin to the config file
+# - `sheldon edit` to open up the config file in the default editor
+# - `sheldon remove` to remove a plugin from the config file
+#
+# See the documentation for more https://github.com/rossmacarthur/sheldon#readme
+
+[plugins]
+
+[plugins.undollar]
+github = 'zpm-zsh/undollar'
+
+[plugins.syntax-highlight]
+github = 'zsh-users/zsh-syntax-highlighting'
+[plugins.history-search]
+github = 'zsh-users/zsh-history-substring-search'
+[plugins.autosuggestions]
+github = 'zsh-users/zsh-completions'
+[plugins.you-should-use]
+github =  'MichaelAquilina/zsh-you-should-use'
+[plugins.abbr]
+github =  'olets/zsh-abbr'
+[plugins.clipboard]
+github = "zpm-zsh/clipboard"
+[plugins.alias-tips]
+github = 'djui/alias-tips'
+[plugins.completion-generator]
+github = 'RobSis/zsh-completion-generator'
+[plugins.z]
+github = 'agkozak/zsh-z'
+# ohmyzsh
+[plugins.omz-git]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/git'
+
+[plugins.omz-pip]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/pip'
+
+[plugins.omz-python]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/python'
+
+[plugins.omz-common-aliases]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/common-aliases'
+
+[plugins.omz-command-not-found]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/command-not-found'
+
+[plugins.omz-github]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/github'
+
+[plugins.omz-pylint]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/pylint'
+
+[plugins.omz-fzf]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/fzf'
+
+[plugins.omz-ubuntu]
+github = 'ohmyzsh/ohmyzsh'
+dir = 'plugins/ubuntu'
+

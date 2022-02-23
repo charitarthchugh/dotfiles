@@ -16,7 +16,8 @@ _comp_options+=(globdots) # Include hidden files.
 autoload -Uz +X compinit
 compinit
 # zplug
-source ~/dotfiles/.zsh_plugins.zsh
+#source ~/dotfiles/.zsh_plugins.zsh
+eval "$(sheldon source)"
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
