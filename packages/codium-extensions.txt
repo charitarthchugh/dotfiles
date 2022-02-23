@@ -1,4 +1,5 @@
 arcticicestudio.nord-visual-studio-code
+asciidoctor.asciidoctor-vscode
 bmalehorn.vscode-fish
 budparr.language-hugo-vscode
 cab404.vscode-direnv
@@ -6,6 +7,10 @@ christian-kohler.path-intellisense
 codezombiech.gitignore
 Dart-Code.dart-code
 Dart-Code.flutter
+dendron.dendron
+dendron.dendron-markdown-shortcuts
+dendron.dendron-paste-image
+donjayamanne.githistory
 dunstontc.viml
 eamodio.gitlens
 Equinusocio.vsc-community-material-theme
@@ -14,8 +19,8 @@ equinusocio.vsc-material-theme-icons
 esbenp.prettier-vscode
 fivethree.vscode-hugo-snippets
 formulahendry.auto-close-tag
-formulahendry.code-runner
 foxundermoon.shell-format
+GitHub.vscode-pull-request-github
 icrawl.discord-vscode
 James-Yu.latex-workshop
 JeffersonQin.latex-snippets-jeff
@@ -24,11 +29,14 @@ KevinRose.vsc-python-indent
 Koihik.vscode-lua-format
 mads-hartmann.bash-ide-vscode
 mathpix.vscode-mathpix-markdown
+meronz.manpages
 mhutchie.git-graph
 ms-azuretools.vscode-docker
 ms-pyright.pyright
 ms-python.python
 ms-toolsai.jupyter
+ms-vscode.live-server
+msjsdiag.debugger-for-chrome
 njpwerner.autodocstring
 pinage404.bash-extension-pack
 PKief.markdown-checkbox
@@ -37,10 +45,15 @@ RandomFractalsInc.vscode-data-preview
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
+reduckted.vscode-gitweblinks
 rogalmic.bash-debug
 rusnasonov.vscode-hugo
+steoates.autoimport
 sumneko.lua
 tamasfe.even-better-toml
 timonwong.shellcheck
 valentjn.vscode-ltex
 vincaslt.highlight-matching-tag
+VSpaceCode.whichkey
+yandeu.five-server
+yzhang.markdown-all-in-one
