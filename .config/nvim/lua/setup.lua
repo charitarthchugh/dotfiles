@@ -18,7 +18,7 @@ lsp_servers = {
 "pyright",
 "xml",
 "yaml",
-"remark_ls",
+-- "remark_ls",
 "tsserver"
 }
 for _, name in pairs(lsp_servers) do
@@ -172,7 +172,7 @@ require('bufferline').setup({
   }
   -- offsets = {filetype = "NvimTree", text = "File Explorer" | function , text_align = "left" | "center" | "right"},
 })
-
+-- Custom Mapping
 cmd[[
   nnoremap <silent>[b :BufferLineCycleNext<CR>
   nnoremap <silent>b] :BufferLineCyclePrev<CR>
@@ -192,4 +192,6 @@ autocmd InsertLeave * execute ':Neoformat'
 cmd[[
 autocmd BufWritePre *.py execute ':Black'
 ]]
-
+cmd[[
+tnoremap <Esc> <C-\><C-n>
+]]
