@@ -70,3 +70,6 @@ dir = 'plugins/fzf'
 github = 'ohmyzsh/ohmyzsh'
 dir = 'plugins/ubuntu'
 
+[plugins.virtualenv-autoswitch]
+github = 'MichaelAquilina/zsh-autoswitch-virtualenv'
+
