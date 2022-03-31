@@ -39,7 +39,6 @@
       path: ~/dotfiles/.config/coc/extensions/package.json
     ~/.config/fish/config.fish:
       path: ~/dotfiles/.config/fish/config.fish
-      force: true
     ~/.config/up/up.fish:
       path: ~/dotfiles/.config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
@@ -56,8 +55,8 @@
       path: ~/dotfiles/.config/Code/User/snippets/*
     ~/.config/gh/config.yml:
       path: ~/dotfiles/.config/gh/config.yml
-    ~/.sheldon/plugins.toml:
-      path: ~/dotfiles/zsh-plugins.toml
+    ~/.config/sheldon/plugins.toml:
+      path: ~/dotfiles/.config/sheldon/plugins.toml
     ~/.config/kitty/:
       path: ~/dotfiles/.config/kitty/*
     ~/.config/alacritty/:
