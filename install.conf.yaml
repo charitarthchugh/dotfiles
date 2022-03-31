@@ -79,7 +79,7 @@
       description: Install zplug
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim
-    - command: git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    - command: mkdir -p ~/.local/share/nvim/site/pack/packer/start/ && git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     - description: Install packer for Neovim 
     - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
       description: Install CoC Extensions
