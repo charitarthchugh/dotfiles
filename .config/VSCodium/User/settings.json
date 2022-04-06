@@ -2,7 +2,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
-  "editor.fontFamily": "\"MesloLGMDZ Nerd Font\",\"Fira Code\",'Liga Meslo LG M DZ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontFamily": "\"Fira Code\",\"MesloLGMDZ Nerd Font\",'Liga Meslo LG M DZ','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
