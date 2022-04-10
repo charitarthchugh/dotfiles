@@ -39,6 +39,8 @@
       path: ~/dotfiles/.config/coc/extensions/package.json
     ~/.config/fish/config.fish:
       path: ~/dotfiles/.config/fish/config.fish
+    ~/.config/fish/fish_plugins:
+      path: ~/dotfiles/.config/fish/fish_plugins
     ~/.config/up/up.fish:
       path: ~/dotfiles/.config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
