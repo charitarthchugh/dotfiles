@@ -77,8 +77,8 @@
 - shell:
     - command: fish -i -c "fisher update"
       description: Install and update Fish Plugins
-    - command: git clone https://github.com/zplug/zplug ~/.zplug
-      description: Install zplug
+    # - command: git clone https://github.com/zplug/zplug ~/.zplug
+    #   description: Install zplug
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim
     - command: mkdir -p ~/.local/share/nvim/site/pack/packer/start/ && git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
