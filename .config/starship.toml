@@ -15,9 +15,6 @@ diverged = "[⇡⇣](cyan)"
 behind = "[⇣](cyan)"
 format = '([$modified $ahead_behind]($style) )'
 
-[memory_usage]
-disabled = "false"
-
 [directory]
 truncate_to_repo = false
 truncation_length = 0
