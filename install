@@ -60,22 +60,6 @@ while read package; do
         echo "$package" >> cargo_failed.txt
     fi
 done <"${BASEDIR}/packages/cargo.txt"
-while read package; do
-    codium --install-extension "$package"
-    if [[ $? -eq 0 ]]; then
-        echo "$package is installed from codium!"
-    else
-        echo "$package" >>codium_failed.txt
-    fi
-done < "$BASEDIR/packages/codium-extensions.txt"
-while read package; do
-    code --install-extension "$package"
-    if [[ $? -eq 0 ]]; then
-        echo "$package is installed from code!"
-    else
-        echo "$package" >>code_failed.txt
-    fi
-done < "$BASEDIR/packages/code-extensions.txt"
 # Snap section- cannot use loop for snaps that need --classic
 sudo snap install --classic intellij-idea-ultimate
 sudo snap install --classic pycharm-professional
