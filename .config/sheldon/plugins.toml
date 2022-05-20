@@ -23,8 +23,7 @@ github = 'zsh-users/zsh-history-substring-search'
 github = 'zsh-users/zsh-completions'
 [plugins.you-should-use]
 github =  'MichaelAquilina/zsh-you-should-use'
-[plugins.abbr]
-github =  'olets/zsh-abbr'
+
 [plugins.clipboard]
 github = "zpm-zsh/clipboard"
 [plugins.alias-tips]
