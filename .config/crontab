@@ -27,7 +27,6 @@ MAILTO="charitarth.chughg@gmail.com"
 0 15 * * * $HOME/dotfiles/scripts/code-codium-ext-install
 0 15 * * * cd ~/.local/share/fonts/NerdFonts; git gc --aggressive --prune
 0 16 * * * cd ~/.local/share/fonts/Google; git gc --aggressive --prune 
-
 #Back In Time system entry, this will be edited by the gui:
 0 12 * * * /usr/bin/nice -n19 /usr/bin/ionice -c2 -n7 /usr/bin/backintime backup-job >/dev/null
 
