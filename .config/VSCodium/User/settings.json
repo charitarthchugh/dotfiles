@@ -115,5 +115,10 @@
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "notebook.showFoldingControls": "always",
   "markdown.preview.typographer": true,
-  "markdown.links.openLocation": "beside"
+  "markdown.links.openLocation": "beside",
+  "better-comments.highlightPlainText": true,
+  "editor.linkedEditing": true,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  }
 }
