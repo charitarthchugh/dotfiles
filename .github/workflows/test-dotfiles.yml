@@ -34,6 +34,6 @@ jobs:
       - name: Setup Fish
         uses: fish-actions/install-fish@v1.1.0
       - name: Make install script executeable
-        run: chmod +x install-dotfiles
+        run: chmod +x install
       - name: Run install-dotfiles
         run: ./install
