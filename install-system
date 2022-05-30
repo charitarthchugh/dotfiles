@@ -89,10 +89,8 @@ eval ${BASEDIR}/install-dotfiles
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub com.github.marktext.marktext com.github.tchx84.Flatseal org.onlyoffice.desktopeditors
-# Install Homebrew
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-# Programs to install via Homebrew(brew)
-# brew bundle --file ~/fre.sh/Brewfile --no-lock
+
+
 # programs to install via npm
 npm i -g carbon-now-cli firebase-tools is-up-cli neovim npm yarn
 # Install fonts
