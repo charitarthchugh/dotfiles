@@ -85,3 +85,7 @@
       description: Install packer for Neovim 
     - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
       description: Install CoC Extensions
+    - command: mkdir -p ~/.local/share/fonts; cd ~/.local/share/fonts/; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; fc-cache -r
+      description: Install Fira Code Font
+    - command: cd ~/.local/share/fonts; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; fc-cache -r
+      description: Install Meslo font
