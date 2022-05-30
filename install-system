@@ -82,8 +82,7 @@ gsettings set org.gnome.desktop.interface cursor-theme "WhiteSur-dark"
 
 cd $HOME
 # Setup dotfiles
-git clone --recursive https://github.com/charitarthchugh/dotfiles $HOME/dotfiles/
-eval ${BASEDIR}/install-dotfiles
+eval ${BASEDIR}/install
 
 # Add Flatpak repositories
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
