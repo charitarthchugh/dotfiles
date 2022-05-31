@@ -1,32 +1,32 @@
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+required = true
 [user]
-	name = charitarthchugh
-	email = 37895518+charitarthchugh@users.noreply.github.com
+name = charitarthchugh
+email = 37895518+charitarthchugh@users.noreply.github.com
 [core]
-	autocrlf = input
-	editor = nvim
+autocrlf = input
+editor = nvim
 [hub]
-	protocol = https
+protocol = https
 [pull]
-	rebase = false
+rebase = false
 [init]
-	defaultBranch = main
+defaultBranch = main
 [credential]
-	helper = store
+helper = store
 [maintenance]
-	repo = /home/cc/dotfiles
-	repo = /home/cc/.local/share/fonts/NerdFonts
-	repo = /home/cc/.local/share/fonts/Google
+repo = /home/cc/dotfiles
+repo = /home/cc/.local/share/fonts/NerdFonts
+repo = /home/cc/.local/share/fonts/Google
 [pager]
-  diff = delta
-  log = delta
-  reflog = delta
-  show = delta
+diff = delta
+log = delta
+reflog = delta
+show = delta
 [delta]
-	navigate = true
+navigate = true
 [interactive]
-	diffFilter = delta --color-only
+diffFilter = delta --color-only
