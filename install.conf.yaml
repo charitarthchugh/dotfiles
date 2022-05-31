@@ -15,8 +15,6 @@
       path: ~/dotfiles/.zshenv
     ~/.zsh_profile:
       path: ~/dotfiles/.zsh_profile
-    ~/.gitconfig:
-      path: ~/dotfiles/.gitconfig
     ~/.bashrc:
       path: ~/dotfiles/.bashrc
     ~/.vimrc:
@@ -37,6 +35,8 @@
       path: ~/dotfiles/.config/starship.toml
     ~/.config/coc/extensions/package.json:
       path: ~/dotfiles/.config/coc/extensions/package.json
+    ~/.config/git/config:
+      path: ~/dotfiles/.config/git/config
     ~/.config/fish/config.fish:
       path: ~/dotfiles/.config/fish/config.fish
     ~/.config/fish/fish_plugins:
