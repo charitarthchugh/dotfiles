@@ -22,6 +22,7 @@ GitHub.vscode-pull-request-github
 icrawl.discord-vscode
 James-Yu.latex-workshop
 JeffersonQin.latex-snippets-jeff
+jeroen-meijer.pubspec-assist
 k--kato.intellij-idea-keybindings
 KevinRose.vsc-python-indent
 Koihik.vscode-lua-format
@@ -38,6 +39,7 @@ pinage404.bash-extension-pack
 PKief.markdown-checkbox
 PKief.material-icon-theme
 RandomFractalsInc.vscode-data-preview
+rangav.vscode-thunder-client
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
