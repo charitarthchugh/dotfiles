@@ -102,14 +102,14 @@
   "material-icon-theme.showWelcomeMessage": false,
   "python.formatting.blackPath": "~/.local/bin/black",
   "terminal.integrated.defaultProfile.linux": "fish",
-  "Codegenx.Token": "44be2396d00666e80c423edb0b801578a63589e740553ec7385c8f25b1215ae5.72057285b3883b0241ae5409a4366428b3d020362b112facc43488f562c26fd5",
+  
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.autoImportCompletions": true,
-  "python.languageServer": "Jedi",
+  "python.languageServer": "Default",
   "workbench.colorTheme": "Material Theme Ocean",
   "liveshare.audio.startCallOnShare": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
@@ -120,5 +120,11 @@
   "editor.linkedEditing": true,
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
   }
 }
