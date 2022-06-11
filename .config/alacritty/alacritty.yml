@@ -1,4 +1,4 @@
-# Configuration for 
+# Configuration for
 # Alacritty, the GPU enhanced terminal emulator.
 
 # Any items in the `env` entry below will be added as
@@ -72,13 +72,13 @@ class:
   # Set this to `None` to use the default theme variant.
   gtk_theme_variant: dark
   scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-   history: 10000
-  # Number of lines the viewport will move for every line scrolled when
-  # scrollback is enabled (history > 0).
-  #multiplier: 3
-   auto_scroll: true 
+    # Maximum number of lines in the scrollback buffer.
+    # Specifying '0' will disable scrolling.
+    history: 10000
+    # Number of lines the viewport will move for every line scrolled when
+    # scrollback is enabled (history > 0).
+    #multiplier: 3
+    auto_scroll: true
 # Font configuration
 font:
   # Normal (roman) font face
@@ -89,7 +89,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "MesloLGMDZ Nerd Font" 
+    family: "MesloLGMDZ Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -157,30 +157,30 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#282a36'
-    foreground: '#eff0eb'
+    background: "#282a36"
+    foreground: "#eff0eb"
 
   # Normal colors
   normal:
-    black: '#282a36'
-    red: '#ff5c57'
-    green: '#5af78e'
-    yellow: '#f3f99d'
-    blue: '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan: '#9aedfe'
-    white: '#f1f1f0'
+    black: "#282a36"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
 
   # Bright colors
   bright:
-    black: '#686868'
-    red: '#ff5c57'
-    green: '#5af78e'
-    yellow: '#f3f99d'
-    blue: '#57c7ff'
-    magenta: '#ff6ac1'
-    cyan: '#9aedfe'
-    white: '#f1f1f0'
+    black: "#686868"
+    red: "#ff5c57"
+    green: "#5af78e"
+    yellow: "#f3f99d"
+    blue: "#57c7ff"
+    magenta: "#ff6ac1"
+    cyan: "#9aedfe"
+    white: "#f1f1f0"
 window.opacity: 1.0
 cursor:
   style: Beam
@@ -189,7 +189,7 @@ mouse:
     program: xdg-open
     args: []
 key_bindings:
-  - { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
-  - { key: PageDown, mods: Shift,   action: ScrollPageDown }
-  - { key: End,      mods: Shift,   action: ScrollToBottom }
-  - { key: Home,     mods: Shift,   action: ScrollToTop    }
+  - { key: PageUp, mods: Shift, action: ScrollPageUp }
+  - { key: PageDown, mods: Shift, action: ScrollPageDown }
+  - { key: End, mods: Shift, action: ScrollToBottom }
+  - { key: Home, mods: Shift, action: ScrollToTop }
