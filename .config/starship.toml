@@ -1,80 +1,88 @@
 [cmd_duration]
 min_time = 1000
-format = "[$duration]($style)"
+format = " [$duration]($style)"
 style = "yellow"
 
 [git_branch]
 format = "[$branch]($style) "
-style = "242"
+style = "bright-black"
 
 [git_status]
+format = "[[($conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
 modified = "[*](218)"
 stashed = "[≡](cyan)"
 ahead = "[⇡](cyan)"
 diverged = "[⇡⇣](cyan)"
 behind = "[⇣](cyan)"
-format = '([$modified $ahead_behind]($style) )'
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
 
 [directory]
 truncate_to_repo = false
 truncation_length = 0
-read_only = " 🔒"
+read_only = "🔒"
 style = "blue"
 
 [character]
 success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
+vicmd_symbol = "[❮](green)"
 
 [username]
-style_user = "242"
-format = "[$user]($style) @ "
+style_user = "bright-black"
+format = "[$user]($style)"
+
 [hostname]
-style = "242"
-format = "[$hostname]($style) "
+style = "bright-black"
+format = " @ [$hostname]($style)"
+
 [package]
-format = " [$symbol$version]($style) "
-style = "242"
+format = " [$symbol$version]($style)"
+style = "bright-black"
 
 [python]
-style = "242"
-symbol = "🐍"
-format = "[${pyenv_prefix}${version} ($virtualenv)]($style) "
+style = "bright-black"
+format = "[${pyenv_prefix} ${version} ($virtualenv)]($style)"
 
 [java]
-format = "[${symbol}(${version})]($style) "
-style = "242"
+format = "[${symbol}(${version})]($style)"
+style = "bright-black"
 
 [swift]
-format = "[${symbol}(${version})]($style) "
-style = "242"
+format = "[${symbol}(${version})]($style)"
+style = "bright-black"
 
 [golang]
-format = "[${symbol}(${version})]($style) "
-style = "242"
+format = "[${symbol}(${version})]($style)"
+style = "bright-black"
 
 [kotlin]
-format = "[${symbol}(${version})]($style) "
-style = "242"
+format = "[${symbol}(${version})]($style)"
+style = "bright-black"
 
 [dart]
-format = "[${symbol}(${version})]($style) "
-style = "242"
+format = "[${symbol}(${version})]($style)"
+style = "bright-black"
 
 [conda]
-format = "[$symbol$environment]($style) "
-style = "242"
+format = "[$symbol$environment]($style)"
+style = "bright-black"
 
 [docker_context]
-format = "[$symbol$context]($style) "
-style = "242"
+format = "[$symbol$context]($style)"
+style = "bright-black"
 
 [nodejs]
-format = "[$symbol($version)]($style) "
-style = "242"
+format = "[$symbol($version)]($style)"
+style = "bright-black"
 
 [cmake]
-format = "[$symbol($version )]($style)"
-style = "242"
+format = "[$symbol($version)]($style)"
+style = "bright-black"
+
 [lua]
-format = "[$symbol($version )]($style)"
-style = "242"
+format = "[$symbol($version)]($style)"
+style = "bright-black"
