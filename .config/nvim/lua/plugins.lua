@@ -34,7 +34,6 @@ return require('packer').startup(
   use 'sheerun/vim-polyglot'
   use 'scrooloose/syntastic'
   use 'windwp/nvim-autopairs'
-  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   use {
     'lewis6991/gitsigns.nvim',
     requires = {

@@ -43,9 +43,6 @@ cmp.setup({
   },  
   snippet = {
     expand = function(args)
-      -- For `vsnip` user.
-      vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` user.
-
       -- For `luasnip` user.
       require('luasnip').lsp_expand(args.body)
 
@@ -119,7 +116,7 @@ g.dashboard_default_executive ='telescope';
 fn.sign_define('LightBulbSign', { text = "", texthl = "", linehl="", numhl="" })
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
   ignore_install = {}, -- List of parsers to ignore installing
   highlight = {
     enable = true,              -- false will disable the whole extension
@@ -136,12 +133,11 @@ g.indentLine_fileTypeExclude = {'dashboard'}
 -- NvimTree
 -- g.nvim_tree_ignore = { ".git", "node_modules", ".cache" }
 require'nvim-tree'.setup({
-  auto_close = true,
   open_on_tab = true,
   diagnostics = {
     enable = true
   },
-  ignore__ft_on_setup = {"dashboard"}
+  ignore_ft_on_setup = {"dashboard"}
 })
 
 
