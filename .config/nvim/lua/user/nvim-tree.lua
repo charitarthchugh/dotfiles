@@ -100,3 +100,4 @@ nvim_tree.setup {
 --  root_folder_modifier = ":t",
 
 }
+
