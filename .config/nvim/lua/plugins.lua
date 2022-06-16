@@ -1,21 +1,15 @@
-vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
-return require('packer').startup(
-  function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  -- Compe
-  use {"hrsh7th/nvim-cmp", 
-   requires = {    
-    "hrsh7th/vim-vsnip",
-    "hrsh7th/cmp-buffer",
-    "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip",
-    "hrsh7th/cmp-calc",
-    "hrsh7th/cmp-path",
-    "hrsh7th/cmp-nvim-lsp",
-    "ray-x/cmp-treesitter",
-    "onsails/lspkind-nvim"
-    },
+local fn = vim.fn
+
+-- Automatically install packer
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+if fn.empty(fn.glob(install_path)) > 0 then
+  PACKER_BOOTSTRAP = fn.system {
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/wbthomason/packer.nvim",
+    install_path,
   }
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
@@ -35,58 +29,17 @@ return require('packer').startup(
   use 'scrooloose/syntastic'
   use 'windwp/nvim-autopairs'
   use {
-    'lewis6991/gitsigns.nvim',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    },
-    config = function()
-      require('gitsigns').setup()
-    end
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
   }
-use {'Pocco81/AutoSave.nvim'}
-use {
-  "folke/which-key.nvim",
-  config = function()
-    require("which-key").setup()
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
+  if PACKER_BOOTSTRAP then
+    require("packer").sync()
   end
-}
-use {
-  "ahmedkhalf/lsp-rooter.nvim",
-  config = function()
-    require("lsp-rooter").setup {
-    }
-  end
-}
-use {"npxbr/glow.nvim", run = ":GlowInstall"}
-use {
-  'nvim-treesitter/nvim-treesitter',
-  run = ':TSUpdate'
-}
-use 'sbdchd/neoformat'
-use {
-  'ojroques/nvim-lspfuzzy',
-  requires = {
-    {'junegunn/fzf'},
-    {'junegunn/fzf.vim'}, 
-  },
-  config= function ()
-    require('lspfuzzy').setup {}
-  end
-}
-use 'kdheepak/lazygit.nvim'
-use "lukas-reineke/indent-blankline.nvim"
-use {
-  'kyazdani42/nvim-tree.lua',
-  requires = 'kyazdani42/nvim-web-devicons'
-}
-use {"petertriho/cmp-git", requires= "nvim-lua/plenary.nvim"}
-use {
-    's1n7ax/nvim-terminal',
-    config = function()
-        vim.o.hidden = true
-        require('nvim-terminal').setup()
-    end,
-}
-use "tpope/vim-unimpaired"
-use "psf/black"
 end)
