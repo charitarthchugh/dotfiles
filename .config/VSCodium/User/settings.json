@@ -90,7 +90,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "native",
   "editor.bracketPairColorization.enabled": true,
   "remote.SSH.remoteServerListenOnSocket": true,
   "remote.SSH.remotePlatform": {
@@ -102,7 +102,7 @@
   "material-icon-theme.showWelcomeMessage": false,
   "python.formatting.blackPath": "~/.local/bin/black",
   "terminal.integrated.defaultProfile.linux": "fish",
-  
+
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -110,7 +110,7 @@
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.autoImportCompletions": true,
   "python.languageServer": "Default",
-  "workbench.colorTheme": "Material Theme Ocean",
+  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting",
   "liveshare.audio.startCallOnShare": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "notebook.showFoldingControls": "always",
@@ -126,5 +126,50 @@
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "docker.host": "unix:///run/user/1000/podman/podman.sock",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "latex-workshop.docker.enabled": true,
+  "latex-workshop.docker.image.latex": "registry.gitlab.com/islandoftex/images/texlive:latest",
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": ["latexmk_rconly"]
+    },
+    {
+      "name": "latexmk (lualatex)",
+      "tools": ["lualatexmk"]
+    },
+    {
+      "name": "latexmk (xelatex)",
+      "tools": ["xelatexmk"]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "Compile Rnw files",
+      "tools": ["rnw2tex", "latexmk"]
+    },
+    {
+      "name": "Compile Jnw files",
+      "tools": ["jnw2tex", "latexmk"]
+    },
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  "codesnap.transparentBackground": true
 }
