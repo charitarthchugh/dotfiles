@@ -51,9 +51,8 @@ self_update = false
 # Custom commands
 [commands]
 "Font cache"="fc-cache -r"
-"Cleanup Package Managers"="conda clean -a -y; sudo apt autoremove --purge -y; flatpak uninstall --unused; sudo apt autoclean"
+"Cleanup Package Managers"="~/dotfiles/scripts/cleanup-package-managers.sh"
 "Clean logs older than 15d"="sudo journalctl --vacuum-time=15d"
-"Clean old snap packages"="sudo ~/dotfiles/scripts/clean_snaps.sh"
 #[brew]
 #greedy_cask = true
 
