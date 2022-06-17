@@ -1,5 +1,7 @@
 kaggle
 autopep8
 bpytop
-youtube-dl
+yt-dlp
+black[d, jupyter]
+pylint
 argcomplete
