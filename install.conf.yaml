@@ -87,5 +87,3 @@
       description: Install Fira Code Font
     - command: cd ~/.local/share/fonts; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; command -v fc-cache &> /dev/null && fc-cache -r
       description: Install Meslo font
-    - command: fisher > test
-      description: test shell
