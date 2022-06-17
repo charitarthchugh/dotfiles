@@ -75,15 +75,17 @@
       path: ~/dotfiles/Templates/*
 
 - shell:
-    - command: fish -i -c "fisher update"
+    - command: command -v fish &> /dev/null && fish -i -c "fisher update"
       description: Install and update Fish Plugins
     - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
       description: Install Dein for Vim
     - command: mkdir -p ~/.local/share/nvim/site/pack/packer/start/ && git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
       description: Install Packer for Neovim
-    - command: cd ~/.config/coc/extensions/ && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    - command: cd ~/.config/coc/extensions/; command -v npm &> /dev/null && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
       description: Install CoC Extensions
-    - command: mkdir -p ~/.local/share/fonts; cd ~/.local/share/fonts/; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; fc-cache -r
+    - command: mkdir -p ~/.local/share/fonts; cd ~/.local/share/fonts/; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf?raw=true;command -v fc-cache &> /dev/null && fc-cache -r
       description: Install Fira Code Font
-    - command: cd ~/.local/share/fonts; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; fc-cache -r
+    - command: cd ~/.local/share/fonts; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; command -v fc-cache &> /dev/null && fc-cache -r
       description: Install Meslo font
+    - command: fisher > test
+      description: test shell
