@@ -1,0 +1,16 @@
+gnome-session
+nautilus
+firefox
+flatpak 
+appimagelauncher
+vlc 
+geary
+syncthing
+keepassxc
+lollypop
+kitty
+brave-browser
+ulauncher
+speedcrunch
+gnome-tweaks 
+gnome-weather

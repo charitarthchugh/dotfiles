@@ -1,0 +1,14 @@
+gnome-tweaks
+brave-bin 
+gnvome-shell-extenstion-pop-shell-git 
+gnome-weather 
+file-roller 
+keepassxc
+lollypop
+nautilus
+speedcrunch
+visual-studio-code-bin 
+vlc 
+vscodium-bin 
+alacritty
+kitty

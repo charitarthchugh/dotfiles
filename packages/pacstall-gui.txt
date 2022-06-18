@@ -1,0 +1,4 @@
+alacritty
+discord
+vscode-deb
+vscodium

@@ -1,0 +1,8 @@
+bat-deb
+btop-bin
+dust-bin
+github-cli-deb 
+neovim-deb
+topgrade-bin 
+glow-deb
+git-delta
