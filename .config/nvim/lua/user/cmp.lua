@@ -105,7 +105,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
-        tabnine = "[TabNine]", 
+        cmp_tabnine = "[TabNine]",
         fish = "[Fish]"
       })[entry.source.name]
       return vim_item
@@ -116,8 +116,8 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
-    {name = "tabnine"},
-    {name = "fish"}
+    { name = "cmp_tabnine"},
+    { name = "fish"}
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
@@ -133,4 +133,3 @@ cmp.setup {
     native_menu = false,
   },
 }
-
