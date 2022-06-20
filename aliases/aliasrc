@@ -115,8 +115,6 @@ alias mv='mv -i'
 # Pip Completions
 eval "$(pip completion --zsh)"
 compctl -K _pip_completion pip3
-# Wrap git automatically with hub
-eval "$(hub alias -s)"
 #Better Up alias
 source ~/dotfiles/.config/up/up.sh
 # GH completion
