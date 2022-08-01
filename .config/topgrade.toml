@@ -51,7 +51,7 @@ self_update = false
 # Custom commands
 [commands]
 "Font cache"="fc-cache -r"
-"Cleanup Package Managers"="~/dotfiles/scripts/cleanup-package-managers.sh"
+"Cleanup Package Managers"="~/dotfiles/scripts/clean-package-managers.sh"
 "Clean logs older than 15d"="sudo journalctl --vacuum-time=15d"
 #[brew]
 #greedy_cask = true
