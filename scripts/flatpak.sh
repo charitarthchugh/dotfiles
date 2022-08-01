@@ -10,7 +10,7 @@ flatpak remote-modify flathub --no-filter
 
 # Install flatpak apps
 while read package; do
-	yes | flatpak install flathub "$package"
+	flatpak install flathub "$package" -y
 	if [[ $? -eq 0 ]]; then
 		echo "$package is installed from flatpak!"
 	else
