@@ -110,7 +110,6 @@
   "python.analysis.useLibraryCodeForTypes": true,
   "python.analysis.autoImportCompletions": true,
   "python.languageServer": "Default",
-  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting",
   "liveshare.audio.startCallOnShare": true,
   "markdown.extension.preview.autoShowPreviewToSide": true,
   "notebook.showFoldingControls": "always",
@@ -171,5 +170,6 @@
       "tools": ["tectonic"]
     }
   ],
-  "codesnap.transparentBackground": true
+  "codesnap.transparentBackground": true,
+  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting & colorful status bar"
 }
