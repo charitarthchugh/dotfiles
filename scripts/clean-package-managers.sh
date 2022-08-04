@@ -19,5 +19,12 @@ if command -v snap &>/dev/null; then
 		while read snapname revision; do
 			echo Removing $snapname
 			sudo snap remove "$snapname" --revision="$revision"
-		done
+		done 
 fi
+if command -v nix-collect-garbage &> /dev/null; then
+  nix-collect-garbage --delete-older-than 15d 
+fi
+if command -v dnf &> /dev/null; then
+  sudo dnf clean all 
+  dnf clean all 
+fi 
