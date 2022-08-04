@@ -60,7 +60,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+  use "Mofiqul/adwaita.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -77,9 +77,10 @@ return packer.startup(function(use)
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use {"williamboman/mason.nvim", requires={"williamboman/mason-lspconfig.nvim"}} -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "WhoIsSethDaniel/mason-tool-installer.nvim" -- Easily install code tools
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -90,10 +91,14 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
-
+  -- Auto save
+  use "Pocco81/auto-save.nvim"
   -- Git
   use "lewis6991/gitsigns.nvim"
-
+  -- Flutter
+  use {"akinsho/flutter-tools.nvim", requires="rcarriga/nvim-notify"}
+  -- Markup languages
+  use "lukas-reineke/headlines.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
