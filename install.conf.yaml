@@ -71,6 +71,8 @@
       path: ~/dotfiles/.config/nvim/*
     ~/.config/ulauncher:
       path: ~/dotfiles/.config/ulauncher/*
+    ~/.config/containers:
+      path: ~/dotfiles/.config/containers/*
     ~/Templates:
       path: ~/dotfiles/Templates/*
 
