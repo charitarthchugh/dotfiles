@@ -5,11 +5,11 @@
 | Type                | Choice         |
 | ------------------- | -------------- |
 | Shell               | Fish           |
-| Prompt              | Starship(Pure) |
-| Color scheme        | Snazzy         |
-| Distribution        | Ubuntu         |
+| Prompt              | Starship with a Pure-like theme |
+| Color scheme        | Snazzy & Adwaita |
+| Distribution        | Arch & Fedora         |
 | Desktop Environment | Gnome          |
 | Tiling              | Pop Shell      |
-| IDE                 | IntelliJ IDEA  |
+| IDE                 | IntelliJ IDEA, VSCodium, Neovim  |
 | Web Browser         | Firefox        |
 | Terminal            | Alacritty      |
