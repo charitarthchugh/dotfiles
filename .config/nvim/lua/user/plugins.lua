@@ -81,7 +81,7 @@ return packer.startup(function(use)
   use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "WhoIsSethDaniel/mason-tool-installer.nvim" -- Easily install code tools
-
+  use "folke/trouble.nvim"
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
@@ -91,6 +91,7 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "windwp/nvim-ts-autotag"
   -- Auto save
   use "Pocco81/auto-save.nvim"
   -- Git
