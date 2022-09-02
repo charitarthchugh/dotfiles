@@ -86,3 +86,6 @@ style = "bright-black"
 [lua]
 format = "[$symbol($version)]($style)"
 style = "bright-black"
+
+[c]
+format = "[$symbol($version(-$name) )]($style)"
