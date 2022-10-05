@@ -76,7 +76,7 @@ format = "[$symbol$context]($style)"
 style = "bright-black"
 
 [nodejs]
-format = "[$symbol($version)]($style)"
+format = " [$symbol($version)]($style)"
 style = "bright-black"
 
 [cmake]
@@ -86,6 +86,3 @@ style = "bright-black"
 [lua]
 format = "[$symbol($version)]($style)"
 style = "bright-black"
-
-[c]
-format = "[$symbol($version(-$name) )]($style)"
