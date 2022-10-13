@@ -58,10 +58,11 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "rmagatti/auto-session"
+  use "ellisonleao/glow.nvim"
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "Mofiqul/adwaita.nvim"
-
+  
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -84,7 +85,7 @@ return packer.startup(function(use)
   use "folke/trouble.nvim"
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-
+  use "nvim-telescope/telescope-file-browser.nvim"
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
