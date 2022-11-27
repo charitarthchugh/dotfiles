@@ -94,12 +94,17 @@
   "remote.SSH.remoteServerListenOnSocket": true,
   "remote.SSH.remotePlatform": {
     "ccd": "linux",
-    "ccl": "linux"
+    "ccl": "linux",
+    "172.16.51.105": "linux",
+    "172.16.50.108": "linux",
+    "172.16.50.106": "linux",
+    "172.16.51.107": "linux",
+    "100.108.230.123": "linux",
+    "ec2-3-95-38-21.compute-1.amazonaws.com": "linux"
   },
   "window.zoomLevel": 1,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
-  "python.formatting.blackPath": "~/.local/bin/black",
   "terminal.integrated.defaultProfile.linux": "fish",
 
   "[xml]": {
@@ -110,7 +115,6 @@
   "python.analysis.autoImportCompletions": true,
   "python.languageServer": "Default",
   "liveshare.audio.startCallOnShare": true,
-  "markdown.extension.preview.autoShowPreviewToSide": true,
   "notebook.showFoldingControls": "always",
   "markdown.preview.typographer": true,
   "markdown.links.openLocation": "beside",
@@ -129,7 +133,6 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "latex-workshop.docker.enabled": true,
   "latex-workshop.docker.image.latex": "registry.gitlab.com/islandoftex/images/texlive:latest",
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -170,6 +173,17 @@
     }
   ],
   "codesnap.transparentBackground": true,
-  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting & colorful status bar",
-  "latex-workshop.linting.chktex.enabled": true
+  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting",
+  "latex-workshop.linting.chktex.enabled": true,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "latex-workshop.docker.enabled": true,
+  "workbench.editor.enablePreview": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "black-formatter.importStrategy": "fromEnvironment",
+  "ipynb.experimental.pasteImages.enabled": true,
+  "editor.experimental.pasteActions.enabled": true
 }
