@@ -173,6 +173,7 @@
     }
   ],
   "codesnap.transparentBackground": true,
+
   "workbench.colorTheme": "Adwaita Dark & default syntax highlighting",
   "latex-workshop.linting.chktex.enabled": true,
   "[c]": {
@@ -185,5 +186,5 @@
   },
   "black-formatter.importStrategy": "fromEnvironment",
   "ipynb.experimental.pasteImages.enabled": true,
-  "editor.experimental.pasteActions.enabled": true
+  "editor.experimental.pasteActions.enabled": true,
 }

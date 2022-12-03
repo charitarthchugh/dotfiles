@@ -46,8 +46,11 @@
       "title": "Firefox — Sharing Indicator"
     },
     {
-      "class": "java-util-concurrent-ForkJoinWorkerThread",
-      "title": " "
+      "class": "Floating Window Exceptions",
+      "title": "Floating Window Exceptions"
+    },
+    {
+      "class": "java-util-concurrent-ForkJoinWorkerThread"
     }
   ],
   "skiptaskbarhidden": [],
