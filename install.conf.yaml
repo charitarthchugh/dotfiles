@@ -59,6 +59,8 @@
       path: ~/dotfiles/.config/gh/config.yml
     ~/.config/sheldon/plugins.toml:
       path: ~/dotfiles/.config/sheldon/plugins.toml
+    ~/.config/nixpkgs/:
+      path: ~/dotfiles/.config/nixpkgs/*
     ~/.config/kitty/:
       path: ~/dotfiles/.config/kitty/*
     ~/.config/alacritty/:
