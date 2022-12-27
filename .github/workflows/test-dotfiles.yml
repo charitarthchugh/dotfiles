@@ -34,7 +34,7 @@ jobs:
       - name: Setup Fish
         uses: fish-actions/install-fish@v1.1.0
       - name: setup fontconfig 
-        run: apt update && apt install fontconfig
+        run: sudo apt update && sudo apt install fontconfig
       - name: Make install script executeable
         run: chmod +x install
       - name: Run install-dotfiles
