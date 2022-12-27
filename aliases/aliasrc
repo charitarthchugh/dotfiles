@@ -5,77 +5,74 @@ export EDITOR
 export VISUAL
 
 #Pkg mangaers search function
-pkg-search()
-{ 	
-        figlet Searching Brew
-	brew search --formula $1
-	figlet Searching Snap
-	snap search $1
-	figlet Searching Apt
-	apt search $1
-	figlet Searching Flatpak
-	flatpak search $1
+pkg-search() {
+  figlet Searching Brew
+  brew search --formula $1
+  figlet Searching Snap
+  snap search $1
+  figlet Searching Apt
+  apt search $1
+  figlet Searching Flatpak
+  flatpak search $1
 }
 
-pkg-clean(){
-	figlet 'Cleaning Brew'
-	brew cleanup
-	figlet 'Cleaning Apt'
-	sudo apt autoremove -y
-	sudo apt autoclean -y
-	figlet "Cleaning flatpak"
-	flatpak uninstall --unused	
+pkg-clean() {
+  figlet 'Cleaning Brew'
+  brew cleanup
+  figlet 'Cleaning Apt'
+  sudo apt autoremove -y
+  sudo apt autoclean -y
+  figlet "Cleaning flatpak"
+  flatpak uninstall --unused
 }
 clonecd() {
   hub clone "$1" && cd "$(basename "$1" .git)"
 }
-fork-sync(){
-    git fetch upstream
-    git checkout master
-    git merge upstream/master
+fork-sync() {
+  git fetch upstream
+  git checkout master
+  git merge upstream/master
 }
 alias pkg-update="topgrade -y"
 # # ex - archive extractor
 # # usage: ex <file>
-ex ()
-{
-  if [ -f $1 ] ; then
+ex() {
+  if [ -f $1 ]; then
     case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1 ;;
-      *.7z)        7z x $1      ;;
-      *.tar.xz)    tar xf $1	;;
-      *.tar.zst)   unzstd $1    ;;	
-      *)           echo "'$1' cannot be extracted via ex()" ;;
+    *.tar.bz2) tar xjf $1 ;;
+    *.tar.gz) tar xzf $1 ;;
+    *.bz2) bunzip2 $1 ;;
+    *.rar) unrar x $1 ;;
+    *.gz) gunzip $1 ;;
+    *.tar) tar xf $1 ;;
+    *.tbz2) tar xjf $1 ;;
+    *.tgz) tar xzf $1 ;;
+    *.zip) unzip $1 ;;
+    *.Z) uncompress $1 ;;
+    *.7z) 7z x $1 ;;
+    *.tar.xz) tar xf $1 ;;
+    *.tar.zst) unzstd $1 ;;
+    *) echo "'$1' cannot be extracted via ex()" ;;
     esac
   else
     echo "'$1' is not a valid file"
   fi
 }
-md () {
-	mkdir -p $1
+md() {
+  mkdir -p $1
 }
-mdcd (){
-	mkdir -p $1
-	cd $1
+mdcd() {
+  mkdir -p $1
+  cd $1
 }
-pulse (){
-    pulseaudio -k
-    pulseaudio --start
+pulse() {
+  pulseaudio -k
+  pulseaudio --start
 }
 
 #Apt Aliases
 alias upd='sudo apt update -y'
 alias upg='sudo apt update -y && sudo apt upgrade -y'
-
 
 alias aliasrc='${=EDITOR} ~/dotfiles/aliases/aliasrc' #quickly access this file
 
@@ -106,7 +103,6 @@ alias hgrep="fc -El 0 | grep"
 alias p='ps -f'
 alias sortnr='sort -n -r'
 alias unexport='unset'
-  
 
 alias rm='rm -i'
 alias cp='cp -i'
