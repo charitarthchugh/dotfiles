@@ -18,7 +18,9 @@ if [ ! -z "$CODESPACES" ]; then
   echo "Installing nix"
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
   source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-  nix-env -iA home-manager"
+  nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+  nix-channel --update
+  nix-shell '<home-manager>' -A install
   home-manager switch"
 fi
 if command -v fish &>/dev/null; then
