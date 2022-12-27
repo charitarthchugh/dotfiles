@@ -17,9 +17,9 @@ fi
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 if [ ! -z "$CODESPACES" ]; then 
   echo "This is a Github codespace, installing neccesary items"
-  "Installing from apt"
+  echo "Installing from apt"
   $BASEDIR/scripts/apt-cli.sh
-  "Installing nix"
+  echo "Installing nix"
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
   bash -i -c "nix-env -iA home-manager"
   bash -i -c "home-manager switch"
