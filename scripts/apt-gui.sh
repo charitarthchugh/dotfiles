@@ -19,11 +19,11 @@ while read package; do
 done <"${BASEDIR}/../packages/apt-gui.txt"
 
 # Install packages using pacstall (GUI only)
-while read package; do
-	sudo apt install -y -qq "$package"
-	if [[ $? -eq 0 ]]; then
-		echo "$package is installed from pacstall!"
-	else
-		echo "$package" >>"${BASEDIR}/pacstall_failed.txt"
-	fi
-done <"${BASEDIR}/../packages/pacstall-gui.txt"
+# while read package; do
+# 	sudo apt install -y -qq "$package"
+# 	if [[ $? -eq 0 ]]; then
+# 		echo "$package is installed from pacstall!"
+# 	else
+# 		echo "$package" >>"${BASEDIR}/pacstall_failed.txt"
+# 	fi
+# done <"${BASEDIR}/../packages/pacstall-gui.txt"
