@@ -10,73 +10,73 @@
 - clean: ["~", "~/.config"]
 - link:
     ~/.zshrc:
-      path: ~/dotfiles/.zshrc
+      path: zshrc
     ~/.zshenv:
-      path: ~/dotfiles/.zshenv
+      path: zshenv
     ~/.zsh_profile:
-      path: ~/dotfiles/.zsh_profile
+      path: zsh_profile
     ~/.bashrc:
-      path: ~/dotfiles/.bashrc
+      path: bashrc
     ~/.vimrc:
-      path: ~/dotfiles/.vimrc
+      path: vimrc
     ~/.npmrc:
-      path: ~/dotfiles/.npmrc
+      path: npmrc
     ~/.condarc:
-      path: ~/dotfiles/.condarc
+      path: condarc
     ~/.carbon-now.json:
-      path: ~/dotfiles/.carbon-now.json
+      path: carbon-now.json
     ~/.selected_editor:
-      path: ~/dotfiles/.selected_editor
+      path: selected_editor
     ~/.config/topgrade.toml:
-      path: ~/dotfiles/.config/topgrade.toml
+      path: config/topgrade.toml
     ~/.config/user-dirs.dirs:
-      path: ~/dotfiles/.config/user-dirs.dirs
+      path: config/user-dirs.dirs
     ~/.config/starship.toml:
-      path: ~/dotfiles/.config/starship.toml
+      path: config/starship.toml
     ~/.config/coc/extensions/package.json:
-      path: ~/dotfiles/.config/coc/extensions/package.json
+      path: config/coc/extensions/package.json
     ~/.config/git/config:
-      path: ~/dotfiles/.config/git/config
+      path: config/git/config
     ~/.config/fish/config.fish:
-      path: ~/dotfiles/.config/fish/config.fish
+      path: config/fish/config.fish
     ~/.config/fish/fish_plugins:
-      path: ~/dotfiles/.config/fish/fish_plugins
+      path: config/fish/fish_plugins
     ~/.config/up/up.fish:
-      path: ~/dotfiles/.config/up/up.fish
+      path: config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
-      path: ~/dotfiles/.config/VSCodium/User/keybindings.json
+      path: config/VSCodium/User/keybindings.json
     ~/.config/VSCodium/User/settings.json:
-      path: ~/dotfiles/.config/VSCodium/User/settings.json
+      path: config/VSCodium/User/settings.json
     ~/.config/VSCodium/User/snippets:
-      path: ~/dotfiles/.config/VSCodium/User/snippets/*
+      path: config/VSCodium/User/snippets/*
     ~/.config/Code/User/keybindings.json:
-      path: ~/dotfiles/.config/VSCodium/User/keybindings.json
+      path: config/VSCodium/User/keybindings.json
     ~/.config/Code/User/settings.json:
-      path: ~/dotfiles/.config/VSCodium/User/settings.json
+      path: config/VSCodium/User/settings.json
     ~/.config/Code/User/snippets:
-      path: ~/dotfiles/.config/Code/User/snippets/*
+      path: config/Code/User/snippets/*
     ~/.config/gh/config.yml:
-      path: ~/dotfiles/.config/gh/config.yml
+      path: config/gh/config.yml
     ~/.config/sheldon/plugins.toml:
-      path: ~/dotfiles/.config/sheldon/plugins.toml
+      path: config/sheldon/plugins.toml
     ~/.config/nixpkgs/:
-      path: ~/dotfiles/.config/nixpkgs/*
+      path: config/nixpkgs/*
     ~/.config/kitty/:
-      path: ~/dotfiles/.config/kitty/*
+      path: config/kitty/*
     ~/.config/alacritty/:
-      path: ~/dotfiles/.config/alacritty/*
+      path: config/alacritty/*
     ~/.config/bpytop/:
-      path: ~/dotfiles/.config/bpytop/*
+      path: config/bpytop/*
     ~/.config/pop-shell:
-      path: ~/dotfiles/.config/pop-shell/*
+      path: config/pop-shell/*
     ~/.config/nvim:
-      path: ~/dotfiles/.config/nvim/*
+      path: config/nvim/*
     ~/.config/ulauncher:
-      path: ~/dotfiles/.config/ulauncher/*
+      path: config/ulauncher/*
     ~/.config/containers:
-      path: ~/dotfiles/.config/containers/*
+      path: config/containers/*
     ~/Templates:
-      path: ~/dotfiles/Templates/*
+      path: Templates/*
 
 - shell:
     - command: command -v fish &> /dev/null && fish -i -c "fisher update"
