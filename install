@@ -10,9 +10,17 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
-git submodule update --init --recursive 
-if command -v fish &> /dev/null
-then
-  fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+git submodule update --init --recursive
+if command -v fish &>/dev/null; then
+  TERM=linux fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
 fi
-  "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
+if [ ! -z "$CODESPACES" ]; then 
+  echo "This is a Github codespace, installing neccesary items"
+  "Installing from apt"
+  $BASEDIR/scripts/apt-cli.sh
+  "Installing nix"
+  sh <(curl -L https://nixos.org/nix/install) --no-daemon
+  bash -i -c "nix-env -iA home-manager"
+  bash -i -c "home-manager switch"
+fi
