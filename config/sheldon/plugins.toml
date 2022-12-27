@@ -72,3 +72,7 @@ dir = 'plugins/ubuntu'
 [plugins.virtualenv-autoswitch]
 github = 'MichaelAquilina/zsh-autoswitch-virtualenv'
 
+[plugins."up.sh"]
+remote = 'https://raw.githubusercontent.com/shannonmoeller/up/master/up.sh'
+
+

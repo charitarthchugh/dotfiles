@@ -41,8 +41,6 @@
       path: config/fish/config.fish
     ~/.config/fish/fish_plugins:
       path: config/fish/fish_plugins
-    ~/.config/up/up.fish:
-      path: config/up/up.fish
     ~/.config/VSCodium/User/keybindings.json:
       path: config/VSCodium/User/keybindings.json
     ~/.config/VSCodium/User/settings.json:
