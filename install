@@ -11,10 +11,6 @@ TERM=xterm
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
-if command -v fish &>/dev/null; then
-  fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
-fi
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 if [ ! -z "$CODESPACES" ]; then 
   echo "This is a Github codespace, installing neccesary items"
   echo "Installing from apt"
@@ -24,3 +20,7 @@ if [ ! -z "$CODESPACES" ]; then
   bash -i -c "nix-env -iA home-manager"
   bash -i -c "home-manager switch"
 fi
+if command -v fish &>/dev/null; then
+  fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+fi
+"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
