@@ -20,11 +20,13 @@ if [ ! -z "$CODESPACES" ]; then
   source "$HOME/.nix-profile/etc/profile.d/nix.sh"
   nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
   nix-channel --update
-  nix-shell '<home-manager>' -A install
   export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
+  nix-shell '<home-manager>' -A install
   home-manager switch
 fi
 if command -v fish &>/dev/null; then
-  fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+  if [ -z "$CODESPACES" ]; then
+    fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+  fi
 fi
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
