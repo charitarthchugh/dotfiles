@@ -33,8 +33,6 @@ jobs:
         uses: actions/setup-node@v2.1.5
       - name: Setup Fish
         uses: fish-actions/install-fish@v1.1.0
-      - name: setup curl 
-        run: sudo apt update && sudo apt install curl
       - name: Make install script executeable
         run: chmod +x install
       - name: Run install-dotfiles
