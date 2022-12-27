@@ -14,10 +14,10 @@ git submodule update --init --recursive
 if [ ! -z "$CODESPACES" ]; then
   echo "This is a Github codespace, installing neccesary items"
   echo "Installing from apt"
-  $BASEDIR/scripts/apt-cli.sh
+  # $BASEDIR/scripts/apt-cli.sh
   echo "Installing nix"
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
-  source "~/.nix-profile/etc/profile.d/nix.sh"
+  source "$HOME/.nix-profile/etc/profile.d/nix.sh"
   nix-env -iA home-manager"
   home-manager switch"
 fi
