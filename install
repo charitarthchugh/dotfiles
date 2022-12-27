@@ -11,14 +11,15 @@ TERM=xterm
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
-if [ ! -z "$CODESPACES" ]; then 
+if [ ! -z "$CODESPACES" ]; then
   echo "This is a Github codespace, installing neccesary items"
   echo "Installing from apt"
   $BASEDIR/scripts/apt-cli.sh
   echo "Installing nix"
   sh <(curl -L https://nixos.org/nix/install) --no-daemon
-  bash -i -c "nix-env -iA home-manager"
-  bash -i -c "home-manager switch"
+  source "~/.nix-profile/etc/profile.d/nix.sh"
+  nix-env -iA home-manager"
+  home-manager switch"
 fi
 if command -v fish &>/dev/null; then
   fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
