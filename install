@@ -7,12 +7,12 @@ DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
+TERM=xterm
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
 if command -v fish &>/dev/null; then
-  TERM=linux fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+  fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
 fi
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 if [ ! -z "$CODESPACES" ]; then 
