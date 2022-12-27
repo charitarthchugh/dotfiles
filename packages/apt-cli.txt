@@ -17,7 +17,6 @@ trash-cli
 unzip 
 xsel
 pipx 
-libnotify-bin 
 python-is-python3
 lazygit
 llvm 

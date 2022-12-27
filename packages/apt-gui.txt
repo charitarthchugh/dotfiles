@@ -14,3 +14,4 @@ ulauncher
 speedcrunch
 gnome-tweaks 
 gnome-weather
+libnotify-bin 
