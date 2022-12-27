@@ -2,7 +2,7 @@ apt-transport-https
 curl
 gnupg
 software-properties-common
-awk
+gawk
 git 
 fd-find
 vim 
