@@ -14,15 +14,15 @@ git submodule update --init --recursive
 if [ ! -z "$CODESPACES" ]; then
   echo "This is a Github codespace, installing neccesary items"
   echo "Installing from apt"
-  # $BASEDIR/scripts/apt-cli.sh
-  echo "Installing nix"
-  sh <(curl -L https://nixos.org/nix/install) --no-daemon
-  source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-  nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-  nix-channel --update
-  export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
-  nix-shell '<home-manager>' -A install
-  home-manager switch
+  $BASEDIR/scripts/apt-cli.sh
+  # echo "Installing nix"
+  # sh <(curl -L https://nixos.org/nix/install) --no-daemon
+  # source "$HOME/.nix-profile/etc/profile.d/nix.sh"
+  # nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+  # nix-channel --update
+  # export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
+  # nix-shell '<home-manager>' -A install
+  # home-manager switch
 fi
 if command -v fish &>/dev/null; then
   if [ -z "$CODESPACES" ]; then
