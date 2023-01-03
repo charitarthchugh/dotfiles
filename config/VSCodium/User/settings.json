@@ -89,7 +89,7 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "window.titleBarStyle": "native",
+  "window.titleBarStyle": "custom",
   "editor.bracketPairColorization.enabled": true,
   "remote.SSH.remoteServerListenOnSocket": true,
   "remote.SSH.remotePlatform": {
@@ -187,4 +187,8 @@
   "black-formatter.importStrategy": "fromEnvironment",
   "ipynb.experimental.pasteImages.enabled": true,
   "editor.experimental.pasteActions.enabled": true,
+  "window.commandCenter": true,
+  "workbench.productIconTheme": "adwaita",
+  "workbench.iconTheme": null,
+  "editor.renderLineHighlight": "none"
 }
