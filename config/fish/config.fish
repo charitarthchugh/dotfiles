@@ -9,9 +9,11 @@ if test -d /home/linuxbrew
 end
 export BETTER_EXCEPTIONS=1
 if command -v fzf > /dev/null
+    echo "Reminder that fzf is not installed & in path"
     fzf_configure_bindings
 end
 if command -v starship > /dev/null
     starship init fish | source
     starship completions fish | source
+    echo "Reminder that starship is not installed & in path"
 end
