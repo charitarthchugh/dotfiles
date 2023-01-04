@@ -24,9 +24,4 @@ if [ ! -z "$CODESPACES" ]; then
   # nix-shell '<home-manager>' -A install
   # home-manager switch
 fi
-if command -v fish &>/dev/null; then
-  if [ -z "$CODESPACES" ]; then
-    fish -i -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
-  fi
-fi
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"

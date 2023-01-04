@@ -77,7 +77,7 @@
       path: Templates/*
 
 - shell:
-    - command: command -v fish &> /dev/null && fish -i -c "fisher update"
+    - command: command -v fish &> /dev/null && fish -i -c "curl -sL https://git.io/fisher | source && fisher update"
       description: Install and update Fish Plugins
     # - command: curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
     #   description: Install Dein for Vim
