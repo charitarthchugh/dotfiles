@@ -7,21 +7,25 @@ DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+echo $BASEDIR
 TERM=xterm
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive
+
+# "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 if [ ! -z "$CODESPACES" ]; then
   echo "This is a Github codespace, installing neccesary items"
   echo "Installing from apt"
-  $BASEDIR/scripts/apt-cli.sh
-  # echo "Installing nix"
-  # sh <(curl -L https://nixos.org/nix/install) --no-daemon
-  # source "$HOME/.nix-profile/etc/profile.d/nix.sh"
-  # nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-  # nix-channel --update
-  # export NIX_PATH=$HOME/.nix-defexpr/channels:/nix/var/nix/profiles/per-user/root/channels${NIX_PATH:+:$NIX_PATH}
-  # nix-shell '<home-manager>' -A install
-  # home-manager switch
+  sudo apt install -y -qq build-essential
+
+  echo "Installing brew"
+  export HOMEBREW_INSTALL_FROM_API=1
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  # Edits to dotfiles does not matter as much to this environment
+  fish -i -c  "echo 'eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> ~/.config/fish/config.fish"
+  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/codespace/.bashrc
+  echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/codespace/.bashrc
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+  brew bundle --file "$BASEDIR/packages/Brewfile"
 fi
-"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
