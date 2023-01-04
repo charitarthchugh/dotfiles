@@ -25,7 +25,6 @@ if [ ! -z "$CODESPACES" ]; then
   # Edits to dotfiles does not matter as much to this environment
   fish -i -c  "echo 'eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> ~/.config/fish/config.fish"
   echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /home/codespace/.bashrc
-  echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/codespace/.bashrc
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
   brew bundle --file "$BASEDIR/packages/Brewfile"
 fi

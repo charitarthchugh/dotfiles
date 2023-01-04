@@ -15,9 +15,9 @@ zmodload zsh/complist
 _comp_options+=(globdots) # Include hidden files.
 autoload -Uz +X compinit
 compinit
-# zplug
-#source ~/dotfiles/.zsh_plugins.zsh
+# Sheldon
 eval "$(sheldon source)"
+
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -40,4 +40,9 @@ bindkey '^ ' autosuggest-accept
 #
 # # Load aliases and shortcuts if existent.
  [ -f "$HOME/dotfiles/aliases/aliasrc" ] && source $HOME/dotfiles/aliases/aliasrc
+
+## Load homebrew if it exists
+if [[ -d /home/linuxbrew ]]; then 
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 eval "$(starship init zsh)"

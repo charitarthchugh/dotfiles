@@ -40,7 +40,6 @@ case "$TERM" in
 xterm-color | *-256color) color_prompt=yes ;;
 esac
 
-
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -83,6 +82,10 @@ if ! shopt -oq posix; then
     elif [ -f /etc/bash_completion ]; then
         . /etc/bash_completion
     fi
+fi
+## Enable Homebrew if it exists
+if [[ -d /home/linuxbrew ]]; then
+    eval "$(/home/linuxbrew/.bin/brew shellenv)"
 fi
 eval "$(starship init bash)"
 # >>> conda initialize >>>
