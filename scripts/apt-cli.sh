@@ -24,7 +24,7 @@ yes | sudo bash -c "$(curl -fsSL https://git.io/JsADh || wget -q https://git.io/
 
 # Install packages using pacstall (cli only)
 # while read package; do
-# 	sudo apt install -y -qq "$package"
+# 	yes no | pacstall -I "$package"
 # 	if [[ $? -eq 0 ]]; then
 # 		echo "$package is installed from pacstall!"
 # 	else

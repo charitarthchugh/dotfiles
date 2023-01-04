@@ -20,7 +20,7 @@ done <"${BASEDIR}/../packages/apt-gui.txt"
 
 # Install packages using pacstall (GUI only)
 # while read package; do
-# 	sudo apt install -y -qq "$package"
+# 	yes no | pacstall -I "$package"
 # 	if [[ $? -eq 0 ]]; then
 # 		echo "$package is installed from pacstall!"
 # 	else
