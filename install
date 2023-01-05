@@ -16,6 +16,9 @@ git submodule update --init --recursive
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 if [ ! -z "$CODESPACES" ]; then
   echo "This is a Github codespace, installing neccesary items"
+  # Delete symlinked gitconfig, commiting won't work otherwisr
+  rm ~/.config/git/config
+
   echo "Installing from apt"
   sudo apt install -y -qq build-essential
 
