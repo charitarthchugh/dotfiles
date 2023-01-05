@@ -8,12 +8,14 @@ if test -d /home/linuxbrew
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
 export BETTER_EXCEPTIONS=1
-if command -v fzf > /dev/null
-    echo "Reminder that fzf is not installed & in path"
+if type -q fzf
     fzf_configure_bindings
+else
+    echo "Reminder that fzf is not installed & in path"
 end
-if command -v starship > /dev/null
+if type -q starship
     starship init fish | source
     starship completions fish | source
+else
     echo "Reminder that starship is not installed & in path"
 end
