@@ -45,6 +45,7 @@
     pkgs.starship
     pkgs.sheldon
     pkgs.poetry
+    pkgs.du-dust
   ];
 }
 
