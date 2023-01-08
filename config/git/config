@@ -30,3 +30,5 @@ show = delta
 navigate = true
 [interactive]
 diffFilter = delta --color-only
+[ghq]
+root = ~/Dev/ghq/ 
