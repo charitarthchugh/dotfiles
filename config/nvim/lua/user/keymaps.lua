@@ -40,7 +40,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Format current buffer  
-keymap("n", "<C-f>", ":lua vim.lsp.buf.formatting_sync()<CR>", opts)
+keymap("n", "<C-f>", ":lua vim.lsp.buf.format()<CR>", opts)
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
