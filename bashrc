@@ -85,7 +85,7 @@ if ! shopt -oq posix; then
 fi
 ## Enable Homebrew if it exists
 if [[ -d /home/linuxbrew ]]; then
-    eval "$(/home/linuxbrew/.bin/brew shellenv)"
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
 eval "$(starship init bash)"
 # >>> conda initialize >>>
