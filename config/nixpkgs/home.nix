@@ -47,6 +47,8 @@
     pkgs.poetry
     pkgs.du-dust
     pkgs.gh
+    pkgs.neovim
+    pkgs.fzf
   ];
 }
 
