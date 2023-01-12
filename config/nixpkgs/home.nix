@@ -46,6 +46,7 @@
     pkgs.sheldon
     pkgs.poetry
     pkgs.du-dust
+    pkgs.gh
   ];
 }
 
