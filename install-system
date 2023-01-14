@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source /ect/os-release
+source /etc/os-release 
 
-GUI = ""
-while test $# -gt 0; do 
-  case "$1" in 
-    -h|--help)
+
+Help(){
       echo "install-system - install Charitarth Chugh's dev environment"
       echo " "
       echo "Default is to install non GUI applications"
@@ -13,16 +11,25 @@ while test $# -gt 0; do
       echo "usage install-system [arguments]"
       echo " "
       echo "options:"
-      echo "-h, --help               show this help message and exit"
-      echo "-g, --gui                install GUI applications as well"
-      exit 0 
-      ;;
-    -g, --gui)
-      GUI=true
-  esac
+      echo "-h,               show this help message and exit"
+      echo "-g,                install GUI applications as well"
+      echo
+}
+# Get the options
+while getopts ":h" option; do
+   case $option in
+      h) # display Help
+         Help
+         exit;;
+     g) 
+        GUI=true;;
+     \?) # Invalid option
+         echo "Error: Invalid option"
+         exit;;
+   esac
 done
 # Detect system and install respective cli packages
-if [["$ID" = "ubuntu"]]; then 
+if [[ "$ID" = "ubuntu" ]]; then 
   $BASEDIR/scripts/apt-cli.sh 
 elif [[ "$ID" = "arch" ]]; then 
    $BASEDIR/scripts/yay-cli.sh 
@@ -31,15 +38,16 @@ elif [[ "$ID" = "fedora" ]]; then
 fi 
 $BASEDIR/install # Install Dotfiles
 
-if ! GUI; then
+if [ -z "$GUI" ]; then
   exit 0 
 fi
+
 # Install respective gui packages
 if [[ "$ID" = "ubuntu" ]]; then
   $BASEDIR/scripts/apt-gui.sh
 elif [[ "$ID" = "arch" ]]; then
  $BASEDIR/scripts/yay-gui.sh 
-elif [[ "$ID" =  "fedora"]]; then
+elif [[ "$ID" =  "fedora" ]]; then
   $BASEDIR/scripts/dnf-gui.sh
 fi
 
