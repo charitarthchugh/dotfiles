@@ -28,3 +28,6 @@ while read package; do
         echo "$package" >>"${BASEDIR}/../dnf_failed.txt"
     fi
 done <"${BASEDIR}/../packages/gui-cli.txt"
+
+# Modify Flathub to not have any filters
+sudo flatpak remote-modify flathub --no-filter
