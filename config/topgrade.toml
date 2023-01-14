@@ -31,8 +31,10 @@ max_concurrency = 5
 repos = [
     "~/Dev/IdeaProjects/Personal/*/*/",
     "~/Dev/GitClone/*/",
+    "~/Dev/ghq/*/*/*/",
     "~/Dev/Reading/*/",
     "~/.local/share/fonts/*/"
+    
 ]
 
 # Don't pull the predefined git repos
