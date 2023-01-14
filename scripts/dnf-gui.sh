@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+# Set vars
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # VSCodium repo
 sudo tee -a /etc/yum.repos.d/vscodium.repo << 'EOF'
