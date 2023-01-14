@@ -22,10 +22,12 @@ while test $# -gt 0; do
   esac
 done
 # Detect system and install respective cli packages
-if [["$ID_LIKE" = "debian"]]; then 
+if [["$ID" = "ubuntu"]]; then 
   $BASEDIR/scripts/apt-cli.sh 
-elif [[ "$ID_LIKE" = "arch" ]]; then 
+elif [[ "$ID" = "arch" ]]; then 
    $BASEDIR/scripts/yay-cli.sh 
+elif [[ "$ID" = "fedora" ]]; then
+    $BASEDIR/scripts/dnf-cli.sh
 fi 
 $BASEDIR/install # Install Dotfiles
 
@@ -33,10 +35,12 @@ if ! GUI; then
   exit 0 
 fi
 # Install respective gui packages
-if [[ "$ID_LIKE" = "debian" ]]; then
+if [[ "$ID" = "ubuntu" ]]; then
   $BASEDIR/scripts/apt-gui.sh
-elif [[ "$ID_LIKE" = "arch" ]]; then
+elif [[ "$ID" = "arch" ]]; then
  $BASEDIR/scripts/yay-gui.sh 
+elif [[ "$ID" =  "fedora"]]; then
+  $BASEDIR/scripts/dnf-gui.sh
 fi
 
 $BASEDIR/scripts/flatpak.sh 
