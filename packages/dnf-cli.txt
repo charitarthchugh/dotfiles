@@ -6,7 +6,8 @@ npm
 openssh
 pipx 
 python3-pip
-gcc 
+gcc
+gcc-c++
 cmake 
 llvm 
 gawk 
