@@ -5,6 +5,6 @@ while read package; do
     if [[ $? -eq 0 ]]; then
         echo "$package is installed from gh!"
     else
-        echo "$package" >> gh_failed.txt
+        echo "$package" >> "$BASEDIR/../gh_failed.txt"
     fi
 done < "$BASEDIR/../packages/gh-extensions.txt"

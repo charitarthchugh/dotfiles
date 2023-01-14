@@ -6,6 +6,6 @@ while read package; do
 	if [[ $? -eq 0 ]]; then
 		echo "$package is installed from yay!"
 	else
-		echo "$package" >>"${BASEDIR}/yay_failed.txt"
+		echo "$package" >>"${BASEDIR}/../yay_failed.txt"
 	fi
 done <"${BASEDIR}/../packages/yay-gui.txt"
