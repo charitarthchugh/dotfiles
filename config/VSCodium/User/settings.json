@@ -190,5 +190,8 @@
   "window.commandCenter": true,
   "workbench.productIconTheme": "adwaita",
   "workbench.iconTheme": null,
-  "editor.renderLineHighlight": "none"
+  "editor.renderLineHighlight": "none",
+  "[fish]": {
+    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+  }
 }
