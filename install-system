@@ -1,56 +1,56 @@
 #!/usr/bin/env bash
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source /etc/os-release 
+source /etc/os-release
 
-
-Help(){
-      echo "install-system - install Charitarth Chugh's dev environment"
-      echo " "
-      echo "Default is to install non GUI applications"
-      echo " "
-      echo "usage install-system [arguments]"
-      echo " "
-      echo "options:"
-      echo "-h,               show this help message and exit"
-      echo "-g,                install GUI applications as well"
-      echo
+Help() {
+  echo "install-system - install Charitarth Chugh's dev environment"
+  echo " "
+  echo "Default is to install non GUI applications"
+  echo " "
+  echo "usage install-system [arguments]"
+  echo " "
+  echo "options:"
+  echo "-h,               show this help message and exit"
+  echo "-g,                install GUI applications as well"
+  echo
 }
 # Get the options
-while getopts ":h" option; do
-   case $option in
-      h) # display Help
-         Help
-         exit;;
-     g) 
-        GUI=true;;
-     \?) # Invalid option
-         echo "Error: Invalid option"
-         exit;;
-   esac
+while getopts ":hg" option; do
+  case $option in
+  h) # display Help
+    Help
+    exit
+    ;;
+  g)
+    GUI=true
+    ;;
+  \?) # Invalid option
+    echo "Error: Invalid option"
+    exit
+    ;;
+  esac
 done
 # Detect system and install respective cli packages
-if [[ "$ID" = "ubuntu" ]]; then 
-  $BASEDIR/scripts/apt-cli.sh 
-elif [[ "$ID" = "arch" ]]; then 
-   $BASEDIR/scripts/yay-cli.sh 
+if [[ "$ID" = "ubuntu" ]]; then
+  $BASEDIR/scripts/apt-cli.sh
+elif [[ "$ID" = "arch" ]]; then
+  $BASEDIR/scripts/yay-cli.sh
 elif [[ "$ID" = "fedora" ]]; then
-    $BASEDIR/scripts/dnf-cli.sh
-fi 
+  $BASEDIR/scripts/dnf-cli.sh
+fi
 $BASEDIR/install # Install Dotfiles
 
 if [ -z "$GUI" ]; then
-  exit 0 
+  exit 0
 fi
 
 # Install respective gui packages
 if [[ "$ID" = "ubuntu" ]]; then
   $BASEDIR/scripts/apt-gui.sh
 elif [[ "$ID" = "arch" ]]; then
- $BASEDIR/scripts/yay-gui.sh 
-elif [[ "$ID" =  "fedora" ]]; then
+  $BASEDIR/scripts/yay-gui.sh
+elif [[ "$ID" = "fedora" ]]; then
   $BASEDIR/scripts/dnf-gui.sh
 fi
 
-$BASEDIR/scripts/flatpak.sh 
-
-
+$BASEDIR/scripts/flatpak.sh
