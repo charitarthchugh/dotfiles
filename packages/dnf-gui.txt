@@ -1,0 +1,13 @@
+syncthing
+keepassxc
+kitty
+ulauncher
+vlc 
+libnotify
+geary
+lollypop
+firefox
+speedcrunch
+gnome-tweaks
+code
+codium

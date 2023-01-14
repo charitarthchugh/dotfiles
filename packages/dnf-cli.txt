@@ -1,0 +1,16 @@
+fish 
+git 
+neovim
+curl 
+npm
+openssh
+pipx 
+python3-pip
+gcc 
+cmake 
+llvm 
+gawk 
+trash-cli
+zsh
+btop
+tailscale
