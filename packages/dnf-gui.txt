@@ -11,3 +11,5 @@ speedcrunch
 gnome-tweaks
 code
 codium
+ffmpeg
+mozilla-openh264
