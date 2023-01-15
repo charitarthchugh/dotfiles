@@ -1,4 +1,3 @@
-aaron-bond.better-comments
 arcticicestudio.nord-visual-studio-code
 bmalehorn.vscode-fish
 budparr.language-hugo-vscode
@@ -17,10 +16,12 @@ esbenp.prettier-vscode
 fivethree.vscode-hugo-snippets
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
+formulahendry.code-runner
 foxundermoon.shell-format
 GitHub.vscode-pull-request-github
 icrawl.discord-vscode
 James-Yu.latex-workshop
+jeff-hykin.better-shellscript-syntax
 JeffersonQin.latex-snippets-jeff
 jeroen-meijer.pubspec-assist
 k--kato.intellij-idea-keybindings
@@ -31,11 +32,17 @@ mathpix.vscode-mathpix-markdown
 mhutchie.git-graph
 mkhl.direnv
 ms-pyright.pyright
+ms-python.isort
 ms-python.python
 ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
 ms-vscode.live-server
 njpwerner.autodocstring
 pinage404.bash-extension-pack
+piousdeer.adwaita-theme
 PKief.markdown-checkbox
 PKief.material-icon-theme
 RandomFractalsInc.vscode-data-preview
