@@ -13,3 +13,5 @@ code
 codium
 ffmpeg
 mozilla-openh264
+gnome-shell-extension-pop-shell
+adw-gtk3
