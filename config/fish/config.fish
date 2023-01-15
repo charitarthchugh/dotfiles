@@ -22,5 +22,7 @@ end
 if type -q nvim
  set -g EDITOR nvim
 end
-set -g OPENCV_LOG_LEVEL 0
-set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
+if type -q howdy 
+  set -g OPENCV_LOG_LEVEL 0
+  set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
+end
