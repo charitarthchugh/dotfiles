@@ -19,3 +19,8 @@ if type -q starship
 else
     echo "Reminder that starship is not installed & in path"
 end
+if type -q nvim
+ set -g EDITOR nvim
+end
+set -g OPENCV_LOG_LEVEL 0
+set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
