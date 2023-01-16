@@ -173,8 +173,6 @@
     }
   ],
   "codesnap.transparentBackground": true,
-
-  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting",
   "latex-workshop.linting.chktex.enabled": true,
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -193,5 +191,6 @@
   "editor.renderLineHighlight": "none",
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
-  }
+  },
+  "workbench.colorTheme": "Adwaita Dark & colorful status bar"
 }

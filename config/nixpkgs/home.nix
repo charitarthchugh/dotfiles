@@ -42,13 +42,14 @@
     pkgs.bat-extras.batdiff
     pkgs.bat-extras.prettybat
     pkgs.black
+    pkgs.isort
     pkgs.starship
     pkgs.sheldon
-    pkgs.poetry
     pkgs.du-dust
     pkgs.gh
     pkgs.neovim
     pkgs.fzf
+    pkgs.croc
   ];
 }
 

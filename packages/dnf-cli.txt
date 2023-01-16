@@ -16,3 +16,5 @@ zsh
 btop
 tailscale
 xz
+openssl
+sqlite3
