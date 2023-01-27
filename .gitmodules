@@ -5,3 +5,6 @@
 [submodule ".config/ulauncher/user-themes/WhiteSur-Dark-ulauncher"]
 	path = .config/ulauncher/user-themes/WhiteSur-Dark-ulauncher
 	url = https://github.com/Raayib/WhiteSur-Dark-ulauncher
+[submodule "config/ulauncher/user-themes/adwaita-dark-ulauncher"]
+	path = config/ulauncher/user-themes/adwaita-dark-ulauncher
+	url = https://github.com/gabrbrand/adwaita-dark-ulauncher
