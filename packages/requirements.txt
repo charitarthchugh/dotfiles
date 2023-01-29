@@ -1,4 +1,7 @@
- fuzzywuzzy
- simpleeval
- pint
- 
+fuzzywuzzy
+simpleeval
+pint
+pytz
+semver
+python-raindropio
+typing_extensions
