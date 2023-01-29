@@ -7,6 +7,6 @@
     "render-on-screen": "mouse-pointer-monitor",
     "show-indicator-icon": false,
     "show-recent-apps": "5",
-    "terminal-command": "alacritty -e",
+    "terminal-command": "kitty -e",
     "theme-name": "adwaita-dark"
 }
