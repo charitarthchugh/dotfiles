@@ -45,44 +45,53 @@ style = "bright-black"
 
 [python]
 style = "bright-black"
-format = "[${pyenv_prefix} ${version} ($virtualenv)]($style)"
+format = "[${pyenv_prefix} ${version} ($virtualenv) ]($style)"
 
 [java]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version}) ]($style)"
 style = "bright-black"
 
 [swift]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version}) ]($style)"
 style = "bright-black"
 
 [golang]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version}) ]($style)"
 style = "bright-black"
 
 [kotlin]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version}) ]($style)"
 style = "bright-black"
 
 [dart]
-format = "[${symbol}(${version})]($style)"
+format = "[${symbol}(${version}) ]($style)"
 style = "bright-black"
 
 [conda]
-format = "[$symbol$environment]($style)"
+format = "[$symbol$environment ]($style)"
 style = "bright-black"
 
 [docker_context]
-format = "[$symbol$context]($style)"
+format = "[$symbol$context ]($style)"
 style = "bright-black"
 
 [nodejs]
-format = " [$symbol($version)]($style)"
+format = "[$symbol($version) ]($style)"
 style = "bright-black"
 
 [cmake]
-format = "[$symbol($version)]($style)"
+format = "[$symbol($version) ]($style)"
 style = "bright-black"
 
 [lua]
-format = "[$symbol($version)]($style)"
+format = "[$symbol($version) ]($style)"
 style = "bright-black"
+
+[nix_shell]
+format = '[$symbol$state( \($name\))]($style) '
+symbol = '❄️ '
+
+[gcloud]
+format = '[$symbol$account(@$domain)(\($region\))]($style) '
+style = "bright-black"
+symbol = '☁️ '
