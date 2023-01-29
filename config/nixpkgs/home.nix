@@ -50,6 +50,11 @@
     pkgs.neovim
     pkgs.fzf
     pkgs.croc
+    pkgs.rars
+    pkgs.exa
+    pkgs.xxh
+    pkgs.google-cloud-sdk
+    pkgs.fd
   ];
 }
 
