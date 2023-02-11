@@ -17,4 +17,4 @@ btop
 tailscale
 xz
 openssl
-sqlite3
+sqlite
