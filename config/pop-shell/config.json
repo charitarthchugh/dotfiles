@@ -51,6 +51,9 @@
     },
     {
       "class": "java-util-concurrent-ForkJoinWorkerThread"
+    },
+    {
+      "class": "org.fedoraproject.MediaWriter"
     }
   ],
   "skiptaskbarhidden": [],
