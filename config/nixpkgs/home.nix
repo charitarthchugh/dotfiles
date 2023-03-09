@@ -30,7 +30,6 @@
     pkgs.yarn
     pkgs.glow
     pkgs.pandoc
-    pkgs.ffmpeg
     pkgs.imagemagick
     pkgs.direnv
     pkgs.cmake
@@ -55,6 +54,7 @@
     pkgs.xxh
     pkgs.google-cloud-sdk
     pkgs.fd
+    pkgs.hugo
   ];
 }
 
