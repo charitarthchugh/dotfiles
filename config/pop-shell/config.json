@@ -54,6 +54,9 @@
     },
     {
       "class": "org.fedoraproject.MediaWriter"
+    },
+    {
+      "class": "io.github.seadve.Kooha"
     }
   ],
   "skiptaskbarhidden": [],
