@@ -7,6 +7,9 @@ end
 if test -d /home/linuxbrew
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
+if test -d $HOME/.pyenv
+   pyenv init - | source
+end
 export BETTER_EXCEPTIONS=1
 if type -q fzf
     fzf_configure_bindings
@@ -26,3 +29,4 @@ if type -q howdy
   set -g OPENCV_LOG_LEVEL 0
   set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
 end
+
