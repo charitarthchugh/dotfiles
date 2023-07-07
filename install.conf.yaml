@@ -57,8 +57,8 @@
       path: config/gh/config.yml
     ~/.config/sheldon/plugins.toml:
       path: config/sheldon/plugins.toml
-    ~/.config/homemanager/:
-      path: config/homemanager/*
+    ~/.config/home-manager/:
+      path: config/home-manager/*
     ~/.config/kitty/:
       path: config/kitty/*
     ~/.config/alacritty/:
