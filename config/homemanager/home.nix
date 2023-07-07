@@ -57,6 +57,7 @@
     pkgs.marksman
     pkgs.ffsend
     pkgs.clipboard-jh
+    pkgs.clang-tools
   ];
 }
 
