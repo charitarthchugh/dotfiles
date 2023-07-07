@@ -8,7 +8,7 @@ format = "[$branch]($style) "
 style = "bright-black"
 
 [git_status]
-format = "[[($conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+format = "[[($conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style) "
 style = "cyan"
 modified = "[*](218)"
 stashed = "[≡](cyan)"
@@ -45,7 +45,7 @@ style = "bright-black"
 
 [python]
 style = "bright-black"
-format = "[${pyenv_prefix} ${version} ($virtualenv) ]($style)"
+format = "[ ${symbol} ${pyenv_prefix} ${version} ($virtualenv) ]($style)"
 
 [java]
 format = "[${symbol}(${version}) ]($style)"
@@ -92,6 +92,10 @@ format = '[$symbol$state( \($name\))]($style) '
 symbol = '❄️ '
 
 [gcloud]
-format = '[$symbol$account(@$domain)(\($region\))]($style) '
+format = '[$symbol $account(@$domain)(\($region\))]($style) '
 style = "bright-black"
-symbol = '☁️ '
+
+[c]
+format = '[$symbol($version(-$name) )]($style)'
+style = 'bright-black'
+
