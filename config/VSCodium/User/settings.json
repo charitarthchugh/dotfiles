@@ -177,7 +177,7 @@
   "codesnap.transparentBackground": true,
   "latex-workshop.linting.chktex.enabled": true,
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
   "workbench.editor.enablePreview": false,
   "[html]": {
