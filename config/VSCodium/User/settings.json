@@ -64,7 +64,7 @@
     }
   },
   "security.workspace.trust.enabled": false,
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "none",
   "redhat.telemetry.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "editor.suggestSelection": "first",
@@ -72,8 +72,12 @@
   "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
   "jupyter.askForKernelRestart": false,
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
+  "isort.args":["--profile", "black"],
   "explorer.confirmDragAndDrop": false,
   "python.linting.pylintPath": "~/.local/bin/pylint",
   "files.watcherExclude": {
@@ -100,12 +104,12 @@
     "172.16.50.106": "linux",
     "172.16.51.107": "linux",
     "100.108.230.123": "linux",
-    "ec2-3-95-38-21.compute-1.amazonaws.com": "linux"
+    "caiwenML": "linux"
   },
   "window.zoomLevel": 1,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
-  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.linux": "zsh",
 
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
@@ -129,15 +133,13 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "docker.host": "unix:///run/user/1000/podman/podman.sock",
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "latex-workshop.docker.image.latex": "registry.gitlab.com/islandoftex/images/texlive:latest",
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
-  "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+  "latex-workshop.latex.recipe.default": "tectonic",
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk 🔃",
@@ -177,7 +179,6 @@
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "latex-workshop.docker.enabled": true,
   "workbench.editor.enablePreview": false,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -187,10 +188,22 @@
   "editor.experimental.pasteActions.enabled": true,
   "window.commandCenter": true,
   "workbench.productIconTheme": "adwaita",
-  "workbench.iconTheme": null,
   "editor.renderLineHighlight": "none",
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
   },
-  "workbench.colorTheme": "Adwaita Dark & colorful status bar"
+  "workbench.colorTheme": "Adwaita Dark & colorful status bar",
+  "python.formatting.blackPath": "~/.nix-profile/bin/black",
+  "notebook.lineNumbers": "on",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false
+  },
+  "latex-workshop.docker.image.latex": "docker.io/danteev/texlive",
+  "docker.environment": {
+    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
+  }
 }
