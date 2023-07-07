@@ -1,5 +1,6 @@
+[misc]
 # Disable specific steps - same options as the command line flag
-#disable = ["Brew Cask"]
+disable = ["tldr", "flutter"]
 
 # Run specific steps - same options as the command line flag
 #only = ["system", "emacs"]
