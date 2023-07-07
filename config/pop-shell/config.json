@@ -57,6 +57,10 @@
     },
     {
       "class": "io.github.seadve.Kooha"
+    },
+    {
+      "class": "org.keepassxc.KeePassXC",
+      "title": "Unlock Database - KeePassXC"
     }
   ],
   "skiptaskbarhidden": [],
