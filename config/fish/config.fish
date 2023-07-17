@@ -29,4 +29,15 @@ if type -q howdy
   set -g OPENCV_LOG_LEVEL 0
   set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
 end
+if test -d "$HOME/micromamba"
+    set -gx MAMBA_ROOT_PREFIX "$HOME/micromamba"
+    set -gx MAMBA_EXE "$HOME/.local/bin/micromamba"
+    $MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
+end    
 
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+# set -gx MAMBA_EXE "/home/cc/.local/bin/micromamba"
+# set -gx MAMBA_ROOT_PREFIX "/home/cc/micromamba"
+
+# <<< mamba initialize <<<
