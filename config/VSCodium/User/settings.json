@@ -77,7 +77,7 @@
       "source.organizeImports": true
     }
   },
-  "isort.args":["--profile", "black"],
+  "isort.args": ["--profile", "black"],
   "explorer.confirmDragAndDrop": false,
   "python.linting.pylintPath": "~/.local/bin/pylint",
   "files.watcherExclude": {
@@ -109,7 +109,7 @@
   "window.zoomLevel": 1,
   "diffEditor.ignoreTrimWhitespace": false,
   "material-icon-theme.showWelcomeMessage": false,
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
 
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
