@@ -21,7 +21,6 @@ sudo dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-rel
 
 sudo dnf update -y
 
-sudo dnf copr enable -y nickavm/gtk3
 # Install dnf packages (gui only)
 while read package; do
     sudo dnf install -y -qq "$package"
