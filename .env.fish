@@ -6,3 +6,4 @@ fish_add_path ~/go/bin/
 fish_add_path ~/.cargo/bin/
 fish_add_path ~/.pyenv/bin/
 fish_add_path /var/lib/flatpak/exports/bin
+fish_add_path /usr/local/cuda/bin
