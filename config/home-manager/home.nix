@@ -58,6 +58,7 @@
     pkgs.ffsend
     pkgs.clipboard-jh
     pkgs.clang-tools
-  ];
+    pkgs.gcc12
+ ];
 }
 
