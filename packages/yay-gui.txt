@@ -12,3 +12,8 @@ vlc
 vscodium-bin 
 alacritty
 kitty
+gvfs-google
+gvfs-goa
+gvfs-smb
+gvfs-mtp
+gvfs-nfs
