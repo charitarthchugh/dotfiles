@@ -1,6 +1,6 @@
 [misc]
 # Disable specific steps - same options as the command line flag
-disable = ["tldr", "flutter"]
+disable = ["tldr", "flutter", "gcloud", "tlmgr"]
 
 # Run specific steps - same options as the command line flag
 #only = ["system", "emacs"]
@@ -35,7 +35,6 @@ repos = [
     "~/Dev/ghq/*/*/*/",
     "~/Dev/Reading/*/",
     "~/.local/share/fonts/*/"
-    
 ]
 
 # Don't pull the predefined git repos
