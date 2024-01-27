@@ -116,7 +116,6 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
-    -- { name = "cmp_tabnine"},
     { name = "fish"}
   },
   confirm_opts = {
