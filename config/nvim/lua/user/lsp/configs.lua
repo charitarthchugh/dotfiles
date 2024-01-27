@@ -10,7 +10,7 @@ mason.setup({
   }
 })
 
-local servers = { "jsonls", "sumneko_lua", "bashls", "html", "eslint", "tsserver", "yamlls","clangd", "pyright", "grammarly", "ltex", "lemminx"}
+local servers = { "jsonls", "lua_ls", "bashls", "html", "eslint", "tsserver", "yamlls","clangd", "pyright", "grammarly", "ltex", "lemminx"}
 
 mason_lspconfig.setup {
 	ensure_installed = servers,
