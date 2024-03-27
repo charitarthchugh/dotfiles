@@ -32,3 +32,5 @@ navigate = true
 diffFilter = delta --color-only
 [ghq]
 root = ~/Dev/ghq/ 
+[safe]
+	directory = /opt/flutter
