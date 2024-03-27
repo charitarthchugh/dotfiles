@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 sudo pacman -Syu
 if [ ! -n "$(pacman -Qs yay)" ]; then
 
