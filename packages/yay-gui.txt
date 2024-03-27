@@ -1,6 +1,5 @@
 gnome-tweaks
-brave-bin 
-gnvome-shell-extenstion-pop-shell-git 
+gnome-shell-extenstion-pop-shell-git 
 gnome-weather 
 file-roller 
 keepassxc
