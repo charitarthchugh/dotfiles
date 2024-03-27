@@ -1,0 +1,61 @@
+[colors.bright]
+black = "#686868"
+blue = "#57c7ff"
+cyan = "#9aedfe"
+green = "#5af78e"
+magenta = "#ff6ac1"
+red = "#ff5c57"
+white = "#f1f1f0"
+yellow = "#f3f99d"
+
+[colors.normal]
+black = "#282a36"
+blue = "#57c7ff"
+cyan = "#9aedfe"
+green = "#5af78e"
+magenta = "#ff6ac1"
+red = "#ff5c57"
+white = "#f1f1f0"
+yellow = "#f3f99d"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#eff0eb"
+
+[cursor]
+style = "Beam"
+
+[env]
+LANG = "en_US.UTF-8"
+LC_CTYPE = "en_US.UTF-8"
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mods = "Shift"
+
+[window.padding]
+x = 6
+y = 6
