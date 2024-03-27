@@ -25,6 +25,9 @@ end
 if type -q nvim
  set -g EDITOR nvim
 end
+if type -q direnv
+    direnv hook fish | source
+end
 if type -q howdy 
   set -g OPENCV_LOG_LEVEL 0
   set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
