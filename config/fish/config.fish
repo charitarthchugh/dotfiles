@@ -37,10 +37,3 @@ if test -d "$HOME/micromamba"
     set -gx MAMBA_EXE "$HOME/.local/bin/micromamba"
     $MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
 end    
-
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-# set -gx MAMBA_EXE "/home/cc/.local/bin/micromamba"
-# set -gx MAMBA_ROOT_PREFIX "/home/cc/micromamba"
-
-# <<< mamba initialize <<<
