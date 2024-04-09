@@ -16,3 +16,4 @@ gvfs-goa
 gvfs-smb
 gvfs-mtp
 gvfs-nfs
+ttf-firacode-nerd
