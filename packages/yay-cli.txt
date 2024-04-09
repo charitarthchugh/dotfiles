@@ -1,14 +1,11 @@
 git 
 curl 
 wget 
-
 fish
 zsh
 gawk 
 unzip 
 unrar 
-
-
 starship 
 topgrade 
 trash-cli 
@@ -24,8 +21,6 @@ chronie
 fd 
 dust 
 exa 
-
-
 nodejs 
 npm 
 python 
@@ -35,8 +30,6 @@ python39
 llvm 
 gcc 
 cmake
-
-
 nerd-fonts-complete
 neovim
 btop 
