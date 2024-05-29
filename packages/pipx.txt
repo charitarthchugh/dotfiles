@@ -5,3 +5,5 @@ yt-dlp
 black[d, jupyter]
 pylint
 argcomplete
+nbqa[toolchain]
+python-lsp-server[all]
