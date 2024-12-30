@@ -9,7 +9,7 @@
 # - `sheldon remove` to remove a plugin from the config file
 #
 # See the documentation for more https://github.com/rossmacarthur/sheldon#readme
-
+shell="zsh"
 [plugins]
 
 [plugins.undollar]
