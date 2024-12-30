@@ -1,6 +1,11 @@
 if test -d $HOME/dotfiles
     source $HOME/dotfiles/.env.fish
 end
+if test -d "$HOME/micromamba"
+    set -gx MAMBA_ROOT_PREFIX "$HOME/micromamba"
+    set -gx MAMBA_EXE "$HOME/.local/bin/micromamba"
+    $MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
+end    
 if test -d $HOME/miniconda3
     eval $HOME/miniconda3/bin/conda "shell.fish" hook $argv | source
 end
@@ -32,8 +37,4 @@ if type -q howdy
   set -g OPENCV_LOG_LEVEL 0
   set -g OPENCV_VIDEOIO_PRIORITY_INTEL_MFX 0
 end
-if test -d "$HOME/micromamba"
-    set -gx MAMBA_ROOT_PREFIX "$HOME/micromamba"
-    set -gx MAMBA_EXE "$HOME/.local/bin/micromamba"
-    $MAMBA_EXE shell hook --shell fish --root-prefix $MAMBA_ROOT_PREFIX | source
-end    
+
