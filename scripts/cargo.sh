@@ -12,8 +12,8 @@ fi
 while read package; do
     cargo install "$package" >> /dev/null
     if [[ $? -eq 0 ]]; then
-        echo "$package is installed from gh!"
+        echo "$package is installed from cargo!"
     else
-        echo "$package" >> "$BASEDIR/../gh_failed.txt"
+        echo "$package" >> "$BASEDIR/../cargo_failed.txt"
     fi
 done < "$BASEDIR/../packages/cargo.txt"
