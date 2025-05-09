@@ -192,8 +192,7 @@
   "[fish]": {
     "editor.defaultFormatter": "bmalehorn.vscode-fish"
   },
-  "workbench.colorTheme": "Adwaita Dark & colorful status bar",
-  "python.formatting.blackPath": "~/.nix-profile/bin/black",
+  "workbench.colorTheme": "Adwaita Dark",
   "notebook.lineNumbers": "on",
   "github.copilot.enable": {
     "*": true,
@@ -205,5 +204,20 @@
   "latex-workshop.docker.image.latex": "docker.io/danteev/texlive",
   "docker.environment": {
     "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
-  }
+  },
+  "jupyter.allowUnauthorizedRemoteConnection": true,
+  "EIDE.Repository.UseProxy": false,
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "[riscv]": {
+    "editor.defaultFormatter": "penguinsnail.riscv-formatter"
+  },
+  "markdown.marp.chromePath": "io.github.ungoogled_software.ungoogled_chromium",
+  "markdown.marp.pdf.noteAnnotations": true,
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "gitlens.views.launchpad.enabled": true,
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "gitlens.ai.model": "gitkraken",
+  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
 }
