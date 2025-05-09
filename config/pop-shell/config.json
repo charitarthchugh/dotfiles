@@ -64,6 +64,19 @@
     },
     {
       "class": "org.keepassxc.KeePassXC"
+    },
+    {
+      "class": "balena-etcher"
+    },
+    {
+      "class": "org.gnome.NautilusPreviewer"
+    },
+    {
+      "class": "python3"
+    },
+    {
+      "class": "io.github.alainm23.planify.quick-add",
+      "title": "Planify - Quick Add"
     }
   ],
   "skiptaskbarhidden": [],
