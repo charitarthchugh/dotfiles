@@ -1,0 +1,3675 @@
+{
+    "pipx_spec_version": "0.1",
+    "venvs": {
+        "argcomplete": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/argcomplete/bin/activate-global-python-argcomplete",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/argcomplete/bin/python-argcomplete-check-easy-install-script",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/argcomplete/bin/register-python-argcomplete",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "activate-global-python-argcomplete",
+                        "python-argcomplete-check-easy-install-script",
+                        "register-python-argcomplete"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "argcomplete",
+                    "package_or_url": "argcomplete",
+                    "package_version": "3.6.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "arxiv-latex-cleaner": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/arxiv-latex-cleaner/bin/arxiv_latex_cleaner",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "arxiv_latex_cleaner"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "arxiv-latex-cleaner",
+                    "package_or_url": "arxiv-latex-cleaner",
+                    "package_version": "1.0.8",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.2",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "autopep8": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/autopep8/bin/autopep8",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/autopep8/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "autopep8"
+                    ],
+                    "apps_of_dependencies": [
+                        "pycodestyle"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "autopep8",
+                    "package_or_url": "autopep8",
+                    "package_version": "2.3.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "black": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/black",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/blackd",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "ipython": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/ipython",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/ipython3",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tokenize-rt": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/black/bin/tokenize-rt",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "black",
+                        "blackd"
+                    ],
+                    "apps_of_dependencies": [
+                        "ipython",
+                        "ipython3",
+                        "pygmentize",
+                        "tokenize-rt"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/ipython.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "ipython": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/black/share/man/man1/ipython.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "black",
+                    "package_or_url": "black[d,jupyter]",
+                    "package_version": "25.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "bpytop": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/bpytop/bin/bpytop",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "bpytop"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "bpytop",
+                    "package_or_url": "bpytop",
+                    "package_version": "1.0.68",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "conda-lock": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/conda-lock",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "cachecontrol": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/doesitcache",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ensureconda": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/ensureconda",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "keyring": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/keyring",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pkginfo": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/pkginfo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/conda-lock/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "conda-lock"
+                    ],
+                    "apps_of_dependencies": [
+                        "doesitcache",
+                        "normalizer",
+                        "ensureconda",
+                        "keyring",
+                        "pkginfo",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "conda-lock",
+                    "package_or_url": "conda-lock",
+                    "package_version": "2.5.7",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "conda-pack": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/conda-pack/bin/conda-pack",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "conda-pack"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "conda-pack",
+                    "package_or_url": "conda-pack",
+                    "package_version": "0.8.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.3",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "cookiecutter": {
+            "metadata": {
+                "injected_packages": {
+                    "cookiecutter-data-science": {
+                        "app_paths": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/ccds",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "app_paths_of_dependencies": {
+                            "chardet": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/chardetect",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "cookiecutter": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/cookiecutter",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "python-slugify": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/slugify",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [
+                            "ccds"
+                        ],
+                        "apps_of_dependencies": [
+                            "cookiecutter",
+                            "chardetect",
+                            "slugify",
+                            "normalizer",
+                            "markdown-it",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "cookiecutter-data-science",
+                        "package_or_url": "cookiecutter-data-science",
+                        "package_version": "2.1.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/cookiecutter",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "chardet": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/chardetect",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "python-slugify": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter/bin/slugify",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "cookiecutter"
+                    ],
+                    "apps_of_dependencies": [
+                        "chardetect",
+                        "slugify",
+                        "normalizer",
+                        "markdown-it",
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "cookiecutter",
+                    "package_or_url": "cookiecutter",
+                    "package_version": "2.6.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "cookiecutter-data-science": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/ccds",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "chardet": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/chardetect",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "cookiecutter": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/cookiecutter",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "python-slugify": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/cookiecutter-data-science/bin/slugify",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "ccds"
+                    ],
+                    "apps_of_dependencies": [
+                        "cookiecutter",
+                        "chardetect",
+                        "slugify",
+                        "normalizer",
+                        "markdown-it",
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "cookiecutter-data-science",
+                    "package_or_url": "cookiecutter-data-science",
+                    "package_version": "2.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "cst-lsp": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/cst-lsp/bin/cst_lsp",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "cst_lsp"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "cst-lsp",
+                    "package_or_url": "cst-lsp",
+                    "package_version": "0.1.3",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "euporie": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/euporie",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/euporie-console",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/euporie-hub",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/euporie-notebook",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/euporie-preview",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "flatlatex": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/flatlatex",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jsonschema": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupyter-client": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-kernel",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-kernelspec",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-run",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupyter-core": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-migrate",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-troubleshoot",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupytext": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupytext",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupytext-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nbformat": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/jupyter-trust",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sixelcrop": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/sixelcrop",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "timg": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/euporie/bin/timg",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "euporie",
+                        "euporie-console",
+                        "euporie-hub",
+                        "euporie-notebook",
+                        "euporie-preview"
+                    ],
+                    "apps_of_dependencies": [
+                        "flatlatex",
+                        "jupyter-kernel",
+                        "jupyter-kernelspec",
+                        "jupyter-run",
+                        "jupyter",
+                        "jupyter-migrate",
+                        "jupyter-troubleshoot",
+                        "jupytext",
+                        "jupytext-config",
+                        "markdown-it",
+                        "jupyter-trust",
+                        "jsonschema",
+                        "pygmentize",
+                        "sixelcrop",
+                        "timg"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "euporie",
+                    "package_or_url": "euporie",
+                    "package_version": "2.8.7",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "fiftyone": {
+            "metadata": {
+                "injected_packages": {
+                    "pycocotools": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "fonttools": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/fonttools",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pyftmerge",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pyftsubset",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/ttx",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "numpy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/f2py",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/numpy-config",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "f2py",
+                            "numpy-config",
+                            "fonttools",
+                            "pyftmerge",
+                            "pyftsubset",
+                            "ttx"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [
+                            "man1/ttx.1"
+                        ],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {
+                            "fonttools": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/share/man/man1/ttx.1",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "package": "pycocotools",
+                        "package_or_url": "pycocotools",
+                        "package_version": "2.0.8",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "torch": {
+                        "app_paths": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/torchfrtrace",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/torchrun",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "app_paths_of_dependencies": {
+                            "sympy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/isympy",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "triton": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/proton",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/proton-viewer",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [
+                            "torchfrtrace",
+                            "torchrun"
+                        ],
+                        "apps_of_dependencies": [
+                            "proton",
+                            "proton-viewer",
+                            "isympy"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [
+                            "man1/isympy.1"
+                        ],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {
+                            "sympy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/share/man/man1/isympy.1",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "package": "torch",
+                        "package_or_url": "torch",
+                        "package_version": "2.6.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "torchvision": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "numpy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/f2py",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/numpy-config",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "sympy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/isympy",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "torch": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/torchfrtrace",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/torchrun",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "triton": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/proton",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/proton-viewer",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "f2py",
+                            "numpy-config",
+                            "torchfrtrace",
+                            "torchrun",
+                            "proton",
+                            "proton-viewer",
+                            "isympy"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [
+                            "man1/isympy.1"
+                        ],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {
+                            "sympy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/share/man/man1/isympy.1",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "package": "torchvision",
+                        "package_or_url": "torchvision",
+                        "package_version": "0.21.0",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    },
+                    "transformers": {
+                        "app_paths": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/transformers-cli",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "app_paths_of_dependencies": {
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "huggingface-hub": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/huggingface-cli",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "numpy": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/f2py",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/numpy-config",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "tqdm": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/tqdm",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [
+                            "transformers-cli"
+                        ],
+                        "apps_of_dependencies": [
+                            "huggingface-cli",
+                            "normalizer",
+                            "tqdm",
+                            "f2py",
+                            "numpy-config"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "transformers",
+                        "package_or_url": "transformers",
+                        "package_version": "4.50.1",
+                        "pinned": false,
+                        "pip_args": [],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/fiftyone",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "argcomplete": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/activate-global-python-argcomplete",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/python-argcomplete-check-easy-install-script",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/register-python-argcomplete",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dill": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/get_gprof",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/get_objgraph",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/undill",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/fonttools",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pyftmerge",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pyftsubset",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/ttx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ftfy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/ftfy",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "future": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/futurize",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pasteurize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "httpx": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/httpx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "hypercorn": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/hypercorn",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "imageio": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/imageio_download_bin",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/imageio_remove_bin",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jmespath": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/jp.py",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numpy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/f2py",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/numpy-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pprintpp": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/pypprint",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "py7zr": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/py7zr",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "strawberry-graphql": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/strawberry",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tifffile": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/lsm2bin",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/tiff2fsspec",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/tiffcomment",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/tifffile",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "voxel51-eta": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/bin/eta",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "fiftyone"
+                    ],
+                    "apps_of_dependencies": [
+                        "activate-global-python-argcomplete",
+                        "python-argcomplete-check-easy-install-script",
+                        "register-python-argcomplete",
+                        "jp.py",
+                        "ftfy",
+                        "hypercorn",
+                        "f2py",
+                        "numpy-config",
+                        "fonttools",
+                        "pyftmerge",
+                        "pyftsubset",
+                        "ttx",
+                        "pypprint",
+                        "imageio_download_bin",
+                        "imageio_remove_bin",
+                        "lsm2bin",
+                        "tiff2fsspec",
+                        "tiffcomment",
+                        "tifffile",
+                        "strawberry",
+                        "tabulate",
+                        "httpx",
+                        "eta",
+                        "get_gprof",
+                        "get_objgraph",
+                        "undill",
+                        "futurize",
+                        "pasteurize",
+                        "py7zr",
+                        "normalizer"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/ttx.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/fiftyone/share/man/man1/ttx.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "fiftyone",
+                    "package_or_url": "fiftyone",
+                    "package_version": "1.3.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.2",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "globus-cli": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/globus-cli/bin/globus",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/globus-cli/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jmespath": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/globus-cli/bin/jp.py",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "globus"
+                    ],
+                    "apps_of_dependencies": [
+                        "normalizer",
+                        "jp.py"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "globus-cli",
+                    "package_or_url": "globus-cli",
+                    "package_version": "3.33.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "gnome-extensions-cli": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/gnome-extensions-cli/bin/gext",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/gnome-extensions-cli/bin/gnome-extensions-cli",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/gnome-extensions-cli/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/gnome-extensions-cli/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "gext",
+                        "gnome-extensions-cli"
+                    ],
+                    "apps_of_dependencies": [
+                        "normalizer",
+                        "tqdm"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "gnome-extensions-cli",
+                    "package_or_url": "gnome-extensions-cli",
+                    "package_version": "0.10.5",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "httpx": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/httpx/bin/httpx",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "httpx"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "httpx",
+                    "package_or_url": "httpx",
+                    "package_version": "0.28.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "huggingface-hub": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/huggingface-hub/bin/huggingface-cli",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/huggingface-hub/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/huggingface-hub/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "huggingface-cli"
+                    ],
+                    "apps_of_dependencies": [
+                        "normalizer",
+                        "tqdm"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "huggingface-hub",
+                    "package_or_url": "huggingface-hub[cli]",
+                    "package_version": "0.29.3",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.2",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "insanely-fast-whisper": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/insanely-fast-whisper",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "accelerate": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/accelerate",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/accelerate-config",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/accelerate-estimate-memory",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/accelerate-launch",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/accelerate-merge-weights",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "alembic": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/alembic",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "antlr4-python3-runtime": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pygrun",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/fonttools",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyftmerge",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyftsubset",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/ttx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "huggingface-hub": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/huggingface-cli",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "lightning": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/fabric",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "mako": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/mako-render",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numpy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/f2py",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/numpy-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "optuna": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/optuna",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyannote-audio": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyannote-audio-eval",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyannote-audio-train",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyannote-database": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyannote-database",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyannote-metrics": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyannote-metrics",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyannote-pipeline": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pyannote-pipeline",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "semver": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/pysemver",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sympy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/isympy",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tabulate": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/tabulate",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "torch": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/torchfrtrace",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/torchrun",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "transformers": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/transformers-cli",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "triton": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/proton",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/proton-viewer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "typer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/bin/typer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "insanely-fast-whisper"
+                    ],
+                    "apps_of_dependencies": [
+                        "transformers-cli",
+                        "huggingface-cli",
+                        "normalizer",
+                        "tqdm",
+                        "f2py",
+                        "numpy-config",
+                        "accelerate",
+                        "accelerate-config",
+                        "accelerate-estimate-memory",
+                        "accelerate-launch",
+                        "accelerate-merge-weights",
+                        "torchfrtrace",
+                        "torchrun",
+                        "proton",
+                        "proton-viewer",
+                        "isympy",
+                        "pyannote-audio-eval",
+                        "pyannote-audio-train",
+                        "fabric",
+                        "pygrun",
+                        "pyannote-database",
+                        "typer",
+                        "markdown-it",
+                        "pygmentize",
+                        "pyannote-metrics",
+                        "tabulate",
+                        "fonttools",
+                        "pyftmerge",
+                        "pyftsubset",
+                        "ttx",
+                        "pyannote-pipeline",
+                        "optuna",
+                        "alembic",
+                        "mako-render",
+                        "pysemver"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/isympy.1",
+                        "man1/ttx.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/share/man/man1/ttx.1",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sympy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/insanely-fast-whisper/share/man/man1/isympy.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "insanely-fast-whisper",
+                    "package_or_url": "insanely-fast-whisper",
+                    "package_version": "0.0.15",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.3",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "isd-tui": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/isd-tui/bin/isd",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/isd-tui/bin/isd-tui",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/isd-tui/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/isd-tui/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "python-dotenv": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/isd-tui/bin/dotenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "isd",
+                        "isd-tui"
+                    ],
+                    "apps_of_dependencies": [
+                        "dotenv",
+                        "markdown-it",
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "isd-tui",
+                    "package_or_url": "isd-tui",
+                    "package_version": "0.5.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "kaggle": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/kaggle/bin/kaggle",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/kaggle/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "python-slugify": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/kaggle/bin/slugify",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/kaggle/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "kaggle"
+                    ],
+                    "apps_of_dependencies": [
+                        "normalizer",
+                        "slugify",
+                        "tqdm"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "kaggle",
+                    "package_or_url": "kaggle",
+                    "package_version": "1.7.4.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "mk": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/mk",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/pre",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "build": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/pyproject-build",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "docutils": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/docutils",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2html",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2html4",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2html5",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2latex",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2man",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2odt",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2pseudoxml",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2s5",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2xetex",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/rst2xml",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "keyring": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/keyring",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pkginfo": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/pkginfo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "twine": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/twine",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "typer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/mk/bin/typer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "mk",
+                        "pre"
+                    ],
+                    "apps_of_dependencies": [
+                        "pyproject-build",
+                        "markdown-it",
+                        "pygmentize",
+                        "twine",
+                        "pkginfo",
+                        "docutils",
+                        "rst2html",
+                        "rst2html4",
+                        "rst2html5",
+                        "rst2latex",
+                        "rst2man",
+                        "rst2odt",
+                        "rst2pseudoxml",
+                        "rst2s5",
+                        "rst2xetex",
+                        "rst2xml",
+                        "normalizer",
+                        "keyring",
+                        "typer"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "mk",
+                    "package_or_url": "mk",
+                    "package_version": "2.7.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "nbconvert": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-dejavu",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-nbconvert",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "jsonschema": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupyter-client": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-kernel",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-kernelspec",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-run",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupyter-core": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-migrate",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-troubleshoot",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nbclient": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-execute",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nbformat": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/jupyter-trust",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbconvert/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "jupyter-dejavu",
+                        "jupyter-nbconvert"
+                    ],
+                    "apps_of_dependencies": [
+                        "jupyter",
+                        "jupyter-migrate",
+                        "jupyter-troubleshoot",
+                        "jupyter-execute",
+                        "jupyter-kernel",
+                        "jupyter-kernelspec",
+                        "jupyter-run",
+                        "jupyter-trust",
+                        "jsonschema",
+                        "pygmentize"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "nbconvert",
+                    "package_or_url": "nbconvert",
+                    "package_version": "7.16.6",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "nbqa": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/nbqa",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "autopep8": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/autopep8",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "black": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/black",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/blackd",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "blacken-docs": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/blacken-docs",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dill": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/get_gprof",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/get_objgraph",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/undill",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "flake8": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/flake8",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ipython": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/ipython",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/ipython3",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "isort": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/isort",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/isort-identify-imports",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jsonschema": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jsonschema",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupyter-core": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupyter",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupyter-migrate",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupyter-troubleshoot",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "jupytext": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupytext",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupytext-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "markdown-it-py": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/markdown-it",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "mypy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/dmypy",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/mypy",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/mypyc",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/stubgen",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/stubtest",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nbformat": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/jupyter-trust",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyflakes": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pyflakes",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pygments": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pygmentize",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pylint": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pylint",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pylint-config",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pyreverse",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/symilar",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyupgrade": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/pyupgrade",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "ruff": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/ruff",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tokenize-rt": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/bin/tokenize-rt",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "nbqa"
+                    ],
+                    "apps_of_dependencies": [
+                        "autopep8",
+                        "pycodestyle",
+                        "ipython",
+                        "ipython3",
+                        "pygmentize",
+                        "tokenize-rt",
+                        "black",
+                        "blackd",
+                        "blacken-docs",
+                        "flake8",
+                        "pyflakes",
+                        "isort",
+                        "isort-identify-imports",
+                        "jupytext",
+                        "jupytext-config",
+                        "markdown-it",
+                        "jupyter-trust",
+                        "jsonschema",
+                        "jupyter",
+                        "jupyter-migrate",
+                        "jupyter-troubleshoot",
+                        "dmypy",
+                        "mypy",
+                        "mypyc",
+                        "stubgen",
+                        "stubtest",
+                        "pylint",
+                        "pylint-config",
+                        "pyreverse",
+                        "symilar",
+                        "get_gprof",
+                        "get_objgraph",
+                        "undill",
+                        "pyupgrade",
+                        "ruff"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/ipython.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "ipython": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/nbqa/share/man/man1/ipython.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "nbqa",
+                    "package_or_url": "nbqa[toolchain]",
+                    "package_version": "1.9.1",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "poetry": {
+            "metadata": {
+                "injected_packages": {
+                    "poetry-audit-plugin": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "build": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "cachecontrol": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "dulwich": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "keyring": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/keyring",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "markdown-it-py": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/markdown-it",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "nltk": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/nltk",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pkginfo": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "poetry": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/poetry",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pygments": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pygmentize",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "safety": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/safety",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "tqdm": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/tqdm",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "typer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/typer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "virtualenv": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "poetry",
+                            "pyproject-build",
+                            "doesitcache",
+                            "normalizer",
+                            "dul-receive-pack",
+                            "dul-upload-pack",
+                            "dulwich",
+                            "keyring",
+                            "pkginfo",
+                            "virtualenv",
+                            "safety",
+                            "nltk",
+                            "tqdm",
+                            "typer",
+                            "markdown-it",
+                            "pygmentize"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "poetry-audit-plugin",
+                        "package_or_url": "poetry-audit-plugin",
+                        "package_version": "0.4.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "poetry-dotenv-plugin": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "build": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "cachecontrol": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "dulwich": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "findpython": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/findpython",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "httpx": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/httpx",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "keyring": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/keyring",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pbs-installer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pbs-install",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pkginfo": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "poetry": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/poetry",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "python-dotenv": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dotenv",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "virtualenv": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "poetry",
+                            "pyproject-build",
+                            "doesitcache",
+                            "normalizer",
+                            "dul-receive-pack",
+                            "dul-upload-pack",
+                            "dulwich",
+                            "findpython",
+                            "keyring",
+                            "pbs-install",
+                            "httpx",
+                            "pkginfo",
+                            "virtualenv",
+                            "dotenv"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "poetry-dotenv-plugin",
+                        "package_or_url": "poetry-dotenv-plugin",
+                        "package_version": "0.2.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "poetry-plugin-bundle": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "build": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "cachecontrol": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "dulwich": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "findpython": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/findpython",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "httpx": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/httpx",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "keyring": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/keyring",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pbs-installer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pbs-install",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pkginfo": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "poetry": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/poetry",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "virtualenv": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "poetry",
+                            "pyproject-build",
+                            "doesitcache",
+                            "normalizer",
+                            "dul-receive-pack",
+                            "dul-upload-pack",
+                            "dulwich",
+                            "findpython",
+                            "keyring",
+                            "pbs-install",
+                            "httpx",
+                            "pkginfo",
+                            "virtualenv"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "poetry-plugin-bundle",
+                        "package_or_url": "poetry-plugin-bundle",
+                        "package_version": "1.7.0",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    },
+                    "poetry-plugin-shell": {
+                        "app_paths": [],
+                        "app_paths_of_dependencies": {
+                            "build": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "cachecontrol": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "charset-normalizer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "dulwich": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                    "__type__": "Path"
+                                },
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "findpython": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/findpython",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "httpx": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/httpx",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "keyring": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/keyring",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pbs-installer": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pbs-install",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "pkginfo": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "poetry": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/poetry",
+                                    "__type__": "Path"
+                                }
+                            ],
+                            "virtualenv": [
+                                {
+                                    "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                    "__type__": "Path"
+                                }
+                            ]
+                        },
+                        "apps": [],
+                        "apps_of_dependencies": [
+                            "poetry",
+                            "pyproject-build",
+                            "doesitcache",
+                            "normalizer",
+                            "dul-receive-pack",
+                            "dul-upload-pack",
+                            "dulwich",
+                            "findpython",
+                            "keyring",
+                            "pbs-install",
+                            "httpx",
+                            "pkginfo",
+                            "virtualenv"
+                        ],
+                        "include_apps": false,
+                        "include_dependencies": false,
+                        "man_pages": [],
+                        "man_pages_of_dependencies": [],
+                        "man_paths": [],
+                        "man_paths_of_dependencies": {},
+                        "package": "poetry-plugin-shell",
+                        "package_or_url": "poetry-plugin-shell",
+                        "package_version": "1.0.1",
+                        "pinned": false,
+                        "pip_args": [
+                            "--force-reinstall"
+                        ],
+                        "suffix": ""
+                    }
+                },
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/poetry",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "build": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pyproject-build",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "cachecontrol": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/doesitcache",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dulwich": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-receive-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dul-upload-pack",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/dulwich",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "findpython": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/findpython",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "httpx": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/httpx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "keyring": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/keyring",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pbs-installer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pbs-install",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pkginfo": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/pkginfo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/poetry/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "poetry"
+                    ],
+                    "apps_of_dependencies": [
+                        "pyproject-build",
+                        "doesitcache",
+                        "normalizer",
+                        "dul-receive-pack",
+                        "dul-upload-pack",
+                        "dulwich",
+                        "findpython",
+                        "keyring",
+                        "pbs-install",
+                        "httpx",
+                        "pkginfo",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "poetry",
+                    "package_or_url": "poetry",
+                    "package_version": "2.1.1",
+                    "pinned": false,
+                    "pip_args": [
+                        "--force-reinstall"
+                    ],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pre-commit": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pre-commit/bin/pre-commit",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "identify": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pre-commit/bin/identify-cli",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "nodeenv": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pre-commit/bin/nodeenv",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "virtualenv": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pre-commit/bin/virtualenv",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pre-commit"
+                    ],
+                    "apps_of_dependencies": [
+                        "identify-cli",
+                        "nodeenv",
+                        "virtualenv"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pre-commit",
+                    "package_or_url": "pre-commit",
+                    "package_version": "4.1.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pydocstyle": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pydocstyle/bin/pydocstyle",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "pydocstyle"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pydocstyle",
+                    "package_or_url": "pydocstyle",
+                    "package_version": "6.3.0",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "pylint": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/pylint",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/pylint-config",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/pyreverse",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/symilar",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "dill": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/get_gprof",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/get_objgraph",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/undill",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "isort": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/isort",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/pylint/bin/isort-identify-imports",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pylint",
+                        "pylint-config",
+                        "pyreverse",
+                        "symilar"
+                    ],
+                    "apps_of_dependencies": [
+                        "get_gprof",
+                        "get_objgraph",
+                        "undill",
+                        "isort",
+                        "isort-identify-imports"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "pylint",
+                    "package_or_url": "pylint",
+                    "package_version": "3.3.5",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "python-lsp-server": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pylsp",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "autopep8": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/autopep8",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "dill": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/get_gprof",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/get_objgraph",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/undill",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "flake8": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/flake8",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "isort": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/isort",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/isort-identify-imports",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pycodestyle": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pycodestyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pydocstyle": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pydocstyle",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pyflakes": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pyflakes",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "pylint": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pylint",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pylint-config",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/pyreverse",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/symilar",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "yapf": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/yapf",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/python-lsp-server/bin/yapf-diff",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "pylsp"
+                    ],
+                    "apps_of_dependencies": [
+                        "autopep8",
+                        "pycodestyle",
+                        "flake8",
+                        "pyflakes",
+                        "pydocstyle",
+                        "pylint",
+                        "pylint-config",
+                        "pyreverse",
+                        "symilar",
+                        "get_gprof",
+                        "get_objgraph",
+                        "undill",
+                        "isort",
+                        "isort-identify-imports",
+                        "yapf",
+                        "yapf-diff"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "python-lsp-server",
+                    "package_or_url": "python-lsp-server[all]",
+                    "package_version": "1.12.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "snakeviz": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/snakeviz/bin/snakeviz",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "snakeviz"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "snakeviz",
+                    "package_or_url": "snakeviz",
+                    "package_version": "2.2.2",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "ultralytics": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/ultralytics",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/yolo",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/fonttools",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/pyftmerge",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/pyftsubset",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/ttx",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "numpy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/f2py",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/numpy-config",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "py-cpuinfo": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/cpuinfo",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sympy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/isympy",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "torch": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/torchfrtrace",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/torchrun",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "tqdm": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/tqdm",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "triton": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/proton",
+                                "__type__": "Path"
+                            },
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/bin/proton-viewer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "ultralytics",
+                        "yolo"
+                    ],
+                    "apps_of_dependencies": [
+                        "f2py",
+                        "numpy-config",
+                        "fonttools",
+                        "pyftmerge",
+                        "pyftsubset",
+                        "ttx",
+                        "normalizer",
+                        "torchfrtrace",
+                        "torchrun",
+                        "proton",
+                        "proton-viewer",
+                        "isympy",
+                        "tqdm",
+                        "cpuinfo"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [
+                        "man1/ttx.1",
+                        "man1/isympy.1"
+                    ],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {
+                        "fonttools": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/share/man/man1/ttx.1",
+                                "__type__": "Path"
+                            }
+                        ],
+                        "sympy": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/ultralytics/share/man/man1/isympy.1",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "package": "ultralytics",
+                    "package_or_url": "ultralytics",
+                    "package_version": "8.3.90",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "virtualenv": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/virtualenv/bin/virtualenv",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "virtualenv"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "virtualenv",
+                    "package_or_url": "virtualenv",
+                    "package_version": "20.29.3",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.2",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "wandb": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/wandb/bin/wandb",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/wandb/bin/wb",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {
+                        "charset-normalizer": [
+                            {
+                                "__Path__": "/home/cc/.local/share/pipx/venvs/wandb/bin/normalizer",
+                                "__type__": "Path"
+                            }
+                        ]
+                    },
+                    "apps": [
+                        "wandb",
+                        "wb"
+                    ],
+                    "apps_of_dependencies": [
+                        "normalizer"
+                    ],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "wandb",
+                    "package_or_url": "wandb",
+                    "package_version": "0.19.8",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "xxh-xxh": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/xxh-xxh/bin/xxh",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/xxh-xxh/bin/xxh.bash",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/xxh-xxh/bin/xxh.xsh",
+                            "__type__": "Path"
+                        },
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/xxh-xxh/bin/xxh.zsh",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "xxh",
+                        "xxh.bash",
+                        "xxh.xsh",
+                        "xxh.zsh"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [],
+                    "man_paths_of_dependencies": {},
+                    "package": "xxh-xxh",
+                    "package_or_url": "xxh-xxh",
+                    "package_version": "0.8.14",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        },
+        "yt-dlp": {
+            "metadata": {
+                "injected_packages": {},
+                "main_package": {
+                    "app_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/yt-dlp/bin/yt-dlp",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "app_paths_of_dependencies": {},
+                    "apps": [
+                        "yt-dlp"
+                    ],
+                    "apps_of_dependencies": [],
+                    "include_apps": true,
+                    "include_dependencies": false,
+                    "man_pages": [
+                        "man1/yt-dlp.1"
+                    ],
+                    "man_pages_of_dependencies": [],
+                    "man_paths": [
+                        {
+                            "__Path__": "/home/cc/.local/share/pipx/venvs/yt-dlp/share/man/man1/yt-dlp.1",
+                            "__type__": "Path"
+                        }
+                    ],
+                    "man_paths_of_dependencies": {},
+                    "package": "yt-dlp",
+                    "package_or_url": "yt-dlp",
+                    "package_version": "2025.2.19",
+                    "pinned": false,
+                    "pip_args": [],
+                    "suffix": ""
+                },
+                "pipx_metadata_version": "0.5",
+                "python_version": "Python 3.13.1",
+                "source_interpreter": {
+                    "__Path__": "/usr/bin/python3.13",
+                    "__type__": "Path"
+                },
+                "venv_args": []
+            }
+        }
+    }
+}
