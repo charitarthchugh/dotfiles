@@ -75,4 +75,7 @@ github = 'MichaelAquilina/zsh-autoswitch-virtualenv'
 [plugins."up.sh"]
 remote = 'https://raw.githubusercontent.com/shannonmoeller/up/master/up.sh'
 
+[plugins.eza]
+github = "z-shell/zsh-eza"
+
 
