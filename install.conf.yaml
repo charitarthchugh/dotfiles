@@ -73,6 +73,8 @@
       path: config/ulauncher/*
     ~/.config/containers:
       path: config/containers/*
+    ~/.config/tealdeer/:
+      path: config/tealdeer/*
     ~/Templates:
       path: Templates/*
 
