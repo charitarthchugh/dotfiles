@@ -4,12 +4,12 @@ set -euo pipefail
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 if ! source /etc/os-release 2>/dev/null; then
-  echo "Error: Unable to detect OS (missing /etc/os-release)."
-  exit 1
+	echo "Error: Unable to detect OS (missing /etc/os-release)."
+	exit 1
 fi
 
 usage() {
-  cat <<'EOF'
+	cat <<'EOF'
 install-system - install Charitarth Chugh's dev environment
 
 Default installs non-GUI applications.
@@ -25,61 +25,87 @@ EOF
 
 GUI=false
 while getopts ":hg" opt; do
-  case "$opt" in
-    h) usage; exit 0 ;;
-    g) GUI=true ;;
-    ?) echo "Error: Invalid option -$OPTARG"; echo; usage; exit 1 ;;
-  esac
+	case "$opt" in
+	h)
+		usage
+		exit 0
+		;;
+	g) GUI=true ;;
+	?)
+		echo "Error: Invalid option -$OPTARG"
+		echo
+		usage
+		exit 1
+		;;
+	esac
 done
 
 run_cli() {
-  # Determine package manager family using ID, with fallback to ID_LIKE
-  local family
-  family="$(detect_family)"
-  case "$family" in
-    apt)   "$BASEDIR/scripts/apt-cli.sh" ;;
-    yay)   "$BASEDIR/scripts/yay-cli.sh" ;;
-    dnf)   "$BASEDIR/scripts/dnf-cli.sh" ;;
-    *)
-      echo "Error: Unsupported distribution: ID='${ID:-unknown}', ID_LIKE='${ID_LIKE:-}'"
-      exit 1
-      ;;
-  esac
+	# Determine package manager family using ID, with fallback to ID_LIKE
+	local family
+	family="$(detect_family)"
+	case "$family" in
+	apt) "$BASEDIR/scripts/apt-cli.sh" ;;
+	yay) "$BASEDIR/scripts/yay-cli.sh" ;;
+	dnf) "$BASEDIR/scripts/dnf-cli.sh" ;;
+	*)
+		echo "Error: Unsupported distribution: ID='${ID:-unknown}', ID_LIKE='${ID_LIKE:-}'"
+		exit 1
+		;;
+	esac
 }
 
 run_gui() {
-  # Determine package manager family using ID, with fallback to ID_LIKE
-  local family
-  family="$(detect_family)"
-  case "$family" in
-    apt)   "$BASEDIR/scripts/apt-gui.sh" ;;
-    yay)   "$BASEDIR/scripts/yay-gui.sh" ;;
-    dnf)   "$BASEDIR/scripts/dnf-gui.sh" ;;
-    *)
-      echo "Error: Unsupported distribution: ID='${ID:-unknown}', ID_LIKE='${ID_LIKE:-}'"
-      exit 1
-      ;;
-  esac
+	# Determine package manager family using ID, with fallback to ID_LIKE
+	local family
+	family="$(detect_family)"
+	case "$family" in
+	apt) "$BASEDIR/scripts/apt-gui.sh" ;;
+	yay) "$BASEDIR/scripts/yay-gui.sh" ;;
+	dnf) "$BASEDIR/scripts/dnf-gui.sh" ;;
+	*)
+		echo "Error: Unsupported distribution: ID='${ID:-unknown}', ID_LIKE='${ID_LIKE:-}'"
+		exit 1
+		;;
+	esac
 }
 
 detect_family() {
-  # Maps distro IDs to a package manager "family": apt | yay | dnf
-  case "${ID:-}" in
-    ubuntu|debian)            echo apt; return 0 ;;
-    arch|artix)               echo yay; return 0 ;;
-    fedora|rhel|centos)       echo dnf; return 0 ;;
-  esac
+	# Maps distro IDs to a package manager "family": apt | yay | dnf
+	case "${ID:-}" in
+	ubuntu | debian)
+		echo apt
+		return 0
+		;;
+	arch | artix)
+		echo yay
+		return 0
+		;;
+	fedora | rhel | centos)
+		echo dnf
+		return 0
+		;;
+	esac
 
-  # Fallback: try ID_LIKE tokens
-  for like in ${ID_LIKE:-}; do
-    case "$like" in
-      ubuntu|debian)          echo apt; return 0 ;;
-      arch|manjaro|artix)     echo yay; return 0 ;;
-      fedora|rhel|centos)     echo dnf; return 0 ;;
-    esac
-  done
+	# Fallback: try ID_LIKE tokens
+	for like in ${ID_LIKE:-}; do
+		case "$like" in
+		ubuntu | debian)
+			echo apt
+			return 0
+			;;
+		arch | manjaro | artix)
+			echo yay
+			return 0
+			;;
+		fedora | rhel | centos)
+			echo dnf
+			return 0
+			;;
+		esac
+	done
 
-  echo unknown
+	echo unknown
 }
 echo "[1/3] Installing CLI packages for '$ID'..."
 run_cli
@@ -88,12 +114,31 @@ echo "[2/3] Installing dotfiles..."
 "$BASEDIR/install"
 
 if $GUI; then
-  echo "[3/3] Installing GUI packages for '$ID'..."
-  run_gui
-  echo "Installing Flatpak packages..."
-  "$BASEDIR/scripts/flatpak.sh"
+	echo "[3/3] Installing GUI packages for '$ID'..."
+	run_gui
+	if command -v flatpak >/dev/null 2>&1; then
+		echo "Installing Flatpak packages..."
+		"$BASEDIR/scripts/flatpak.sh"
+	else
+		echo "Flatpak not found; skipping Flatpak packages."
+	fi
+
 else
-  echo "[3/3] Skipping GUI packages (run with -g to include)."
+	echo "[3/3] Skipping GUI packages (run with -g to include)."
+fi
+if command -v systemctl >/dev/null 2>&1; then
+	if command -v tailscaled >/dev/null 2>&1 || systemctl list-unit-files --type=service 2>/dev/null | grep -q '^tailscaled\.service'; then
+		echo "Ensuring tailscaled service is enabled and running..."
+		if ! systemctl is-enabled tailscaled >/dev/null 2>&1 || ! systemctl is-active tailscaled >/dev/null 2>&1; then
+			if command -v sudo >/dev/null 2>&1; then
+				sudo systemctl enable --now tailscaled || true
+				sudo tailscaled set --operator="$USER"
+				echo "Enabled tailscaled service and set operator to current user."
+			else
+				systemctl enable --now tailscaled || true
+			fi
+		fi
+	fi
 fi
 
 echo "Done."
