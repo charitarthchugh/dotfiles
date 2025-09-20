@@ -17,7 +17,10 @@ starship
 tldr
 bat
 btop
-chronie 
+chronie
+podman
+podman-compose
+podman-docker
 fd 
 dust 
 exa 
@@ -32,7 +35,10 @@ gcc
 cmake
 nerd-fonts-complete
 neovim
-btop 
+btop
+uv
+bpython
+tailscale
 
  
 

@@ -3,9 +3,7 @@ gnome-shell-extenstion-pop-shell-git
 gnome-weather 
 file-roller 
 keepassxc
-lollypop
 nautilus
-speedcrunch
 visual-studio-code-bin 
 vlc 
 vscodium-bin 
@@ -17,3 +15,12 @@ gvfs-smb
 gvfs-mtp
 gvfs-nfs
 ttf-firacode-nerd
+zed
+bitwarden
+thunderbird
+firefox
+librewolf
+nvtop
+zotero-bin
+webex-bin
+scx-scheds
