@@ -39,6 +39,7 @@ btop
 uv
 bpython
 tailscale
+silicon
 
  
 
