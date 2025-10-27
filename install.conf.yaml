@@ -17,8 +17,8 @@
       path: zsh_profile
     ~/.bashrc:
       path: bashrc
-    ~/.vimrc:
-      path: vimrc
+    # ~/.vimrc:
+    # path: vimrc
     ~/.npmrc:
       path: npmrc
     ~/.condarc:
