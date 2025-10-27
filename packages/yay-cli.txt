@@ -40,6 +40,4 @@ uv
 bpython
 tailscale
 silicon
-
- 
-
+fzf
