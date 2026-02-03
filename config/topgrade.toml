@@ -59,6 +59,8 @@ self_update = false
 "Font cache"="fc-cache -r"
 "Cleanup Package Managers"="~/dotfiles/scripts/clean-package-managers.sh"
 "Clean logs older than 15d"="sudo journalctl --vacuum-time=15d"
+"Update fish completions" = "fish -c fish_update_completions"
+
 #[brew]
 #greedy_cask = true
 
