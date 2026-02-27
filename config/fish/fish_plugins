@@ -1,7 +1,5 @@
 jorgebucaran/fisher
 jethrokuan/z
-jorgebucaran/bax.fish
-jorgebucaran/gitio.fish
 PatrickF1/fzf.fish
 franciscolourenco/done
 jorgebucaran/autopair.fish
@@ -18,5 +16,7 @@ decors/fish-ghq
 jduchateau/fish-flutter-completions
 lilyball/nix-env.fish
 kidonng/nix-completions.fish
-jschwrtz/up
 oh-my-fish/plugin-pyenv
+meaningful-ooo/sponge
+charitarthchugh/up
+jorgebucaran/replay.fish
