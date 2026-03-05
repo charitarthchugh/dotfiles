@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/config.schema.json
+source: ~/.config/skillshare/skills
+mode: merge
+targets:
+  antigravity:
+    path: ~/.gemini/antigravity/global_skills
+  claude:
+    path: ~/.claude/skills
+  cline:
+    path: ~/.cline/skills
+  codex:
+    path: ~/.codex/skills
+  copilot:
+    path: ~/.copilot/skills
+  cursor:
+    path: ~/.cursor/skills
+  gemini:
+    path: ~/.gemini/skills
+  junie:
+    path: ~/.junie/skills
+  opencode:
+    path: ~/.config/opencode/skills
+skills:
+  - name: humanizer
+    source: https://github.com/blader/humanizer
+  - name: skillshare
+    source: github.com/runkids/skillshare/skills/skillshare
+ignore:
+  - "**/.DS_Store"
+  - "**/.git/**"
+audit:
+  block_threshold: CRITICAL
