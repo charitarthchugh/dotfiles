@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Copy this file to ~/.config/yabai/rules.local.sh and adapt to your apps.
+# Use `yabai -m query --windows --window | jq .app,.title` to inspect names.
+
+# Example: float browser picture-in-picture windows
+# yabai -m rule --add app="^Safari$" title="^Picture in Picture$" manage=off
+
+# Example: float password prompts
+# yabai -m rule --add app="^KeePassXC$" title="^Unlock Database.*" manage=off

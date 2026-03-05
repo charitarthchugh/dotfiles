@@ -77,6 +77,10 @@
       path: config/containers/*
     ~/.config/tealdeer/:
       path: config/tealdeer/*
+    ~/.config/yabai/:
+      path: config/yabai/*
+    ~/.config/skhd/:
+      path: config/skhd/*
     ~/Templates:
       path: Templates/*
 

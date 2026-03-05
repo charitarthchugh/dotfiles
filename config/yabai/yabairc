@@ -1,0 +1,53 @@
+#!/usr/bin/env sh
+
+set -eu
+
+# Pop Shell-like defaults, but for yabai's BSP model.
+# Override any of these with env vars before starting yabai.
+: "${POP_INITIAL_LAYOUT:=bsp}"   # bsp|float
+: "${POP_OUTER_GAP:=2}"          # Pop Shell default gap-outer is 2
+: "${POP_INNER_GAP:=2}"          # Pop Shell default gap-inner is 2
+: "${POP_MOUSE_FOLLOWS_FOCUS:=on}"
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+
+yabai -m config \
+    mouse_follows_focus       "${POP_MOUSE_FOLLOWS_FOCUS}" \
+    focus_follows_mouse       off \
+    window_origin_display     focused \
+    window_placement          second_child \
+    window_insertion_point    focused \
+    window_zoom_persist       on \
+    split_ratio               0.50 \
+    split_type                auto \
+    auto_balance              off \
+    mouse_modifier            cmd \
+    mouse_action1             move \
+    mouse_action2             resize \
+    mouse_drop_action         stack
+
+# Apply per-space defaults on startup.
+"${SCRIPT_DIR}/scripts/apply_space_defaults.sh"
+
+# Keep new spaces aligned with defaults.
+yabai -m signal --remove pop_space_defaults >/dev/null 2>&1 || true
+yabai -m signal --add label=pop_space_defaults event=space_created \
+    action="${SCRIPT_DIR}/scripts/apply_space_defaults.sh \"\${YABAI_SPACE_INDEX}\""
+
+# Minimal float rules for macOS utility/dialog apps.
+yabai -m rule --remove pop_float_system_settings >/dev/null 2>&1 || true
+yabai -m rule --remove pop_float_about_panel >/dev/null 2>&1 || true
+yabai -m rule --remove pop_float_calculator >/dev/null 2>&1 || true
+yabai -m rule --remove pop_float_archive_utility >/dev/null 2>&1 || true
+yabai -m rule --add label=pop_float_system_settings app="^System Settings$" manage=off
+yabai -m rule --add label=pop_float_about_panel title="^About .*" manage=off
+yabai -m rule --add label=pop_float_calculator app="^Calculator$" manage=off
+yabai -m rule --add label=pop_float_archive_utility app="^Archive Utility$" manage=off
+
+# Optional local overrides: ~/.config/yabai/rules.local.sh
+if [ -f "${SCRIPT_DIR}/rules.local.sh" ]; then
+    # shellcheck source=/dev/null
+    . "${SCRIPT_DIR}/rules.local.sh"
+fi
+
+echo "yabai pop-shell profile loaded"

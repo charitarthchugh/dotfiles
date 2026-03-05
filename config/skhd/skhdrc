@@ -1,0 +1,98 @@
+# Pop Shell-like bindings for yabai.
+# Place in ~/.config/skhd/skhdrc (or include from your main skhdrc).
+# Assumes helper scripts exist in ~/.config/yabai/scripts/.
+
+# Modes
+:: default
+:: pop_manage @
+
+# Focus (Pop: Super + direction)
+cmd - h     : yabai -m window --focus west
+cmd - j     : yabai -m window --focus south
+cmd - k     : yabai -m window --focus north
+cmd - l     : yabai -m window --focus east
+cmd - left  : yabai -m window --focus west
+cmd - down  : yabai -m window --focus south
+cmd - up    : yabai -m window --focus north
+cmd - right : yabai -m window --focus east
+
+# Launcher (Pop: Super + /)
+cmd - slash : ~/.config/yabai/scripts/launcher.sh
+
+# App launchers
+shift + alt + cmd - t : open /Applications/kitty.app 
+shift + alt + cmd - c : open /Applications/Browsers.app
+
+# Toggle floating/orientation/tiling/stacking (Pop: Super + g/o/y/s)
+cmd - g : yabai -m window --toggle float
+cmd - o : yabai -m window --toggle split
+cmd - y : ~/.config/yabai/scripts/toggle_tiling.sh
+cmd - s : ~/.config/yabai/scripts/toggle_stacking.sh
+
+# Enter/leave management mode (Pop: Super + Return)
+cmd - return : true ; pop_manage
+pop_manage < return : true ; default
+pop_manage < escape : true ; default
+
+# Move focused window across spaces (Pop workspace up/down).
+shift + cmd - k    : ~/.config/yabai/scripts/move_window_space_follow.sh prev
+shift + cmd - j    : ~/.config/yabai/scripts/move_window_space_follow.sh next
+shift + cmd - up   : ~/.config/yabai/scripts/move_window_space_follow.sh prev
+shift + cmd - down : ~/.config/yabai/scripts/move_window_space_follow.sh next
+
+# Move focused window across displays (Pop monitor shortcuts).
+shift + cmd - h                : ~/.config/yabai/scripts/move_window_display_follow.sh west
+shift + cmd - l                : ~/.config/yabai/scripts/move_window_display_follow.sh east
+shift + cmd - left             : ~/.config/yabai/scripts/move_window_display_follow.sh west
+shift + cmd - right            : ~/.config/yabai/scripts/move_window_display_follow.sh east
+shift + ctrl + cmd - k         : ~/.config/yabai/scripts/move_window_display_follow.sh north
+shift + ctrl + cmd - j         : ~/.config/yabai/scripts/move_window_display_follow.sh south
+shift + ctrl + cmd - up        : ~/.config/yabai/scripts/move_window_display_follow.sh north
+shift + ctrl + cmd - down      : ~/.config/yabai/scripts/move_window_display_follow.sh south
+
+# Management mode approximation:
+# plain direction = move (warp)
+# ctrl + direction = swap
+# shift + direction = grow
+# shift + ctrl + direction = shrink
+# o/s/g/~ = orientation/stacking/float toggles
+pop_manage < h : yabai -m window --warp west
+pop_manage < j : yabai -m window --warp south
+pop_manage < k : yabai -m window --warp north
+pop_manage < l : yabai -m window --warp east
+pop_manage < left  : yabai -m window --warp west
+pop_manage < down  : yabai -m window --warp south
+pop_manage < up    : yabai -m window --warp north
+pop_manage < right : yabai -m window --warp east
+
+pop_manage < ctrl - h : yabai -m window --swap west
+pop_manage < ctrl - j : yabai -m window --swap south
+pop_manage < ctrl - k : yabai -m window --swap north
+pop_manage < ctrl - l : yabai -m window --swap east
+pop_manage < ctrl - left  : yabai -m window --swap west
+pop_manage < ctrl - down  : yabai -m window --swap south
+pop_manage < ctrl - up    : yabai -m window --swap north
+pop_manage < ctrl - right : yabai -m window --swap east
+
+pop_manage < shift - h : yabai -m window --resize left:40:0
+pop_manage < shift - j : yabai -m window --resize bottom:0:40
+pop_manage < shift - k : yabai -m window --resize top:0:-40
+pop_manage < shift - l : yabai -m window --resize right:40:0
+pop_manage < shift - left  : yabai -m window --resize left:40:0
+pop_manage < shift - down  : yabai -m window --resize bottom:0:40
+pop_manage < shift - up    : yabai -m window --resize top:0:-40
+pop_manage < shift - right : yabai -m window --resize right:40:0
+
+pop_manage < shift + ctrl - h : yabai -m window --resize left:-40:0
+pop_manage < shift + ctrl - j : yabai -m window --resize bottom:0:-40
+pop_manage < shift + ctrl - k : yabai -m window --resize top:0:40
+pop_manage < shift + ctrl - l : yabai -m window --resize right:-40:0
+pop_manage < shift + ctrl - left  : yabai -m window --resize left:-40:0
+pop_manage < shift + ctrl - down  : yabai -m window --resize bottom:0:-40
+pop_manage < shift + ctrl - up    : yabai -m window --resize top:0:40
+pop_manage < shift + ctrl - right : yabai -m window --resize right:-40:0
+
+pop_manage < o     : yabai -m window --toggle split
+pop_manage < s     : ~/.config/yabai/scripts/toggle_stacking.sh
+pop_manage < g     : yabai -m window --toggle float
+pop_manage < grave : yabai -m window --toggle float
