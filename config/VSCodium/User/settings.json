@@ -11,7 +11,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "dart.debugSdkLibraries": false,
   "update.mode": "none",
@@ -32,7 +32,7 @@
   "python.linting.enabled": true,
   "latex-workshop.intellisense.update.aggressive.enabled": true,
   "latex-workshop.latex.autoBuild.run": "onSave",
-  "latex-workshop.latex.autoClean.run": "onBuilt",
+  "latex-workshop.latex.autoClean.run": "onFailed",
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.view.pdf.external.synctex.command": "evince",
   "latex-workshop.view.pdf.viewer": "tab",
@@ -74,7 +74,7 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "isort.args": ["--profile", "black"],
@@ -134,7 +134,7 @@
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
   },
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -219,5 +219,15 @@
   "gitlens.views.launchpad.enabled": true,
   "chat.editing.alwaysSaveWithGeneratedChanges": true,
   "gitlens.ai.model": "gitkraken",
-  "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash"
+  "containers.environment": {
+    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
+  },
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.intellisense.citation.backend": "biblatex",
+  "latex-workshop.intellisense.package.unusual": true,
+  "latex-workshop.intellisense.subsuperscript.enabled": true,
+  "latex-workshop.view.pdf.hand": true,
+  "latex-workshop.latex.clean.method": "glob",
+  "latex-workshop.formatting.tex-fmt.args": ["--recursive"],
+  "latex-workshop.format.fixQuotes.enabled": true,
 }
