@@ -11,7 +11,7 @@
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
   },
   "dart.debugSdkLibraries": false,
   "update.mode": "none",
@@ -19,7 +19,7 @@
   "git.autofetch": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook",
-    "*.pdf": "latex-workshop-pdf-hook"
+    "*.pdf": "latex-workshop-pdf-hook",
   },
   "git.confirmSync": false,
   "terminal.external.linuxExec": "alacritty",
@@ -60,8 +60,8 @@
       "menubar.selectionForeground": "#84FFFF",
       "editor.findMatchBorder": "#84FFFF",
       "selection.background": "#84FFFF40",
-      "statusBarItem.remoteBackground": "#84FFFF"
-    }
+      "statusBarItem.remoteBackground": "#84FFFF",
+    },
   },
   "security.workspace.trust.enabled": false,
   "python.formatting.provider": "none",
@@ -74,8 +74,8 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   "isort.args": ["--profile", "black"],
   "explorer.confirmDragAndDrop": false,
@@ -86,10 +86,10 @@
     "**/node_modules/*/**": true,
     "**/.data/*/**": true,
     "**/.venv/**": true,
-    "**/.env/**": true
+    "**/.env/**": true,
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -104,7 +104,7 @@
     "172.16.50.106": "linux",
     "172.16.51.107": "linux",
     "100.108.230.123": "linux",
-    "caiwenML": "linux"
+    "caiwenML": "linux",
   },
   "window.zoomLevel": 1,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -112,7 +112,7 @@
   "terminal.integrated.defaultProfile.linux": "fish",
 
   "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+    "editor.defaultFormatter": "redhat.vscode-xml",
   },
   "liveServer.settings.donotShowInfoMsg": true,
   "python.analysis.useLibraryCodeForTypes": true,
@@ -125,63 +125,63 @@
   "better-comments.highlightPlainText": true,
   "editor.linkedEditing": true,
   "[toml]": {
-    "editor.defaultFormatter": "tamasfe.even-better-toml"
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
   },
   "[properties]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "foxundermoon.shell-format",
   },
   "[dockerfile]": {
-    "editor.defaultFormatter": "ms-azuretools.vscode-containers"
+    "editor.defaultFormatter": "ms-azuretools.vscode-containers",
   },
   "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
   },
   "latex-workshop.latex.recipe.default": "tectonic",
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk 🔃",
-      "tools": ["latexmk"]
+      "tools": ["latexmk"],
     },
     {
       "name": "latexmk (latexmkrc)",
-      "tools": ["latexmk_rconly"]
+      "tools": ["latexmk_rconly"],
     },
     {
       "name": "latexmk (lualatex)",
-      "tools": ["lualatexmk"]
+      "tools": ["lualatexmk"],
     },
     {
       "name": "latexmk (xelatex)",
-      "tools": ["xelatexmk"]
+      "tools": ["xelatexmk"],
     },
     {
       "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
-      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"],
     },
     {
       "name": "Compile Rnw files",
-      "tools": ["rnw2tex", "latexmk"]
+      "tools": ["rnw2tex", "latexmk"],
     },
     {
       "name": "Compile Jnw files",
-      "tools": ["jnw2tex", "latexmk"]
+      "tools": ["jnw2tex", "latexmk"],
     },
     {
       "name": "tectonic",
-      "tools": ["tectonic"]
-    }
+      "tools": ["tectonic"],
+    },
   ],
   "codesnap.transparentBackground": true,
   "latex-workshop.linting.chktex.enabled": true,
   "[c]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "xaver.clang-format",
   },
   "workbench.editor.enablePreview": false,
   "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
+    "editor.defaultFormatter": "vscode.html-language-features",
   },
   "black-formatter.importStrategy": "fromEnvironment",
   "ipynb.experimental.pasteImages.enabled": true,
@@ -190,7 +190,7 @@
   "workbench.productIconTheme": "adwaita",
   "editor.renderLineHighlight": "none",
   "[fish]": {
-    "editor.defaultFormatter": "bmalehorn.vscode-fish"
+    "editor.defaultFormatter": "bmalehorn.vscode-fish",
   },
   "workbench.colorTheme": "Adwaita Dark",
   "notebook.lineNumbers": "on",
@@ -199,28 +199,28 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "yaml": false
+    "yaml": false,
   },
   "latex-workshop.docker.image.latex": "docker.io/danteev/texlive",
   "docker.environment": {
-    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
+    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock",
   },
   "jupyter.allowUnauthorizedRemoteConnection": true,
   "EIDE.Repository.UseProxy": false,
   "latex-workshop.formatting.latex": "tex-fmt",
   "[riscv]": {
-    "editor.defaultFormatter": "penguinsnail.riscv-formatter"
+    "editor.defaultFormatter": "penguinsnail.riscv-formatter",
   },
   "markdown.marp.chromePath": "io.github.ungoogled_software.ungoogled_chromium",
   "markdown.marp.pdf.noteAnnotations": true,
   "[bibtex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
   },
   "gitlens.views.launchpad.enabled": true,
   "chat.editing.alwaysSaveWithGeneratedChanges": true,
   "gitlens.ai.model": "gitkraken",
   "containers.environment": {
-    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock"
+    "DOCKER_HOST": "unix:///run/user/1000/podman/podman.sock",
   },
   "latex-workshop.bibtex-fields.sort.enabled": true,
   "latex-workshop.intellisense.citation.backend": "biblatex",
@@ -230,4 +230,5 @@
   "latex-workshop.latex.clean.method": "glob",
   "latex-workshop.formatting.tex-fmt.args": ["--recursive"],
   "latex-workshop.format.fixQuotes.enabled": true,
+  "claudeCode.preferredLocation": "panel",
 }
