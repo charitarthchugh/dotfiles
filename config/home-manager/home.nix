@@ -1,64 +1,80 @@
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the
-  # paths it should manage.
-  home.username = "cc";
-  home.homeDirectory = "/home/cc";
+  home.username = "humara";
+  home.homeDirectory = "/home/humara";
+  home.stateVersion = "25.10";
 
-  # This value determines the Home Manager release that your
-  # configuration is compatible with. This helps avoid breakage
-  # when a new Home Manager release introduces backwards
-  # incompatible changes.
-  #
-  # You can update Home Manager without changing this value. See
-  # the Home Manager release notes for a list of state version
-  # changes in each release.
-  home.stateVersion = "22.05";
-  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-  home.packages = [
-    pkgs.nixfmt
-    pkgs.topgrade
-    pkgs.ghq
-    pkgs.go
-    pkgs.flutter
-    pkgs.delta
-    pkgs.tldr
-    pkgs.speedtest-cli
-    pkgs.betterdiscordctl
-    pkgs.yarn
-    pkgs.glow
-    pkgs.pandoc
-    pkgs.imagemagick
-    pkgs.direnv
-    pkgs.cmake
-    pkgs.lazygit
-    pkgs.bat
-    pkgs.bat-extras.batman
-    pkgs.bat-extras.batgrep
-    pkgs.bat-extras.batwatch
-    pkgs.bat-extras.batdiff
-    pkgs.bat-extras.prettybat
-    pkgs.black
-    pkgs.isort
-    pkgs.starship
-    pkgs.sheldon
-    pkgs.du-dust
-    pkgs.gh
-    pkgs.neovim
-    pkgs.fzf
-    pkgs.croc
-    pkgs.exa
-    pkgs.xxh
-    pkgs.google-cloud-sdk
-    pkgs.fd
-    pkgs.hugo
-    pkgs.marksman
-    pkgs.ffsend
-    pkgs.clipboard-jh
-    pkgs.clang-tools
-    pkgs.gcc12
- ];
-}
 
+  programs.gnome-shell = {
+    enable = true;
+    extensions = [
+      { package = pkgs.gnomeExtensions.pop-shell; }
+    ];
+  };
+
+  home.packages = with pkgs; [
+    nixfmt
+    nixfmt-tree
+    topgrade
+    ghq
+    delta
+    tealdeer
+    speedtest-cli
+    betterdiscordctl
+    yarn
+    glow
+    pandoc
+    imagemagick
+    direnv
+    lazygit
+    bat
+    bat-extras.batman
+    bat-extras.batgrep
+    bat-extras.batwatch
+    bat-extras.batdiff
+    bat-extras.prettybat
+    black
+    isort
+    starship
+    sheldon
+    gh
+    neovim
+    fzf
+    croc
+    eza
+    xxh
+    google-cloud-sdk
+    fd
+    hugo
+    marksman
+    ffsend
+    clipboard-jh
+
+    git
+    python3
+    nodejs
+    prettier
+    mermaid-cli
+    opencode
+    claude-code
+    codex
+
+    btop
+    dust
+    eza
+    poetry
+    pipx
+    pyenv
+    dysk
+    kitty
+    fish
+
+    gnupg
+    openssh
+    jq
+
+    google-chrome
+  ];
+}
