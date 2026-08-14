@@ -1,9 +1,27 @@
 { config, pkgs, ... }:
 
+let
+  herdr = pkgs.stdenv.mkDerivation {
+    pname = "herdr";
+    version = "0.7.1";
+    src = pkgs.fetchurl {
+      url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64";
+      sha256 = "0m56v2ws8rwwb6h309k2q953z2p9z1yayr3cdr5za8iczjpsqrdr";
+    };
+    nativeBuildInputs = [ pkgs.autoPatchelfHook ];
+    dontUnpack = true;
+    installPhase = ''
+      runHook preInstall
+      install -Dm755 $src $out/bin/herdr
+      runHook postInstall
+    '';
+    meta.mainProgram = "herdr";
+  };
+in
 {
   home.username = "humara";
   home.homeDirectory = "/home/humara";
-  home.stateVersion = "25.10";
+  home.stateVersion = "25.11";
 
   programs.home-manager.enable = true;
 
@@ -41,9 +59,9 @@
     sheldon
     gh
     neovim
+    tree-sitter
     fzf
     croc
-    eza
     xxh
     google-cloud-sdk
     fd
@@ -51,21 +69,22 @@
     marksman
     ffsend
     clipboard-jh
-
+    trash-cli
+    # trashy
     git
     python3
     nodejs
     prettier
     mermaid-cli
     opencode
-    claude-code
+    # claude-code-bin
     codex
-
+    # pi-coding-agent
+    ripgrep
     btop
     dust
     eza
     poetry
-    pipx
     pyenv
     dysk
     kitty
@@ -74,7 +93,13 @@
     gnupg
     openssh
     jq
+    pass-git-helper
+    pinentry-gnome3
+    
 
-    google-chrome
+    # google-chrome
+    rtk
+    herdr
+    
   ];
 }
