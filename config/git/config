@@ -18,7 +18,7 @@ autoSetupRemote = true
 [init]
 defaultBranch = main
 [credential]
-helper = store
+	helper = store
 [maintenance]
 repo = ~/dotfiles
 repo = ~/.local/share/fonts/NerdFonts
@@ -38,8 +38,9 @@ root = ~/Dev/ghq/
 	directory = /opt/flutter
 [credential "https://github.com"]
 	helper = 
-	helper = !gh auth git-credential
+	helper = !/etc/profiles/per-user/humara/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !gh auth git-credential
-
+	helper = !/etc/profiles/per-user/humara/bin/gh auth git-credential
+[credential "https://git.zebra-bull.ts.net"]
+	helper = store
