@@ -38,9 +38,9 @@ root = ~/Dev/ghq/
 	directory = /opt/flutter
 [credential "https://github.com"]
 	helper = 
-	helper = !/etc/profiles/per-user/humara/bin/gh auth git-credential
+	helper = !/home/humara/.nix-profile/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/etc/profiles/per-user/humara/bin/gh auth git-credential
+	helper = !/home/humara/.nix-profile/bin/gh auth git-credential
 [credential "https://git.zebra-bull.ts.net"]
 	helper = store
