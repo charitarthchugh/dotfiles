@@ -80,6 +80,13 @@
     },
     {
       "class": "com.dec05eba.gpu_screen_recorder"
+    },
+    {
+      "class": "io.speedofsound.SpeedOfSound",
+      "title": "Speed of Sound"
+    },
+    {
+      "class": "Handy"
     }
   ],
   "skiptaskbarhidden": [],
