@@ -1,6 +1,5 @@
 brew "node"
 brew "devcontainer"
-brew "gemini-cli"
 brew "mermaid-cli"
 brew "opencode"
 brew "prettier"

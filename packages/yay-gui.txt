@@ -1,15 +1,13 @@
 gnome-tweaks
-gnome-shell-extenstion-pop-shell-git 
-gnome-weather 
-file-roller 
+gnome-weather
+file-roller
 keepassxc
 nautilus
-visual-studio-code-bin 
-vlc 
-vscodium-bin 
+visual-studio-code-bin
+vlc
+vscodium-bin
 alacritty
 kitty
-gvfs-google
 gvfs-goa
 gvfs-smb
 gvfs-mtp
@@ -24,3 +22,9 @@ nvtop
 zotero-bin
 webex-bin
 scx-scheds
+# Added to mirror nix config (2026-10-01)
+vesktop
+speedcrunch
+extension-manager
+virt-manager
+gnome-shell-extension-pop-shell-git

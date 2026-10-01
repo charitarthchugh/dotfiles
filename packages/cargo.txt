@@ -1,8 +1,6 @@
 topgrade
 bat
 cargo-update
-git-delta
-fd-find
 procs
 tealdeer
 sheldon
