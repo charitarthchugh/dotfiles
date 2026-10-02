@@ -26,7 +26,6 @@ npm
 python
 python-pip
 python-pipx
-python39
 llvm
 gcc
 cmake
