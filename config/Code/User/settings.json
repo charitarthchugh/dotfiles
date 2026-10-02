@@ -176,7 +176,7 @@
   "notebook.outline.showCodeCells": true,
   "notebook.breadcrumbs.showCodeCells": true,
   "jupyter.useNotebookEditor": false,
-  "python.pythonPath": "/usr/bin/python3.8",
+  "python.defaultInterpreterPath": "/usr/bin/python3",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.editor.scrollToSwitchTabs": true,
   "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
