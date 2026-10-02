@@ -17,8 +17,6 @@
       path: zsh_profile
     ~/.bashrc:
       path: bashrc
-    # ~/.vimrc:
-    # path: vimrc
     ~/.npmrc:
       path: npmrc
     ~/.condarc:
@@ -33,8 +31,6 @@
       path: config/user-dirs.dirs
     ~/.config/starship.toml:
       path: config/starship.toml
-    ~/.config/coc/extensions/package.json:
-      path: config/coc/extensions/package.json
     ~/.config/git/config:
       path: config/git/config
     ~/.config/fish/config.fish:
@@ -87,12 +83,8 @@
 - shell:
     - command: command -v fish &> /dev/null && fish -i -c "curl -sL https://git.io/fisher | source && fisher update"
       description: Install and update Fish Plugins
-    # - command: wget -q0- https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh  | bash -s ~/.vim/bundle
-    #   description: Install Dein for Vim
     # - command: mkdir -p ~/.local/share/nvim/site/pack/packer/start/ && git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     #   description: Install Packer for Neovim
-    - command: cd ~/.config/coc/extensions/; command -v npm &> /dev/null && npm i --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-      description: Install CoC Extensions
     - command: mkdir -p ~/.local/share/fonts; cd ~/.local/share/fonts/; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf?raw=true;command -v fc-cache &> /dev/null && fc-cache -r
       description: Install Fira Code Font
     - command: cd ~/.local/share/fonts; wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Meslo/M/Regular/complete/Meslo%20LG%20M%20Regular%20Nerd%20Font%20Complete.ttf?raw=true; command -v fc-cache &> /dev/null && fc-cache -r

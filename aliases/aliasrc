@@ -1,5 +1,5 @@
 #!/bin/zsh
-EDITOR=vim
+EDITOR=nvim
 VISUAL=code
 export EDITOR
 export VISUAL
