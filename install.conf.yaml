@@ -48,7 +48,7 @@
     ~/.config/Code/User/settings.json:
       path: config/VSCodium/User/settings.json
     ~/.config/Code/User/snippets:
-      path: config/Code/User/snippets/*
+      path: config/VSCodium/User/snippets/*
     ~/.config/gh/config.yml:
       path: config/gh/config.yml
     ~/.config/sheldon/plugins.toml:
