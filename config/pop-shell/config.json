@@ -87,6 +87,9 @@
     },
     {
       "class": "Handy"
+    },
+    {
+      "class": "io.github.alyraffauf.Switchyard"
     }
   ],
   "skiptaskbarhidden": [],
