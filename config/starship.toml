@@ -99,3 +99,6 @@ style = "bright-black"
 format = '[$symbol($version(-$name) )]($style)'
 style = 'bright-black'
 
+[aws]
+format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
+style = " bright-black"
