@@ -27,7 +27,6 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorStyle": "line",
   "editor.fontLigatures": true,
-  "python.pythonPath": "/bin/python3",
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "latex-workshop.intellisense.update.aggressive.enabled": true,
@@ -231,4 +230,5 @@
   "latex-workshop.formatting.tex-fmt.args": ["--recursive"],
   "latex-workshop.format.fixQuotes.enabled": true,
   "claudeCode.preferredLocation": "panel",
+  "aws.telemetry": false,
 }
