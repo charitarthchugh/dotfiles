@@ -27,6 +27,8 @@
       path: selected_editor
     ~/.config/topgrade.toml:
       path: config/topgrade.toml
+    ~/.config/nix/nix.conf:
+      path: config/nix.conf
     ~/.config/user-dirs.dirs:
       path: config/user-dirs.dirs
     ~/.config/starship.toml:
