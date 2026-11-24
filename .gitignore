@@ -135,3 +135,7 @@ temp/
 .config/fish/fish_variables
 winehq.key
 *_failed.txt
+
+# nix build output links
+result
+result-*
