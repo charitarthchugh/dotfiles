@@ -11,16 +11,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # hermes-agent (home.nix) via numtide/llm-agents.nix: a cache-backed,
-    # patched build. The old NousResearch/hermes-agent and herdr inputs were
-    # dropped; herdr ships as a local mkDerivation in home.nix.
+    # herdr, herdr-core and herdr-app (dev-tools.nix) and hermes-agent
+    # (common.nix) via numtide/llm-agents.nix: cache-backed, patched builds.
     # NOTE: intentionally NOT following our nixpkgs — numtide builds/publishes
     # against their own pinned nixpkgs, so the cache only hits that way.
     # Bump via:
     #   nix flake update llm-agents
     #
     # On a machine without NixOS, add the cache to /etc/nix/nix.conf, or
-    # hermes builds from source:
+    # these build from source:
     #   extra-substituters = https://cache.numtide.com
     #   extra-trusted-public-keys = niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g=
     llm-agents = {
@@ -84,14 +83,11 @@
         default = mkHome { };
         # Plus the desktop apps and what they need (desktop.nix).
         desktop = mkHome { modules = [ ./desktop.nix ]; };
-        # The machine that used this flake first: desktop plus its own
-        # packages (home.nix).
+        # Same modules as `desktop`; only the stateVersion of this machine's
+        # first switch differs. There are no machine-specific packages.
         humara = mkHome {
           stateVersion = "25.11";
-          modules = [
-            ./desktop.nix
-            ./home.nix
-          ];
+          modules = [ ./desktop.nix ];
         };
       };
     };

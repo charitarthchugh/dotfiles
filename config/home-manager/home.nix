@@ -1,33 +1,14 @@
 # The packages of the machine that used this flake first
 # (homeConfigurations.humara). The dev tools that every machine gets (fish,
-# neovim, nodejs, poetry, fd, claude-code, codex, ...) come from dev-tools.nix
-# through common.nix, shared with the NixOS hosts. Do not list one of them
-# here too: when the two builds differ, the build fails with a collision.
+# neovim, nodejs, poetry, fd, claude-code, codex, herdr, ...) come from
+# dev-tools.nix through common.nix, shared with the NixOS hosts. Do not list
+# one of them here too: when the two builds differ, the build fails with a
+# collision.
 { pkgs, inputs, ... }:
 
 let
   system = pkgs.stdenv.hostPlatform.system;
   llmPkgs = inputs.llm-agents.packages.${system};
-
-  herdr = pkgs.stdenvNoCC.mkDerivation {
-    pname = "herdr";
-    version = "0.7.1";
-    src = pkgs.fetchurl {
-      url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64";
-      hash = "sha256-uWWsr/wsIvVLbmxkr3z46Yo/SsJiJjCgWZxnpLnYplQ=";
-    };
-    nativeBuildInputs = [ pkgs.autoPatchelfHook ];
-    dontUnpack = true;
-    installPhase = ''
-      runHook preInstall
-      install -Dm755 "$src" "$out/bin/herdr"
-      runHook postInstall
-    '';
-    meta = {
-      mainProgram = "herdr";
-      platforms = [ "x86_64-linux" ];
-    };
-  };
 
   formattingPackages = with pkgs; [
     nixfmt
@@ -83,7 +64,6 @@ let
     llmPkgs.hermes-agent
   ];
 
-  # kitty is in desktop.nix.
   systemPackages = with pkgs; [
     ripgrep
     btop
@@ -114,6 +94,5 @@ in
     ++ developmentPackages
     ++ agentPackages
     ++ systemPackages
-    ++ securityPackages
-    ++ [ herdr ];
+    ++ securityPackages;
 }
