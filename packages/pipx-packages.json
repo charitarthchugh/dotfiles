@@ -48,43 +48,6 @@
                 "venv_args": []
             }
         },
-        "arxiv-latex-cleaner": {
-            "metadata": {
-                "injected_packages": {},
-                "main_package": {
-                    "app_paths": [
-                        {
-                            "__Path__": "/home/cc/.local/share/pipx/venvs/arxiv-latex-cleaner/bin/arxiv_latex_cleaner",
-                            "__type__": "Path"
-                        }
-                    ],
-                    "app_paths_of_dependencies": {},
-                    "apps": [
-                        "arxiv_latex_cleaner"
-                    ],
-                    "apps_of_dependencies": [],
-                    "include_apps": true,
-                    "include_dependencies": false,
-                    "man_pages": [],
-                    "man_pages_of_dependencies": [],
-                    "man_paths": [],
-                    "man_paths_of_dependencies": {},
-                    "package": "arxiv-latex-cleaner",
-                    "package_or_url": "arxiv-latex-cleaner",
-                    "package_version": "1.0.8",
-                    "pinned": false,
-                    "pip_args": [],
-                    "suffix": ""
-                },
-                "pipx_metadata_version": "0.5",
-                "python_version": "Python 3.13.2",
-                "source_interpreter": {
-                    "__Path__": "/usr/bin/python3.13",
-                    "__type__": "Path"
-                },
-                "venv_args": []
-            }
-        },
         "autopep8": {
             "metadata": {
                 "injected_packages": {},
