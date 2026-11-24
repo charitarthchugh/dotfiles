@@ -1,12 +1,33 @@
-{
-  pkgs,
-  inputs,
-  codexUpstream,
-  ...
-}:
+# The packages of the machine that used this flake first
+# (homeConfigurations.humara). The dev tools that every machine gets (fish,
+# neovim, nodejs, poetry, fd, claude-code, codex, ...) come from dev-tools.nix
+# through common.nix, shared with the NixOS hosts. Do not list one of them
+# here too: when the two builds differ, the build fails with a collision.
+{ pkgs, inputs, ... }:
 
 let
   system = pkgs.stdenv.hostPlatform.system;
+  llmPkgs = inputs.llm-agents.packages.${system};
+
+  herdr = pkgs.stdenvNoCC.mkDerivation {
+    pname = "herdr";
+    version = "0.7.1";
+    src = pkgs.fetchurl {
+      url = "https://github.com/ogulcancelik/herdr/releases/download/v0.7.1/herdr-linux-x86_64";
+      hash = "sha256-uWWsr/wsIvVLbmxkr3z46Yo/SsJiJjCgWZxnpLnYplQ=";
+    };
+    nativeBuildInputs = [ pkgs.autoPatchelfHook ];
+    dontUnpack = true;
+    installPhase = ''
+      runHook preInstall
+      install -Dm755 "$src" "$out/bin/herdr"
+      runHook postInstall
+    '';
+    meta = {
+      mainProgram = "herdr";
+      platforms = [ "x86_64-linux" ];
+    };
+  };
 
   formattingPackages = with pkgs; [
     nixfmt
@@ -14,7 +35,6 @@ let
   ];
 
   cliPackages = with pkgs; [
-    topgrade
     ghq
     delta
     tealdeer
@@ -32,16 +52,13 @@ let
     bat-extras.batwatch
     bat-extras.batdiff
     bat-extras.prettybat
-    starship
     sheldon
     gh
-    neovim
     tree-sitter
     fzf
     croc
     xxh
     google-cloud-sdk
-    fd
     hugo
     marksman
     ffsend
@@ -55,33 +72,22 @@ let
     black
     isort
     python3
-    nodejs
-    prettier
-    mermaid-cli
-    opencode
     # claude-code-bin
     # pi-coding-agent
   ];
 
   agentPackages = [
-    # codex — upstream openai/codex flake via the hash-injecting wrapper in
-    # flake.nix (upstream's flake fails to evaluate as-is; see comment there).
-    codexUpstream
-    # hermes — official upstream flake (NousResearch/hermes-agent), bumped
-    # manually via `nix flake lock --update-input hermes` (see flake.nix).
-    inputs.hermes.packages.${system}.default
+    # hermes-agent from numtide/llm-agents.nix: replaces the old pinned
+    # NousResearch/hermes-agent input with numtide's cache-backed, patched
+    # build of the same release.
+    llmPkgs.hermes-agent
   ];
 
+  # kitty is in desktop.nix.
   systemPackages = with pkgs; [
     ripgrep
     btop
-    dust
     eza
-    poetry
-    pyenv
-    dysk
-    kitty
-    fish
     # google-chrome
   ];
 
@@ -95,12 +101,6 @@ let
   ];
 in
 {
-  home.username = "humara";
-  home.homeDirectory = "/home/humara";
-  home.stateVersion = "25.11";
-
-  programs.home-manager.enable = true;
-
   programs.gnome-shell = {
     enable = true;
     extensions = [
@@ -115,5 +115,5 @@ in
     ++ agentPackages
     ++ systemPackages
     ++ securityPackages
-    ++ [ inputs.herdr.packages.${system}.herdr ];
+    ++ [ herdr ];
 }
