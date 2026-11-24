@@ -59,8 +59,12 @@
       path: config/skillshare/config.yaml
     ~/.config/skillshare/skills/registry.yaml:
       path: config/skillshare/registry.yaml
+    # *.nix and flake.lock only: a bare * also links the `result` symlink
+    # that `nix build` leaves here. (dotbot 1.18 has no `exclude`.)
     ~/.config/home-manager/:
-      path: config/home-manager/*
+      path: config/home-manager/*.nix
+    ~/.config/home-manager/flake.lock:
+      path: config/home-manager/flake.lock
     ~/.config/kitty/:
       path: config/kitty/*
     ~/.config/alacritty/:
