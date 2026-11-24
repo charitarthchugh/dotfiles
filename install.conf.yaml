@@ -55,6 +55,8 @@
       path: config/sheldon/plugins.toml
     ~/.config/skillshare/config.yaml:
       path: config/skillshare/config.yaml
+    ~/.config/skillshare/skills/registry.yaml:
+      path: config/skillshare/registry.yaml
     ~/.config/home-manager/:
       path: config/home-manager/*
     ~/.config/kitty/:

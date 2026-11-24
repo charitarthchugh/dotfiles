@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/registry.schema.json
+
+skills:
+  - name: humanizer
+    source: https://github.com/blader/humanizer
+  - name: skillshare
+    source: github.com/runkids/skillshare/skills/skillshare
