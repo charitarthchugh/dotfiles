@@ -139,3 +139,6 @@ winehq.key
 # nix build output links
 result
 result-*
+
+# machine-specific home-manager config
+config/home-manager/home.nix
