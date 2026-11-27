@@ -60,6 +60,7 @@ self_update = false
 "Cleanup Package Managers"="~/dotfiles/scripts/clean-package-managers.sh"
 "Clean logs older than 15d"="sudo journalctl --vacuum-time=15d"
 "Update fish completions" = "fish -c fish_update_completions"
+"Update ollama" = "curl -fsSL https://ollama.com/install.sh | sh && sudo systemctl disable ollama.service && sudo systemctl restart ollama-custom.service"
 
 #[brew]
 #greedy_cask = true

@@ -22,3 +22,4 @@ lazygit
 llvm 
 cmake 
 gcc 
+neovim
