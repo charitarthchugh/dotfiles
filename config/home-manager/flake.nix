@@ -90,5 +90,44 @@
           modules = [ ./desktop.nix ];
         };
       };
+
+      # Smoke test of what the nixos-config hosts get from this repo: a NixOS
+      # VM booted with the shared dev tools (dev-tools.nix `programs`)
+      # installed through the Home Manager NixOS module, then checked from
+      # inside a real fish login. CI runs it (see .github/workflows) with the
+      # installer action's KVM setup:
+      #   nix build .#checks.x86_64-linux.vm
+      checks.x86_64-linux.vm =
+        let
+          system = "x86_64-linux";
+        in
+        (import "${nixpkgs}/nixos/lib/testing-python.nix" { inherit system; }).runTest {
+          name = "dotfiles-dev-tools";
+          nodes.machine =
+            { ... }:
+            {
+              imports = [ inputs.home-manager.nixosModules.home-manager ];
+              users.users.alice = {
+                isNormalUser = true;
+              };
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.alice =
+                  { pkgs, ... }:
+                  {
+                    home.stateVersion = "26.11";
+                    home.packages = (import ./dev-tools.nix { inherit pkgs inputs; }).programs;
+                  };
+              };
+              virtualisation.memorySize = 2048;
+            };
+          testScript = ''
+            machine.start()
+            machine.wait_for_unit("multi-user.target")
+            machine.succeed("su - alice -c \"fish -c 'starship --version' | head -1\"")
+            machine.succeed("su - alice -c \"nvim --version | head -1\"")
+          '';
+        };
     };
 }
