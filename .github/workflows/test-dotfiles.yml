@@ -32,8 +32,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
       - name: Setup Fish
-        uses: fish-actions/install-fish@v1.1.0
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends fish
       - name: Make install script executeable
         run: chmod +x install
       - name: Run install-dotfiles
         run: ./install
+
+  # Boot the shared dev tools (config/home-manager/dev-tools.nix) in a real
+  # NixOS VM. DeterminateSystems/nix-installer-action's `kvm` input wires up
+  # /dev/kvm for NixOS test support when the runner exposes it (it also sets
+  # DETERMINATE_NIX_KVM=0/1); without it qemu falls back to TCG, slower but
+  # still correct.
+  nix-vm-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v16
+        with:
+          kvm: true
+      - name: KVM availability
+        run: echo "DETERMINATE_NIX_KVM=${DETERMINATE_NIX_KVM:-0}" | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Run NixOS VM test
+        run: nix build ./config/home-manager#checks.x86_64-linux.vm -L
