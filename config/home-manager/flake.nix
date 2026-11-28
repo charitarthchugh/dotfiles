@@ -125,8 +125,8 @@
           testScript = ''
             machine.start()
             machine.wait_for_unit("multi-user.target")
-            machine.succeed("su - alice -c \"fish -c 'starship --version' | head -1\"")
-            machine.succeed("su - alice -c \"nvim --version | head -1\"")
+            machine.succeed("su - alice -c \"fish -c 'starship --version'\"")
+            machine.succeed("su - alice -c \"fish -c 'nvim --version'\"")
           '';
         };
     };
